@@ -1,0 +1,939 @@
+#include "DetectorConstruction.hh"
+
+#include "SensitiveDetector.hh"
+#include "SDDSensitiveDetector.hh"
+
+#include "G4SystemOfUnits.hh"
+#include "G4PhysicalConstants.hh"
+
+#include "G4NistManager.hh"
+#include "G4RunManager.hh"
+#include "G4RegionStore.hh"
+#include "G4SDManager.hh"
+#include "G4Material.hh"
+#include "G4Box.hh"
+#include "G4VSolid.hh"
+#include "G4SubtractionSolid.hh"
+#include "G4Tubs.hh"
+#include "G4Polyhedra.hh"
+#include "G4Trap.hh"
+#include "G4RotationMatrix.hh"
+#include "G4LogicalVolume.hh"
+#include "G4ThreeVector.hh"
+#include "G4PVPlacement.hh"
+#include "G4PVReplica.hh"
+#include "G4Transform3D.hh"
+#include "G4VPVParameterisation.hh"
+#include "G4PVParameterised.hh"
+#include "globals.hh"
+
+#include "G4GeometryManager.hh"
+#include "G4PhysicalVolumeStore.hh"
+#include "G4LogicalVolumeStore.hh"
+#include "G4SolidStore.hh"
+#include "G4SDManager.hh"
+
+#include "G4VisAttributes.hh"
+#include "G4Colour.hh"
+
+#include "G4GDMLParser.hh"
+
+#include <fstream>
+#include <vector>
+#include <string>
+
+//#include "ConfigFile.hh"
+
+// Constructor 
+DetectorConstruction::DetectorConstruction() 
+:	experimentalHall_log(0),
+/*  
+    sdd00_log(0),
+    sdd01_log(0),
+    sdd02_log(0),
+    sdd03_log(0),
+    sdd04_log(0),
+    sdd05_log(0),
+    sdd06_log(0),
+    sdd07_log(0),
+    sdd08_log(0),
+    sdd09_log(0),
+    sdd10_log(0),
+    sdd11_log(0),
+    scint00_log(0),
+    scint01_log(0),
+    scint02_log(0),
+    scint03_log(0),
+    scint04_log(0),
+    scint05_log(0),
+    scint06_log(0),
+    scint07_log(0),
+    scint08_log(0),
+    scint09_log(0),
+    scint10_log(0),
+    scint11_log(0),
+    scint12_log(0),
+    scint13_log(0),
+    scint14_log(0),
+    scint15_log(0),
+    scint16_log(0),
+    scint17_log(0),
+    scint18_log(0),
+    scint19_log(0),
+    scint20_log(0),
+    scint21_log(0),
+    scint22_log(0),
+    scint23_log(0),
+    scint24_log(0),
+    scint25_log(0),
+    scint26_log(0),
+    scint27_log(0),
+    scint28_log(0),
+    scint29_log(0),
+    scint30_log(0),
+    scint31_log(0),
+    scint32_log(0),
+    scint33_log(0),
+    scint34_log(0),
+    scint35_log(0),
+    scint36_log(0),
+    scint37_log(0),
+    scint38_log(0),
+    scint39_log(0),
+    scint40_log(0),
+    scint41_log(0),
+    scint42_log(0),
+    scint43_log(0),
+    scint44_log(0),
+    scint45_log(0),
+    scint46_log(0),
+    scint47_log(0),
+    scint48_log(0),
+    scint49_log(0),
+    scint50_log(0),
+    scint51_log(0),
+    scint52_log(0),
+    scint53_log(0),
+    scint54_log(0),
+    scint55_log(0),
+    scint56_log(0),
+    scint57_log(0),
+    scint58_log(0),
+    scint59_log(0),
+*/	
+    sdd00_log(0),
+    sdd01_log(0),
+    sdd02_log(0),
+    sdd03_log(0),
+    sdd04_log(0),
+    sdd05_log(0),
+    sdd06_log(0),
+    sdd07_log(0),
+    sdd08_log(0),
+    sdd09_log(0),
+    sdd10_log(0),
+    sdd11_log(0),
+    sdd12_log(0),
+    sdd13_log(0),
+    sdd14_log(0),
+    sdd15_log(0),
+    sdd16_log(0),
+    sdd17_log(0),
+    sdd18_log(0),
+    sdd19_log(0),
+    sdd20_log(0),
+    sdd21_log(0),
+    sdd22_log(0),
+    sdd23_log(0),
+    sdd24_log(0),
+    sdd25_log(0),
+    sdd26_log(0),
+    sdd27_log(0),
+    sdd28_log(0),
+    sdd29_log(0),
+    sdd30_log(0),
+    sdd31_log(0),
+    sdd32_log(0),
+    sdd33_log(0),
+    sdd34_log(0),
+    sdd35_log(0),
+
+    scint00_log(0),
+    scint01_log(0),
+    scint02_log(0),
+    scint03_log(0),
+    scint04_log(0),
+    scint05_log(0),
+    scint06_log(0),
+    scint07_log(0),
+    scint08_log(0),
+    scint09_log(0),
+    scint10_log(0),
+    scint11_log(0),
+    scint12_log(0),
+    scint13_log(0),
+    scint14_log(0),
+    scint15_log(0),
+    scint16_log(0),
+    scint17_log(0),
+    scint18_log(0),
+    scint19_log(0),
+    scint20_log(0),
+    scint21_log(0),
+    scint22_log(0),
+    scint23_log(0),
+    scint24_log(0),
+    scint25_log(0),
+    scint26_log(0),
+    scint27_log(0),
+    scint28_log(0),
+    scint29_log(0),
+    scint30_log(0),
+    scint31_log(0),
+    scint32_log(0),
+    scint33_log(0),
+    scint34_log(0),
+    scint35_log(0),
+    scint36_log(0),
+    scint37_log(0),
+    scint38_log(0),
+    scint39_log(0),
+    scint40_log(0),
+    scint41_log(0),
+    scint42_log(0),
+    scint43_log(0),
+    scint44_log(0),
+    scint45_log(0),
+    scint46_log(0),
+    scint47_log(0),
+    scint48_log(0),
+    scint49_log(0),
+    scint50_log(0),
+    scint51_log(0),
+    scint52_log(0),
+    scint53_log(0),
+    scint54_log(0),
+    scint55_log(0),
+    scint56_log(0),
+    scint57_log(0),
+    scint58_log(0),
+    scint59_log(0),
+    scint60_log(0),
+    scint61_log(0),
+    scint62_log(0),
+    scint63_log(0),
+    experimentalHall_phys(0)
+{
+
+	// Define the materials
+	DefineMaterials();
+
+	// Define the parameters
+	DefineParameters();
+		
+
+	
+;}
+
+
+
+// Destructor
+DetectorConstruction::~DetectorConstruction() { }
+
+
+
+// Definition of the parameters
+void DetectorConstruction::DefineParameters()
+{
+}
+
+
+// Definition of the materials
+void DetectorConstruction::DefineMaterials()
+{
+	G4double a;			// Atomic mass
+	G4double z;			// Atomic number
+	G4double density;	// Density
+	G4int nel;			// Number of elements in a compound
+	G4int natoms;       // Number of atoms in a compound
+	G4double fractionmass;
+    G4int ncomponents;
+
+	// Elements
+	G4Element*  H  = new G4Element("Hydrogen"  , "H" , z = 1. , a =  1.008*g/mole);
+//	G4Element*  He = new G4Element("Helium"    , "He", z = 2. , a =  4.003*g/mole);
+    G4Element*  C  = new G4Element("Carbon"    , "C" , z = 6. , a =  12.01*g/mole);
+    G4Element*  N  = new G4Element("Nitrogen"  , "N" , z = 7. , a =  14.01*g/mole);
+    G4Element*  O  = new G4Element("Oxygen"    , "O" , z = 8. , a =  16.00*g/mole);
+//  G4Element*  Na = new G4Element("Sodium"    , "Na", z = 11., a =  22.99*g/mole);
+	G4Element*  Al = new G4Element("Aluminium" , "Al", z = 13., a =  26.98*g/mole);
+	G4Element*  Si = new G4Element("Silicon"   , "Si", z = 14., a =  28.08*g/mole);
+//  G4Element*  K  = new G4Element("Potassium" , "K" , z = 19., a =  39.10*g/mole);
+//  G4Element*  Ti = new G4Element("Titanium"  , "Ti", z = 22., a =  47.87*g/mole);
+    G4Element*  Fe = new G4Element("Iron"      , "Fe", z = 26., a =  55.84*g/mole);
+    G4Element*  Co = new G4Element("Cobalt"    , "Co", z = 27., a =  58.93*g/mole);
+    G4Element*  Ni = new G4Element("Nickel"    , "Ni", z = 28., a =  58.69*g/mole);
+//	G4Element*  Cu = new G4Element("Copper"    , "Cu", z = 29., a =  63.55*g/mole);
+    G4Element*  Ga = new G4Element("Gallium"   , "Ga", z = 31., a =  69.72*g/mole);
+//  G4Element*  Ge = new G4Element("Germanium" , "Ge", z = 32., a =  72.63*g/mole);
+//  G4Element*  As = new G4Element("Arsenic"   , "As", z = 33., a =  74.92*g/mole);
+    G4Element*  Br = new G4Element("Bromine"   , "Br", z = 35., a =  79.90*g/mole);
+//  G4Element*  Mo = new G4Element("Molybdenum", "Mo", z = 42., a =  95.94*g/mole);
+//  G4Element*  I  = new G4Element("Iodine"    , "I" , z = 53., a = 126.90*g/mole);
+//  G4Element*  Cs = new G4Element("Caesium"   , "Cs", z = 55., a = 132.90*g/mole);
+    G4Element*  La = new G4Element("Lanthanium", "La", z = 57., a = 138.90*g/mole);
+    G4Element*  Gd = new G4Element("Gadolinium", "Gd", z = 64., a = 157.25*g/mole);
+//  G4Element*  Ta = new G4Element("Tantalum"  , "Ta", z = 73., a = 180.94*g/mole);
+//  G4Element*  W  = new G4Element("Tungsten"  , "W" , z = 74., a = 183.84*g/mole);
+//  G4Element*  Pb = new G4Element("Lead"      , "Pb", z = 82., a = 207.20*g/mole);
+//  G4Element*  Bi = new G4Element("Bismuth"   , "Bi", z = 83., a = 208.98*g/mole);
+
+	// Materials 
+	// Vacuum
+	G4Material* Vacuum = new G4Material("Vacuum", density = 1.e-25*g/cm3, nel = 1);
+	Vacuum -> AddElement(H, 100*perCent);
+
+    // NIST
+    G4NistManager* man = G4NistManager::Instance();
+    G4Material* G4_CESIUM_IODIDE = man->FindOrBuildMaterial("G4_CESIUM_IODIDE");
+    G4Material* G4_BGO = man->FindOrBuildMaterial("G4_BGO");
+    G4Material* G4_Si = man->FindOrBuildMaterial("G4_Si");
+    G4Material* G4_Ti = man->FindOrBuildMaterial("G4_Ti");
+    G4Material* G4_Al = man->FindOrBuildMaterial("G4_Al");
+    G4Material* G4_AIR = man->FindOrBuildMaterial("G4_AIR");
+    G4Material* G4_STAINLESS_STEEL = man->FindOrBuildMaterial("G4_STAINLESS-STEEL");
+    G4Material* G4_BRASS = man->FindOrBuildMaterial("G4_BRASS");
+    G4Material* G4_Cu = man->FindOrBuildMaterial("G4_Cu");
+    G4Material* G4_Mo = man->FindOrBuildMaterial("G4_Mo");
+    G4Material* G4_W = man->FindOrBuildMaterial("G4_W");
+    G4Material* G4_Ta = man->FindOrBuildMaterial("G4_Ta");
+    G4Material* G4_Pb = man->FindOrBuildMaterial("G4_Pb");
+    G4Material* G4_SILICON_DIOXIDE = man->FindOrBuildMaterial("G4_SILICON_DIOXIDE");
+    G4Material* G4_KAPTON = man->FindOrBuildMaterial("G4_KAPTON");
+    G4Material* G4_Galactic = man->FindOrBuildMaterial("G4_Galactic");
+    G4Material* G4_POLYPROPYLENE = man->FindOrBuildMaterial("G4_POLYPROPYLENE");
+
+    // Effective Aluminium Solid for Bus (6619.5 g before system margin, minus 1579.2 g payload = 5040 g)
+    // Volume bus: 10 x 10 x 20 = 2000 cm3; effective density = 2.52 g/cm3
+    G4Material* EffectiveAluminiumSolid_Bus = new G4Material("EffectiveAluminiumSolid_Bus",
+                                                         density = 2.52*g/cm3, nel = 1);
+    EffectiveAluminiumSolid_Bus -> AddElement(Al, 100*perCent);
+    
+    // Effective Aluminium Solid for CSAC (35 g, 17 cm3)
+    G4Material* EffectiveAluminiumSolid_CSAC = new G4Material("EffectiveAluminiumSolid_CSAC",
+                                                         density = 2.06*g/cm3, nel = 1);
+    EffectiveAluminiumSolid_CSAC -> AddMaterial(G4_Al, 100*perCent);
+    
+    
+    // Effective Aluminium Solid for PICO SAR 250 DC-DC converter (12 g, 1.10" x 0.80" x 0.45")
+    G4Material* EffectiveAluminiumSolid_PICO = new G4Material("EffectiveAluminiumSolid_PICO",
+                                                         density = 1.85*g/cm3, nel = 1);
+    EffectiveAluminiumSolid_PICO -> AddMaterial(G4_Al, 100*perCent);
+
+
+    // GAGG
+    G4Material* GAGG = new G4Material("GAGG", density = 6.63 *g/cm3, nel = 4);
+    GAGG -> AddElement(Gd, natoms=3);
+    GAGG -> AddElement(Al, natoms=2);
+    GAGG -> AddElement(Ga, natoms=3);
+    GAGG -> AddElement(O,  natoms=12);
+    
+    // Kovar
+    G4Material* Kovar = new G4Material("Kovar", density = 8.0 *g/cm3, nel = 3);
+    Kovar -> AddElement(Fe, 54*perCent);
+    Kovar -> AddElement(Ni, 29*perCent);
+    Kovar -> AddElement(Co, 17*perCent);
+
+
+    // LaBr3
+//    G4Material* LaBr3 = new G4Material("LaBr3", density = 5.06 *g/cm3, nel = 2);
+//    LaBr3 -> AddElement(La, 36.68*perCent);
+//    LaBr3 -> AddElement(Br, 63.32*perCent);
+
+    // Polymide
+//    G4Material* Polymide = new G4Material("Polymide", density = 1.43*g/cm3, nel = 4);
+//    Polymide -> AddElement(C, natoms=22);
+//    Polymide -> AddElement(H, natoms=10);
+//    Polymide -> AddElement(N, natoms=2);
+//    Polymide -> AddElement(O, natoms=5);
+    
+    // OpticalFilter material (1 um kapton + 300 nm Al)
+    // WARNING: in the GDML file the filter overall thickness is 10 um instead of 1.3 um!
+    // So we scale the 1.71*g/cm3 effective density by a 1.3/10 factor.
+    G4Material* OpticalFilter = new G4Material("OpticalFilter", density = 0.2223*g/cm3, ncomponents=2);
+    OpticalFilter -> AddMaterial(G4_KAPTON, fractionmass=63.2*perCent);
+    OpticalFilter -> AddMaterial(G4_Al,  fractionmass=36.8*perCent);
+
+
+    // Silicon Oxide
+//    G4Material* SiliconOxide = new G4Material("SiliconOxide", density = 2.65*g/cm3, nel = 2);
+//    SiliconOxide -> AddElement(Si, natoms=1);
+//    SiliconOxide -> AddElement(O,  natoms=2);
+
+    // Diglycidyl Ether of Bisphenol A (First compound of epoxy resin Epotek 301-1)
+    G4Material* Epoxy_1 = new G4Material("Epoxy_1", density = 1.16*g/cm3, nel = 3);
+    Epoxy_1 -> AddElement(C, natoms=19);
+    Epoxy_1 -> AddElement(H, natoms=20);
+    Epoxy_1 -> AddElement(O, natoms=4);
+    
+    // 1,4-Butanediol Diglycidyl Ether (Second compound of epoxy resin Epotek 301-1)
+    G4Material* Epoxy_2 = new G4Material("Epoxy_2", density = 1.10*g/cm3, nel = 3);
+    Epoxy_2 -> AddElement(C, natoms=10);
+    Epoxy_2 -> AddElement(H, natoms=18);
+    Epoxy_2 -> AddElement(O, natoms=4);
+    
+    // 1,6-Hexanediamine 2,2,4-trimetyl (Third compound of epoxy resin Epotek 301-1)
+    G4Material* Epoxy_3 = new G4Material("Epoxy_3", density = 1.16*g/cm3, nel = 3);
+    Epoxy_3 -> AddElement(C, natoms=9);
+    Epoxy_3 -> AddElement(H, natoms=22);
+    Epoxy_3 -> AddElement(N, natoms=2);
+    
+    // Epoxy resin Epotek 301-1
+    G4Material* Epoxy_Resin = new G4Material("Epoxy_Resin", density = 1.19*g/cm3, ncomponents = 3);
+    Epoxy_Resin -> AddMaterial(Epoxy_1, fractionmass=56*perCent);
+    Epoxy_Resin -> AddMaterial(Epoxy_2, fractionmass=24*perCent);
+    Epoxy_Resin -> AddMaterial(Epoxy_3, fractionmass=20*perCent);
+    
+    // FR4 PCB material
+    G4Material* FR4 = new G4Material("FR4", density = 1.8*g/cm3, ncomponents=2);
+    FR4 -> AddMaterial(G4_SILICON_DIOXIDE, fractionmass=60*perCent);
+    FR4 -> AddMaterial(Epoxy_Resin,  fractionmass=40*perCent);
+    
+    // Silicone (Dowsil 93-500, Polydimethylsiloxane C2H6OSi)
+    G4Material* Silicone = new G4Material("Silicone", density = 1.08 *g/cm3, nel = 4);
+    Silicone -> AddElement(C,  natoms=2);
+    Silicone -> AddElement(H,  natoms=6);
+    Silicone -> AddElement(O,  natoms=1);
+    Silicone -> AddElement(Si, natoms=1);
+    
+    // Silicon (for SDD)
+    // WARNING: in the GDML file the SDD overall thickness is 400 um instead of 450 um!
+    // So we scale the 2.33*g/cm3 Si  density by a 450/400 factor, to ensure a correct efficiency
+    G4Material* Si_SDD = new G4Material("Si_SDD", density = 2.62 *g/cm3, ncomponents=1);
+    Si_SDD -> AddMaterial(G4_Si, fractionmass=100*perCent);
+
+
+    mli1Material = G4_KAPTON;
+    mli2Material = G4_Al;
+    mli3Material = G4_POLYPROPYLENE;
+
+//    mli1Material = Vacuum;
+//    mli2Material = Vacuum;
+//    mli3Material = Vacuum;
+
+    solarPanel1Material = G4_Al;
+    solarPanel2Material = G4_SILICON_DIOXIDE;
+    busMaterial = EffectiveAluminiumSolid_Bus;
+
+}
+
+
+
+// Detector construction
+G4VPhysicalVolume* DetectorConstruction::Construct()
+{
+	// Clean old geometry, if any
+	G4GeometryManager::GetInstance()->OpenGeometry();
+	G4PhysicalVolumeStore::GetInstance()->Clean();
+	G4LogicalVolumeStore::GetInstance()->Clean();
+	G4SolidStore::GetInstance()->Clean();
+    
+    G4GDMLParser parser;
+    // Importing geometry
+    //parser.Read("hermes_test.gdml");
+    parser.Read("cusp_payload_GEANT4-worldVOL.gdml");
+
+    
+    // Reads and stores in memory
+    experimentalHall_phys = parser.GetWorldVolume(); // get world
+    experimentalHall_log = parser.GetVolume("worldVOL");
+    
+
+    
+/*    sdd00_log = parser.GetVolume("LV_SDD00");
+    sdd01_log = parser.GetVolume("LV_SDD01");
+    sdd02_log = parser.GetVolume("LV_SDD02");
+    sdd03_log = parser.GetVolume("LV_SDD03");
+    sdd04_log = parser.GetVolume("LV_SDD04");
+    sdd05_log = parser.GetVolume("LV_SDD05");
+    sdd06_log = parser.GetVolume("LV_SDD06");
+    sdd07_log = parser.GetVolume("LV_SDD07");
+    sdd08_log = parser.GetVolume("LV_SDD08");
+    sdd09_log = parser.GetVolume("LV_SDD09");
+    sdd10_log = parser.GetVolume("LV_SDD10");
+    sdd11_log = parser.GetVolume("LV_SDD11");
+
+    
+    scint00_log = parser.GetVolume("LV_CRYSTAL00");
+    scint01_log = parser.GetVolume("LV_CRYSTAL01");
+    scint02_log = parser.GetVolume("LV_CRYSTAL02");
+    scint03_log = parser.GetVolume("LV_CRYSTAL03");
+    scint04_log = parser.GetVolume("LV_CRYSTAL04");
+    scint05_log = parser.GetVolume("LV_CRYSTAL05");
+    scint06_log = parser.GetVolume("LV_CRYSTAL06");
+    scint07_log = parser.GetVolume("LV_CRYSTAL07");
+    scint08_log = parser.GetVolume("LV_CRYSTAL08");
+    scint09_log = parser.GetVolume("LV_CRYSTAL09");
+    scint10_log = parser.GetVolume("LV_CRYSTAL10");
+    scint11_log = parser.GetVolume("LV_CRYSTAL11");
+    scint12_log = parser.GetVolume("LV_CRYSTAL12");
+    scint13_log = parser.GetVolume("LV_CRYSTAL13");
+    scint14_log = parser.GetVolume("LV_CRYSTAL14");
+    scint15_log = parser.GetVolume("LV_CRYSTAL15");
+    scint16_log = parser.GetVolume("LV_CRYSTAL16");
+    scint17_log = parser.GetVolume("LV_CRYSTAL17");
+    scint18_log = parser.GetVolume("LV_CRYSTAL18");
+    scint19_log = parser.GetVolume("LV_CRYSTAL19");
+    scint20_log = parser.GetVolume("LV_CRYSTAL20");
+    scint21_log = parser.GetVolume("LV_CRYSTAL21");
+    scint22_log = parser.GetVolume("LV_CRYSTAL22");
+    scint23_log = parser.GetVolume("LV_CRYSTAL23");
+    scint24_log = parser.GetVolume("LV_CRYSTAL24");
+    scint25_log = parser.GetVolume("LV_CRYSTAL25");
+    scint26_log = parser.GetVolume("LV_CRYSTAL26");
+    scint27_log = parser.GetVolume("LV_CRYSTAL27");
+    scint28_log = parser.GetVolume("LV_CRYSTAL28");
+    scint29_log = parser.GetVolume("LV_CRYSTAL29");
+    scint30_log = parser.GetVolume("LV_CRYSTAL30");
+    scint31_log = parser.GetVolume("LV_CRYSTAL31");
+    scint32_log = parser.GetVolume("LV_CRYSTAL32");
+    scint33_log = parser.GetVolume("LV_CRYSTAL33");
+    scint34_log = parser.GetVolume("LV_CRYSTAL34");
+    scint35_log = parser.GetVolume("LV_CRYSTAL35");
+    scint36_log = parser.GetVolume("LV_CRYSTAL36");
+    scint37_log = parser.GetVolume("LV_CRYSTAL37");
+    scint38_log = parser.GetVolume("LV_CRYSTAL38");
+    scint39_log = parser.GetVolume("LV_CRYSTAL39");
+    scint40_log = parser.GetVolume("LV_CRYSTAL40");
+    scint41_log = parser.GetVolume("LV_CRYSTAL41");
+    scint42_log = parser.GetVolume("LV_CRYSTAL42");
+    scint43_log = parser.GetVolume("LV_CRYSTAL43");
+    scint44_log = parser.GetVolume("LV_CRYSTAL44");
+    scint45_log = parser.GetVolume("LV_CRYSTAL45");
+    scint46_log = parser.GetVolume("LV_CRYSTAL46");
+    scint47_log = parser.GetVolume("LV_CRYSTAL47");
+    scint48_log = parser.GetVolume("LV_CRYSTAL48");
+    scint49_log = parser.GetVolume("LV_CRYSTAL49");
+    scint50_log = parser.GetVolume("LV_CRYSTAL50");
+    scint51_log = parser.GetVolume("LV_CRYSTAL51");
+    scint52_log = parser.GetVolume("LV_CRYSTAL52");
+    scint53_log = parser.GetVolume("LV_CRYSTAL53");
+    scint54_log = parser.GetVolume("LV_CRYSTAL54");
+    scint55_log = parser.GetVolume("LV_CRYSTAL55");
+    scint56_log = parser.GetVolume("LV_CRYSTAL56");
+    scint57_log = parser.GetVolume("LV_CRYSTAL57");
+    scint58_log = parser.GetVolume("LV_CRYSTAL58");
+    scint59_log = parser.GetVolume("LV_CRYSTAL59");*/
+    
+    
+    // Multilayer insulation
+    // Single layer: 12.5 um kapton + 100 nm Al
+    // Netting: 165.1 um polypropylene with an open fraction of 98.5% (i.e. 2.4765 um effective thickness)
+    
+/*    G4int nlayers = 3;
+    G4double mli_1_thick = nlayers * 12.5 * um;
+    G4double mli_2_thick = nlayers * 100 * nm;
+    G4double mli_3_thick = (nlayers-1) * 2.4765 * um;
+    
+    G4double mli_side = 110 * mm;
+    G4double mli_height = 50 * mm;*/
+
+
+	// Set visualization attributes
+	// RGB components
+/*	G4Colour white   (1.0, 1.0, 1.0);
+	G4Colour red     (1.0, 0.0, 0.0);
+	G4Colour green   (0.0, 1.0, 0.0);
+	G4Colour blue    (0.0, 0.0, 1.0);
+	G4Colour yellow  (1.0, 1.0, 0.0);
+	G4Colour magenta (1.0, 0.0, 1.0);
+	G4Colour cyan    (0.0, 1.0, 1.0);
+
+    experimentalHall_log -> SetVisAttributes(G4VisAttributes::GetInvisible());
+
+	G4VisAttributes* ScintVisAtt= new G4VisAttributes(yellow);
+    scint00_log -> SetVisAttributes(ScintVisAtt);
+    scint01_log -> SetVisAttributes(ScintVisAtt);
+    scint02_log -> SetVisAttributes(ScintVisAtt);
+    scint03_log -> SetVisAttributes(ScintVisAtt);
+    scint04_log -> SetVisAttributes(ScintVisAtt);
+    scint05_log -> SetVisAttributes(ScintVisAtt);
+    scint06_log -> SetVisAttributes(ScintVisAtt);
+    scint07_log -> SetVisAttributes(ScintVisAtt);
+    scint08_log -> SetVisAttributes(ScintVisAtt);
+    scint09_log -> SetVisAttributes(ScintVisAtt);
+    scint10_log -> SetVisAttributes(ScintVisAtt);
+    scint11_log -> SetVisAttributes(ScintVisAtt);
+    scint12_log -> SetVisAttributes(ScintVisAtt);
+    scint13_log -> SetVisAttributes(ScintVisAtt);
+    scint14_log -> SetVisAttributes(ScintVisAtt);
+    scint15_log -> SetVisAttributes(ScintVisAtt);
+    scint16_log -> SetVisAttributes(ScintVisAtt);
+    scint17_log -> SetVisAttributes(ScintVisAtt);
+    scint18_log -> SetVisAttributes(ScintVisAtt);
+    scint19_log -> SetVisAttributes(ScintVisAtt);
+    scint20_log -> SetVisAttributes(ScintVisAtt);
+    scint21_log -> SetVisAttributes(ScintVisAtt);
+    scint22_log -> SetVisAttributes(ScintVisAtt);
+    scint23_log -> SetVisAttributes(ScintVisAtt);
+    scint24_log -> SetVisAttributes(ScintVisAtt);
+    scint25_log -> SetVisAttributes(ScintVisAtt);
+    scint26_log -> SetVisAttributes(ScintVisAtt);
+    scint27_log -> SetVisAttributes(ScintVisAtt);
+    scint28_log -> SetVisAttributes(ScintVisAtt);
+    scint29_log -> SetVisAttributes(ScintVisAtt);
+    scint30_log -> SetVisAttributes(ScintVisAtt);
+    scint31_log -> SetVisAttributes(ScintVisAtt);
+    scint32_log -> SetVisAttributes(ScintVisAtt);
+    scint33_log -> SetVisAttributes(ScintVisAtt);
+    scint34_log -> SetVisAttributes(ScintVisAtt);
+    scint35_log -> SetVisAttributes(ScintVisAtt);
+    scint36_log -> SetVisAttributes(ScintVisAtt);
+    scint37_log -> SetVisAttributes(ScintVisAtt);
+    scint38_log -> SetVisAttributes(ScintVisAtt);
+    scint39_log -> SetVisAttributes(ScintVisAtt);
+    scint40_log -> SetVisAttributes(ScintVisAtt);
+    scint41_log -> SetVisAttributes(ScintVisAtt);
+    scint42_log -> SetVisAttributes(ScintVisAtt);
+    scint43_log -> SetVisAttributes(ScintVisAtt);
+    scint44_log -> SetVisAttributes(ScintVisAtt);
+    scint45_log -> SetVisAttributes(ScintVisAtt);
+    scint46_log -> SetVisAttributes(ScintVisAtt);
+    scint47_log -> SetVisAttributes(ScintVisAtt);
+    scint48_log -> SetVisAttributes(ScintVisAtt);
+    scint49_log -> SetVisAttributes(ScintVisAtt);
+    scint50_log -> SetVisAttributes(ScintVisAtt);
+    scint51_log -> SetVisAttributes(ScintVisAtt);
+    scint52_log -> SetVisAttributes(ScintVisAtt);
+    scint53_log -> SetVisAttributes(ScintVisAtt);
+    scint54_log -> SetVisAttributes(ScintVisAtt);
+    scint55_log -> SetVisAttributes(ScintVisAtt);
+    scint56_log -> SetVisAttributes(ScintVisAtt);
+    scint57_log -> SetVisAttributes(ScintVisAtt);
+    scint58_log -> SetVisAttributes(ScintVisAtt);
+    scint59_log -> SetVisAttributes(ScintVisAtt);*/
+
+    sdd00_log = parser.GetVolume("LV_Absorber100__Meshed_");
+    sdd01_log = parser.GetVolume("LV_Absorber101__Meshed_");
+    sdd02_log = parser.GetVolume("LV_Absorber102__Meshed_");
+    sdd03_log = parser.GetVolume("LV_Absorber103__Meshed_");
+    sdd04_log = parser.GetVolume("LV_Absorber104__Meshed_");
+ // This volume is missed in the gdml file   
+ //   sdd05_log = parser.GetVolume("LV_Absorber005__Meshed_");
+    sdd06_log = parser.GetVolume("LV_Absorber106__Meshed_");
+    sdd07_log = parser.GetVolume("LV_Absorber107__Meshed_");
+    sdd08_log = parser.GetVolume("LV_Absorber108__Meshed_");
+    sdd09_log = parser.GetVolume("LV_Absorber109__Meshed_");
+    sdd10_log = parser.GetVolume("LV_Absorber110__Meshed_");
+    sdd11_log = parser.GetVolume("LV_Absorber111__Meshed_");
+    sdd12_log = parser.GetVolume("LV_Absorber112__Meshed_");
+    sdd13_log = parser.GetVolume("LV_Absorber113__Meshed_");
+    sdd14_log = parser.GetVolume("LV_Absorber114__Meshed_");
+    sdd15_log = parser.GetVolume("LV_Absorber115__Meshed_");
+    sdd16_log = parser.GetVolume("LV_Absorber116__Meshed_");
+    sdd17_log = parser.GetVolume("LV_Absorber117__Meshed_");
+    sdd18_log = parser.GetVolume("LV_Absorber118__Meshed_");
+    sdd19_log = parser.GetVolume("LV_Absorber119__Meshed_");
+    sdd20_log = parser.GetVolume("LV_Absorber120__Meshed_");
+    sdd21_log = parser.GetVolume("LV_Absorber121__Meshed_");
+    sdd22_log = parser.GetVolume("LV_Absorber122__Meshed_");
+    sdd23_log = parser.GetVolume("LV_Absorber123__Meshed_");
+    sdd24_log = parser.GetVolume("LV_Absorber124__Meshed_");
+    sdd25_log = parser.GetVolume("LV_Absorber125__Meshed_");
+    sdd26_log = parser.GetVolume("LV_Absorber126__Meshed_");
+    sdd27_log = parser.GetVolume("LV_Absorber127__Meshed_");
+    sdd28_log = parser.GetVolume("LV_Absorber128__Meshed_");
+    sdd29_log = parser.GetVolume("LV_Absorber129__Meshed_");
+    sdd30_log = parser.GetVolume("LV_Absorber130__Meshed_");
+    sdd31_log = parser.GetVolume("LV_Absorber131__Meshed_");
+    sdd32_log = parser.GetVolume("LV_Absorber132__Meshed_");
+    sdd33_log = parser.GetVolume("LV_Absorber133__Meshed_");
+    sdd34_log = parser.GetVolume("LV_Absorber134__Meshed_");
+    sdd35_log = parser.GetVolume("LV_Absorber135__Meshed_");
+
+    scint00_log = parser.GetVolume("LV_Scatterer000__Meshed_");
+    scint01_log = parser.GetVolume("LV_Scatterer001__Meshed_");
+    scint02_log = parser.GetVolume("LV_Scatterer002__Meshed_");
+    scint03_log = parser.GetVolume("LV_Scatterer003__Meshed_");
+    scint04_log = parser.GetVolume("LV_Scatterer004__Meshed_");
+    scint05_log = parser.GetVolume("LV_Scatterer005__Meshed_");
+    scint06_log = parser.GetVolume("LV_Scatterer006__Meshed_");
+    scint07_log = parser.GetVolume("LV_Scatterer007__Meshed_");
+    scint08_log = parser.GetVolume("LV_Scatterer008__Meshed_");
+    scint09_log = parser.GetVolume("LV_Scatterer009__Meshed_");
+    scint10_log = parser.GetVolume("LV_Scatterer010__Meshed_");
+    scint11_log = parser.GetVolume("LV_Scatterer011__Meshed_");
+    scint12_log = parser.GetVolume("LV_Scatterer012__Meshed_");
+    scint13_log = parser.GetVolume("LV_Scatterer013__Meshed_");
+    scint14_log = parser.GetVolume("LV_Scatterer014__Meshed_");
+    scint15_log = parser.GetVolume("LV_Scatterer015__Meshed_");
+    scint16_log = parser.GetVolume("LV_Scatterer016__Meshed_");
+    scint17_log = parser.GetVolume("LV_Scatterer017__Meshed_");
+    scint18_log = parser.GetVolume("LV_Scatterer018__Meshed_");
+    scint19_log = parser.GetVolume("LV_Scatterer019__Meshed_");
+    scint20_log = parser.GetVolume("LV_Scatterer020__Meshed_");
+    scint21_log = parser.GetVolume("LV_Scatterer021__Meshed_");
+    scint22_log = parser.GetVolume("LV_Scatterer022__Meshed_");
+    scint23_log = parser.GetVolume("LV_Scatterer023__Meshed_");
+    scint24_log = parser.GetVolume("LV_Scatterer024__Meshed_");
+    scint25_log = parser.GetVolume("LV_Scatterer025__Meshed_");
+    scint26_log = parser.GetVolume("LV_Scatterer026__Meshed_");
+    scint27_log = parser.GetVolume("LV_Scatterer027__Meshed_");
+    scint28_log = parser.GetVolume("LV_Scatterer028__Meshed_");
+    scint29_log = parser.GetVolume("LV_Scatterer029__Meshed_");
+    scint30_log = parser.GetVolume("LV_Scatterer030__Meshed_");
+    scint31_log = parser.GetVolume("LV_Scatterer031__Meshed_");
+    scint32_log = parser.GetVolume("LV_Scatterer032__Meshed_");
+    scint33_log = parser.GetVolume("LV_Scatterer033__Meshed_");
+    scint34_log = parser.GetVolume("LV_Scatterer034__Meshed_");
+    scint35_log = parser.GetVolume("LV_Scatterer035__Meshed_");
+    scint36_log = parser.GetVolume("LV_Scatterer036__Meshed_");
+    scint37_log = parser.GetVolume("LV_Scatterer037__Meshed_");
+    scint38_log = parser.GetVolume("LV_Scatterer038__Meshed_");
+    scint39_log = parser.GetVolume("LV_Scatterer039__Meshed_");
+    scint40_log = parser.GetVolume("LV_Scatterer040__Meshed_");
+    scint41_log = parser.GetVolume("LV_Scatterer041__Meshed_");
+    scint42_log = parser.GetVolume("LV_Scatterer042__Meshed_");
+    scint43_log = parser.GetVolume("LV_Scatterer043__Meshed_");
+    scint44_log = parser.GetVolume("LV_Scatterer044__Meshed_");
+    scint45_log = parser.GetVolume("LV_Scatterer045__Meshed_");
+    scint46_log = parser.GetVolume("LV_Scatterer046__Meshed_");
+    scint47_log = parser.GetVolume("LV_Scatterer047__Meshed_");
+    scint48_log = parser.GetVolume("LV_Scatterer048__Meshed_");
+    scint49_log = parser.GetVolume("LV_Scatterer049__Meshed_");
+    scint50_log = parser.GetVolume("LV_Scatterer050__Meshed_");
+    scint51_log = parser.GetVolume("LV_Scatterer051__Meshed_");
+    scint52_log = parser.GetVolume("LV_Scatterer052__Meshed_");
+    scint53_log = parser.GetVolume("LV_Scatterer053__Meshed_");
+    scint54_log = parser.GetVolume("LV_Scatterer054__Meshed_");
+    scint55_log = parser.GetVolume("LV_Scatterer055__Meshed_");
+    scint56_log = parser.GetVolume("LV_Scatterer056__Meshed_");
+    scint57_log = parser.GetVolume("LV_Scatterer057__Meshed_");
+    scint58_log = parser.GetVolume("LV_Scatterer058__Meshed_");
+    scint59_log = parser.GetVolume("LV_Scatterer059__Meshed_");
+    scint60_log = parser.GetVolume("LV_Scatterer060__Meshed_");
+    scint61_log = parser.GetVolume("LV_Scatterer061__Meshed_");
+    scint62_log = parser.GetVolume("LV_Scatterer062__Meshed_");
+    scint63_log = parser.GetVolume("LV_Scatterer063__Meshed_");
+
+
+
+    
+	// The function must return the physical volume of the world
+	return experimentalHall_phys;
+}
+
+
+void DetectorConstruction::ConstructSDandField()
+{
+    // Sensitive volume
+    // So far, the detector created above is not yet a real detector: it is just
+    // a geometrical object (with some attributes) placed within the world volume.
+    // To make the volume a detector, which can record e.g. hits, one must
+    // define a sensitive volume associated with it.
+    // For this purpose, a SensitiveDetector object is instantiated.
+    // SD for the Scint
+    
+
+    auto sdman = G4SDManager::GetSDMpointer(); // Mandatory since Geant v. 4.10.03
+
+    // Instantiation of the scintillator sensitive detector and readout geometry
+    SensitiveDetector* scint_SD  = new SensitiveDetector("SCI");
+    
+    // Instantiation of the SDD sensitive detector and readout geometry
+    SDDSensitiveDetector* sdd_SD  = new SDDSensitiveDetector("SDD");
+
+
+    sdman->AddNewDetector(scint_SD); // Mandatory since Geant v. 4.10.03
+    sdman->AddNewDetector(sdd_SD); // Mandatory since Geant v. 4.10.03
+
+    SetSensitiveDetector(sdd00_log, scint_SD);
+    SetSensitiveDetector(sdd01_log, scint_SD);
+    SetSensitiveDetector(sdd02_log, scint_SD);
+    SetSensitiveDetector(sdd03_log, scint_SD);
+    SetSensitiveDetector(sdd04_log, scint_SD);
+ //   SetSensitiveDetector(sdd05_log, sdd_SD);
+    SetSensitiveDetector(sdd06_log, scint_SD);
+    SetSensitiveDetector(sdd07_log, scint_SD);
+    SetSensitiveDetector(sdd08_log, scint_SD);
+    SetSensitiveDetector(sdd09_log, scint_SD);
+    SetSensitiveDetector(sdd10_log, scint_SD);
+    SetSensitiveDetector(sdd11_log, scint_SD);
+    SetSensitiveDetector(sdd12_log, scint_SD);
+    SetSensitiveDetector(sdd13_log, scint_SD);
+    SetSensitiveDetector(sdd14_log, scint_SD);
+    SetSensitiveDetector(sdd15_log, scint_SD);
+    SetSensitiveDetector(sdd16_log, scint_SD);
+    SetSensitiveDetector(sdd17_log, scint_SD);
+    SetSensitiveDetector(sdd18_log, scint_SD);
+    SetSensitiveDetector(sdd19_log, scint_SD);
+    SetSensitiveDetector(sdd20_log, scint_SD);
+    SetSensitiveDetector(sdd21_log, scint_SD);
+    SetSensitiveDetector(sdd22_log, scint_SD);
+    SetSensitiveDetector(sdd23_log, scint_SD);
+    SetSensitiveDetector(sdd24_log, scint_SD);
+    SetSensitiveDetector(sdd25_log, scint_SD);
+    SetSensitiveDetector(sdd26_log, scint_SD);
+    SetSensitiveDetector(sdd27_log, scint_SD);
+    SetSensitiveDetector(sdd28_log, scint_SD);
+    SetSensitiveDetector(sdd29_log, scint_SD);
+    SetSensitiveDetector(sdd30_log, scint_SD);
+    SetSensitiveDetector(sdd31_log, scint_SD);
+    SetSensitiveDetector(sdd32_log, scint_SD);
+    SetSensitiveDetector(sdd33_log, scint_SD);
+    SetSensitiveDetector(sdd34_log, scint_SD);
+    SetSensitiveDetector(sdd35_log, scint_SD);
+
+    SetSensitiveDetector(scint00_log, scint_SD);
+    SetSensitiveDetector(scint01_log, scint_SD);
+    SetSensitiveDetector(scint02_log, scint_SD);
+    SetSensitiveDetector(scint03_log, scint_SD);
+    SetSensitiveDetector(scint04_log, scint_SD);
+    SetSensitiveDetector(scint05_log, scint_SD);
+    SetSensitiveDetector(scint06_log, scint_SD);
+    SetSensitiveDetector(scint07_log, scint_SD);
+    SetSensitiveDetector(scint08_log, scint_SD);
+    SetSensitiveDetector(scint09_log, scint_SD);
+    SetSensitiveDetector(scint10_log, scint_SD);
+    SetSensitiveDetector(scint11_log, scint_SD);
+    SetSensitiveDetector(scint12_log, scint_SD);
+    SetSensitiveDetector(scint13_log, scint_SD);
+    SetSensitiveDetector(scint14_log, scint_SD);
+    SetSensitiveDetector(scint15_log, scint_SD);
+    SetSensitiveDetector(scint16_log, scint_SD);
+    SetSensitiveDetector(scint17_log, scint_SD);
+    SetSensitiveDetector(scint18_log, scint_SD);
+    SetSensitiveDetector(scint19_log, scint_SD);
+    SetSensitiveDetector(scint20_log, scint_SD);
+    SetSensitiveDetector(scint21_log, scint_SD);
+    SetSensitiveDetector(scint22_log, scint_SD);
+    SetSensitiveDetector(scint23_log, scint_SD);
+    SetSensitiveDetector(scint24_log, scint_SD);
+    SetSensitiveDetector(scint25_log, scint_SD);
+    SetSensitiveDetector(scint26_log, scint_SD);
+    SetSensitiveDetector(scint27_log, scint_SD);
+    SetSensitiveDetector(scint28_log, scint_SD);
+    SetSensitiveDetector(scint29_log, scint_SD);
+    SetSensitiveDetector(scint30_log, scint_SD);
+    SetSensitiveDetector(scint31_log, scint_SD);
+    SetSensitiveDetector(scint32_log, scint_SD);
+    SetSensitiveDetector(scint33_log, scint_SD);
+    SetSensitiveDetector(scint34_log, scint_SD);
+    SetSensitiveDetector(scint35_log, scint_SD);
+    SetSensitiveDetector(scint36_log, scint_SD);
+    SetSensitiveDetector(scint37_log, scint_SD);
+    SetSensitiveDetector(scint38_log, scint_SD);
+    SetSensitiveDetector(scint39_log, scint_SD);
+    SetSensitiveDetector(scint40_log, scint_SD);
+    SetSensitiveDetector(scint41_log, scint_SD);
+    SetSensitiveDetector(scint42_log, scint_SD);
+    SetSensitiveDetector(scint43_log, scint_SD);
+    SetSensitiveDetector(scint44_log, scint_SD);
+    SetSensitiveDetector(scint45_log, scint_SD);
+    SetSensitiveDetector(scint46_log, scint_SD);
+    SetSensitiveDetector(scint47_log, scint_SD);
+    SetSensitiveDetector(scint48_log, scint_SD);
+    SetSensitiveDetector(scint49_log, scint_SD);
+    SetSensitiveDetector(scint50_log, scint_SD);
+    SetSensitiveDetector(scint51_log, scint_SD);
+    SetSensitiveDetector(scint52_log, scint_SD);
+    SetSensitiveDetector(scint53_log, scint_SD);
+    SetSensitiveDetector(scint54_log, scint_SD);
+    SetSensitiveDetector(scint55_log, scint_SD);
+    SetSensitiveDetector(scint56_log, scint_SD);
+    SetSensitiveDetector(scint57_log, scint_SD);
+    SetSensitiveDetector(scint58_log, scint_SD);
+    SetSensitiveDetector(scint59_log, scint_SD);
+    SetSensitiveDetector(scint60_log, scint_SD);
+    SetSensitiveDetector(scint61_log, scint_SD);
+    SetSensitiveDetector(scint62_log, scint_SD);
+    SetSensitiveDetector(scint63_log, scint_SD);
+
+/*  
+    SetSensitiveDetector(scint00_log, scint_SD);
+    SetSensitiveDetector(scint01_log, scint_SD);
+    SetSensitiveDetector(scint02_log, scint_SD);
+    SetSensitiveDetector(scint03_log, scint_SD);
+    SetSensitiveDetector(scint04_log, scint_SD);
+    SetSensitiveDetector(scint05_log, scint_SD);
+    SetSensitiveDetector(scint06_log, scint_SD);
+    SetSensitiveDetector(scint07_log, scint_SD);
+    SetSensitiveDetector(scint08_log, scint_SD);
+    SetSensitiveDetector(scint09_log, scint_SD);
+    SetSensitiveDetector(scint10_log, scint_SD);
+    SetSensitiveDetector(scint11_log, scint_SD);
+    SetSensitiveDetector(scint12_log, scint_SD);
+    SetSensitiveDetector(scint13_log, scint_SD);
+    SetSensitiveDetector(scint14_log, scint_SD);
+    SetSensitiveDetector(scint15_log, scint_SD);
+    SetSensitiveDetector(scint16_log, scint_SD);
+    SetSensitiveDetector(scint17_log, scint_SD);
+    SetSensitiveDetector(scint18_log, scint_SD);
+    SetSensitiveDetector(scint19_log, scint_SD);
+    SetSensitiveDetector(scint20_log, scint_SD);
+    SetSensitiveDetector(scint21_log, scint_SD);
+    SetSensitiveDetector(scint22_log, scint_SD);
+    SetSensitiveDetector(scint23_log, scint_SD);
+    SetSensitiveDetector(scint24_log, scint_SD);
+    SetSensitiveDetector(scint25_log, scint_SD);
+    SetSensitiveDetector(scint26_log, scint_SD);
+    SetSensitiveDetector(scint27_log, scint_SD);
+    SetSensitiveDetector(scint28_log, scint_SD);
+    SetSensitiveDetector(scint29_log, scint_SD);
+    SetSensitiveDetector(scint30_log, scint_SD);
+    SetSensitiveDetector(scint31_log, scint_SD);
+    SetSensitiveDetector(scint32_log, scint_SD);
+    SetSensitiveDetector(scint33_log, scint_SD);
+    SetSensitiveDetector(scint34_log, scint_SD);
+    SetSensitiveDetector(scint35_log, scint_SD);
+    SetSensitiveDetector(scint36_log, scint_SD);
+    SetSensitiveDetector(scint37_log, scint_SD);
+    SetSensitiveDetector(scint38_log, scint_SD);
+    SetSensitiveDetector(scint39_log, scint_SD);
+    SetSensitiveDetector(scint40_log, scint_SD);
+    SetSensitiveDetector(scint41_log, scint_SD);
+    SetSensitiveDetector(scint42_log, scint_SD);
+    SetSensitiveDetector(scint43_log, scint_SD);
+    SetSensitiveDetector(scint44_log, scint_SD);
+    SetSensitiveDetector(scint45_log, scint_SD);
+    SetSensitiveDetector(scint46_log, scint_SD);
+    SetSensitiveDetector(scint47_log, scint_SD);
+    SetSensitiveDetector(scint48_log, scint_SD);
+    SetSensitiveDetector(scint49_log, scint_SD);
+    SetSensitiveDetector(scint50_log, scint_SD);
+    SetSensitiveDetector(scint51_log, scint_SD);
+    SetSensitiveDetector(scint52_log, scint_SD);
+    SetSensitiveDetector(scint53_log, scint_SD);
+    SetSensitiveDetector(scint54_log, scint_SD);
+    SetSensitiveDetector(scint55_log, scint_SD);
+    SetSensitiveDetector(scint56_log, scint_SD);
+    SetSensitiveDetector(scint57_log, scint_SD);
+    SetSensitiveDetector(scint58_log, scint_SD);
+    SetSensitiveDetector(scint59_log, scint_SD);
+    
+    SetSensitiveDetector(sdd00_log, sdd_SD);
+    SetSensitiveDetector(sdd01_log, sdd_SD);
+    SetSensitiveDetector(sdd02_log, sdd_SD);
+    SetSensitiveDetector(sdd03_log, sdd_SD);
+    SetSensitiveDetector(sdd04_log, sdd_SD);
+    SetSensitiveDetector(sdd05_log, sdd_SD);
+    SetSensitiveDetector(sdd06_log, sdd_SD);
+    SetSensitiveDetector(sdd07_log, sdd_SD);
+    SetSensitiveDetector(sdd08_log, sdd_SD);
+    SetSensitiveDetector(sdd09_log, sdd_SD);
+    SetSensitiveDetector(sdd10_log, sdd_SD);
+    SetSensitiveDetector(sdd11_log, sdd_SD);*/
+
+    
+}
+
+
+
+
+void DetectorConstruction::UpdateGeometry()
+{  
+	G4RunManager::GetRunManager()->DefineWorldVolume(Construct());
+	G4RunManager::GetRunManager()->GeometryHasBeenModified();
+}
+
+

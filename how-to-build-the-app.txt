@@ -1,4 +1,4 @@
-How to compile a geant4 code
+How to build the app 
 
 1. Source the geant4 setup script
    cd /Users/giovanni/sw/geant4
@@ -16,7 +16,7 @@ How to compile a geant4 code
 4. Run 
    ./cusp_gdml (GUI)
    ./cusp_gdml batch.mac (batch)
-   convert the output from .root to .fits 
+   convert the output from .root to .fits -> python ../convertRoot2Fits.py (it requires root python module) 
 
 5. Check the result
    a. Open scorefile.fits with TOPCAT or

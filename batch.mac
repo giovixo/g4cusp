@@ -1,0 +1,15 @@
+/process/em/fluo true
+/process/em/auger true
+/process/em/augerCascade true 
+#/process/em/pixe true
+
+/gps/particle gamma
+/gps/energy 60 keV
+/gps/direction 0.0  0.0 -1.0
+#/gps/position 1.0 1.0 8.0 cm
+/gps/pos/type Plane
+/gps/pos/shape Square
+/gps/pos/centre 1.2 1.2 8.0 cm
+/gps/pos/halfx 0.1 cm
+/gps/pos/halfy 0.1 cm
+/run/beamOn 120000
