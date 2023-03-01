@@ -1,0 +1,25 @@
+How to compile a geant4 code
+
+1. Source the geant4 setup script
+   cd /Users/giovanni/sw/geant4
+   cd installation-dir (example: cd geant4-v11.0.2-gdml-install/share/Geant4-11.0.2/geant4make)
+   source geant4make.sh
+
+2. Go to the source code directory (example)
+   cd /Users/giovanni/dev/CUSP/g4cusp
+
+3. Complile the code (example)
+   cd build
+   cmake ..
+   make -j6 (6 cores)
+
+4. Run 
+   ./cusp_gdml (GUI)
+   ./cusp_gdml batch.mac (batch)
+   convert the output from .root to .fits 
+
+5. Check the result
+   a. Open scorefile.fits with TOPCAT or
+   b. Use python (example astropy)
+
+   
