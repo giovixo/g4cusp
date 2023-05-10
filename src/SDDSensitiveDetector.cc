@@ -9,6 +9,9 @@
 #include "G4SystemOfUnits.hh"
 #include "G4PhysicalConstants.hh"
 
+#include "G4VSolid.hh"
+#include "G4VisExtent.hh"
+
 #include <iostream>
 
 // Constructor.
@@ -85,6 +88,12 @@ G4bool SDDSensitiveDetector::ProcessHits(G4Step* step, G4TouchableHistory* ROhis
     
     G4Track* track = step -> GetTrack();
     G4double globaltime = track -> GetGlobalTime();
+
+    G4double x_center = 0 * mm;
+    G4double y_center = 0 * mm;
+    G4double z_center = 0 * mm;
+    G4VSolid *targetSolid = 0;
+    G4VisExtent targetVisExtent;
     
     
     // debug code
@@ -97,12 +106,21 @@ G4bool SDDSensitiveDetector::ProcessHits(G4Step* step, G4TouchableHistory* ROhis
     
     // Get the interaction volume
     G4String volumeName = track -> GetVolume() -> GetName();
+
+    targetSolid = track -> GetVolume() -> GetLogicalVolume() -> GetSolid();
+    targetVisExtent = targetSolid->GetExtent();
+
+    x_center = targetVisExtent.GetExtentCenter()[0];
+    y_center = targetVisExtent.GetExtentCenter()[1];
+    z_center = targetVisExtent.GetExtentCenter()[2];
+
     //-> G4int volumeNumber = std::stoi( volumeName.substr(volumeName.size()-2, volumeName.size()-1));
     // Placeholder. Fix the following line
     G4int volumeNumber = 1;
     // G4int volumeNumber = std::stoi( volumeName.substr(volumeName.size()-11, 2) );
     G4String volumeNum = volumeName.substr(volumeName.size()-11, 2);
     G4cout << "*** DEBUG *** volumeName: " << volumeName << " VolumeNum: " << volumeNum << G4endl;
+    G4cout << "*** DEBUG *** volume position (x, y, z of the center): " << x_center << " " << y_center << " " << z_center << G4endl;
 
     // Get position
     G4ThreeVector position = track -> GetPosition();
