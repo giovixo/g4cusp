@@ -5,11 +5,11 @@
 
 /gps/particle gamma
 /gps/energy 60 keV
-/gps/direction 0.0  0.0 -1.0
+/gps/direction 0.0  0.0 1.0
 #/gps/position 1.0 1.0 8.0 cm
 /gps/pos/type Plane
 /gps/pos/shape Square
-/gps/pos/centre 1.2 1.2 8.0 cm
-/gps/pos/halfx 0.1 cm
-/gps/pos/halfy 0.1 cm
+/gps/pos/centre  1.1225 1.5525 -8.0 cm
+/gps/pos/halfx 0.1825 cm
+/gps/pos/halfy 0.1825 cm
 /run/beamOn 120000

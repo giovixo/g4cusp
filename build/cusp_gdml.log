@@ -1,0 +1,145 @@
+
+
+          ################################
+          !!! G4Backtrace is activated !!!
+          ################################
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-00-patch-02    (25-May-2022)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+G4GDML: Reading 'cusp_payload_GEANT4-worldVOL.gdml'...
+G4GDML: VALIDATION ERROR! no character data is allowed by content model at line: 1
+G4GDML: VALIDATION ERROR! ID attribute 'GAGG' is referenced but was never declared at line: 16
+G4GDML: VALIDATION ERROR! ID attribute 'G4_AIR' is referenced but was never declared at line: 16
+G4GDML: VALIDATION ERROR! ID attribute 'G4_Al' is referenced but was never declared at line: 16
+G4GDML: VALIDATION ERROR! ID attribute 'G4_GLASS_PLATE' is referenced but was never declared at line: 16
+G4GDML: VALIDATION ERROR! ID attribute 'G4_W' is referenced but was never declared at line: 16
+G4GDML: VALIDATION ERROR! ID attribute 'G4_PLEXIGLASS' is referenced but was never declared at line: 16
+G4GDML: VALIDATION ERROR! ID attribute 'G4_PLASTIC_SC_VINYLTOLUENE' is referenced but was never declared at line: 16
+G4GDML: Reading definitions...
+G4GDML: Reading materials...
+G4GDML: Reading solids...
+G4GDML: Reading structure...
+G4GDML: Reading setup...
+G4GDML: Reading 'cusp_payload_GEANT4-worldVOL.gdml' done!
+Stripping off GDML names of materials, solids and volumes ...
+Visualization Manager instantiating with verbosity "warnings (3)"...
+Visualization Manager initialising...
+Registering graphics systems...
+
+You have successfully registered the following graphics systems.
+Registered graphics systems are:
+  ASCIITree (ATree)
+  DAWNFILE (DAWNFILE)
+  G4HepRepFile (HepRepFile)
+  RayTracer (RayTracer)
+  VRML2FILE (VRML2FILE)
+  gMocrenFile (gMocrenFile)
+  OpenGLImmediateQt (OGLIQt, OGLI)
+  OpenGLStoredQt (OGLSQt, OGL, OGLS)
+  RayTracerX (RayTracerX)
+
+Registering model factories...
+
+You have successfully registered the following model factories.
+Registered model factories:
+  generic
+  drawByAttribute
+  drawByCharge
+  drawByOriginVolume
+  drawByParticleID
+  drawByEncounteredVolume
+
+Registered models:
+  None
+
+Registered filter factories:
+  attributeFilter
+  chargeFilter
+  originVolumeFilter
+  particleFilter
+  encounteredVolumeFilter
+
+Registered filters:
+  None
+
+You have successfully registered the following user vis actions.
+Run Duration User Vis Actions: none
+End of Event User Vis Actions: none
+End of Run User Vis Actions: none
+
+Some /vis commands (optionally) take a string to specify colour.
+"/vis/list" to see available colours.
+G4VisManager: Using G4TrajectoryDrawByCharge as fallback trajectory model.
+See commands in /vis/modeling/trajectories/ for other options.
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Analysis_W001
+      issued by : G4RootNtupleFileManager::SetNtupleMergingMode
+Merging ntuples is not applicable in sequential application.
+Setting was ignored.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+... set ntuple merging row mode : row-wise - done
+... create file : scorefile.root - done
+... open analysis file : scorefile.root - done
+... open analysis file : scorefile.root - done
+INFORMATION: Run No. 0 start.
+INFORMATION: event 0 in progress...
+INFORMATION: 10000 events processed.
+INFORMATION: 20000 events processed.
+INFORMATION: 30000 events processed.
+INFORMATION: 40000 events processed.
+INFORMATION: 50000 events processed.
+INFORMATION: 60000 events processed.
+INFORMATION: 70000 events processed.
+*** DEBUG *** volumeName: PV-LV_Absorber108__Meshed_ VolumeNum: 108
+*** DEBUG *** volume position (x, y, z of the center): 5.15 -36.7 -23.5
+*** DEBUG *** volumeName: PV-LV_Absorber108__Meshed_ VolumeNum: 108
+*** DEBUG *** volume position (x, y, z of the center): 5.15 -36.7 -23.5
+*** DEBUG *** volumeName: PV-LV_Absorber108__Meshed_ VolumeNum: 108
+*** DEBUG *** volume position (x, y, z of the center): 5.15 -36.7 -23.5
+*** DEBUG *** volumeName: PV-LV_Absorber108__Meshed_ VolumeNum: 108
+*** DEBUG *** volume position (x, y, z of the center): 5.15 -36.7 -23.5
+*** DEBUG *** volumeName: PV-LV_Absorber108__Meshed_ VolumeNum: 108
+*** DEBUG *** volume position (x, y, z of the center): 5.15 -36.7 -23.5
+*** DEBUG *** volumeName: PV-LV_Absorber108__Meshed_ VolumeNum: 108
+*** DEBUG *** volume position (x, y, z of the center): 5.15 -36.7 -23.5
+*** DEBUG *** volumeName: PV-LV_Absorber108__Meshed_ VolumeNum: 108
+*** DEBUG *** volume position (x, y, z of the center): 5.15 -36.7 -23.5
+*** DEBUG *** volumeName: PV-LV_Absorber108__Meshed_ VolumeNum: 108
+*** DEBUG *** volume position (x, y, z of the center): 5.15 -36.7 -23.5
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Analysis_W001
+      issued by : G4TNtupleManager<NT,FT>::FillNtupleTColumn
+Ntuple 1 column 11 does not exist.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+---> (Record Event) End of event: 78450
+INFORMATION: 80000 events processed.
+INFORMATION: 90000 events processed.
+INFORMATION: 100000 events processed.
+INFORMATION: event 100000 in progress...
+INFORMATION: 110000 events processed.
+INFORMATION: 120000 events processed.
+... write file : scorefile.root - done
+... close file : scorefile.root - done
+INFORMATION: Run No 0 end.
+INFORMATION: Number of events = 1
+INFORMATION: Elapsed time = User=9.150000s Real=9.163537s Sys=0.010000s
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+Batch file executed: batch.mac
+Graphics systems deleted.
+Visualization Manager deleting...
