@@ -1,11 +1,11 @@
 "LV_Scatterer__Meshed_"<structure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<volume name="LV_TOP_FILM001__Meshed_">
-		<materialref ref="G4_W"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Mesh2Tess125"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_TOP_FILM__Meshed_">
-		<materialref ref="G4_W"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Mesh2Tess124"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
@@ -525,22 +525,22 @@
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_COLLIMATOR_ABSORBER003__Meshed_">
-		<materialref ref="G4_W"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Mesh2Tess020"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_COLLIMATOR_ABSORBER002__Meshed_">
-		<materialref ref="G4_W"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Mesh2Tess019"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_COLLIMATOR_ABSORBER001__Meshed_">
-		<materialref ref="G4_W"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Mesh2Tess018"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_COLLIMATOR_ABSORBER__Meshed_">
-		<materialref ref="G4_W"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Mesh2Tess017"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
@@ -565,22 +565,22 @@
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_COLLIMATOR_SCATTERER003__Meshed_">
-		<materialref ref="G4_W"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Mesh2Tess012"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_COLLIMATOR_SCATTERER002__Meshed_">
-		<materialref ref="G4_W"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Mesh2Tess011"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_COLLIMATOR_SCATTERER001__Meshed_">
-		<materialref ref="G4_W"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Mesh2Tess010"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_COLLIMATOR_SCATTERER__Meshed_">
-		<materialref ref="G4_W"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Mesh2Tess009"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
