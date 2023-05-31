@@ -1,0 +1,1226 @@
+<structure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<volume name="LV_Gyro__Meshed_">
+		<materialref ref="G4_PLEXIGLASS"/>
+		<solidref ref="Mesh2Tess121"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Lid_v1__Meshed_">
+		<materialref ref="G4_Al"/>
+		<solidref ref="Mesh2Tess120"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Shield_Box_v1__Meshed_">
+		<materialref ref="G4_W"/>
+		<solidref ref="Mesh2Tess119"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Box_v1__Meshed_">
+		<materialref ref="G4_PLEXIGLASS"/>
+		<solidref ref="Mesh2Tess118"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Collimator_Absorber_v004__Meshed_">
+		<materialref ref="G4_Galactic"/>
+		<solidref ref="Mesh2Tess117"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Collimator_Absorber_v003__Meshed_">
+		<materialref ref="G4_Galactic"/>
+		<solidref ref="Mesh2Tess116"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Collimator_Absorber_v002__Meshed_">
+		<materialref ref="G4_Galactic"/>
+		<solidref ref="Mesh2Tess115"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Collimator_Absorber_v1__Meshed_">
+		<materialref ref="G4_Galactic"/>
+		<solidref ref="Mesh2Tess114"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Collimator_Scatterer_v004__Meshed_">
+		<materialref ref="G4_Galactic"/>
+		<solidref ref="Mesh2Tess113"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Collimator_Scatterer_v003__Meshed_">
+		<materialref ref="G4_Galactic"/>
+		<solidref ref="Mesh2Tess112"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Collimator_Scatterer_v002__Meshed_">
+		<materialref ref="G4_Galactic"/>
+		<solidref ref="Mesh2Tess111"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Collimator_Scatterer_v1__Meshed_">
+		<materialref ref="G4_Galactic"/>
+		<solidref ref="Mesh2Tess110"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v064__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess109"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v063__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess108"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v062__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess107"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v061__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess106"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v060__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess105"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v059__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess104"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v058__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess103"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v057__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess102"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v056__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess101"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v055__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess100"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v054__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess099"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v053__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess098"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v052__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess097"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v051__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess096"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v050__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess095"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v049__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess094"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v048__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess093"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v047__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess092"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v046__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess091"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v045__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess090"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v044__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess089"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v043__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess088"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v042__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess087"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v041__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess086"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v040__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess085"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v039__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess084"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v038__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess083"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v037__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess082"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v036__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess081"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v035__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess080"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v034__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess079"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v033__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess078"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v032__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess077"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v031__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess076"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v030__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess075"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v029__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess074"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v028__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess073"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v027__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess072"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v026__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess071"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v025__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess070"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v024__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess069"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v023__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess068"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v022__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess067"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v021__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess066"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v020__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess065"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v019__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess064"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v018__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess063"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v017__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess062"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v016__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess061"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v015__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess060"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v014__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess059"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v013__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess058"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v012__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess057"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v011__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess056"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v010__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess055"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v009__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess054"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v008__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess053"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v007__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess052"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v006__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess051"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v005__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess050"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v004__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess049"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v003__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess048"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v002__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess047"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Scatterer_v1__Meshed_">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess046"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Absorber_v032__Meshed_">
+		<materialref ref="G4_A-150_TISSUE"/>
+		<solidref ref="Mesh2Tess045"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Absorber_v031__Meshed_">
+		<materialref ref="G4_A-150_TISSUE"/>
+		<solidref ref="Mesh2Tess044"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Absorber_v030__Meshed_">
+		<materialref ref="G4_A-150_TISSUE"/>
+		<solidref ref="Mesh2Tess043"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Absorber_v029__Meshed_">
+		<materialref ref="G4_A-150_TISSUE"/>
+		<solidref ref="Mesh2Tess042"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Absorber_v028__Meshed_">
+		<materialref ref="G4_A-150_TISSUE"/>
+		<solidref ref="Mesh2Tess041"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Absorber_v027__Meshed_">
+		<materialref ref="G4_A-150_TISSUE"/>
+		<solidref ref="Mesh2Tess040"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Absorber_v026__Meshed_">
+		<materialref ref="G4_A-150_TISSUE"/>
+		<solidref ref="Mesh2Tess039"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Absorber_v025__Meshed_">
+		<materialref ref="G4_A-150_TISSUE"/>
+		<solidref ref="Mesh2Tess038"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Absorber_v024__Meshed_">
+		<materialref ref="G4_A-150_TISSUE"/>
+		<solidref ref="Mesh2Tess037"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Absorber_v023__Meshed_">
+		<materialref ref="G4_A-150_TISSUE"/>
+		<solidref ref="Mesh2Tess036"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Absorber_v022__Meshed_">
+		<materialref ref="G4_A-150_TISSUE"/>
+		<solidref ref="Mesh2Tess035"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Absorber_v021__Meshed_">
+		<materialref ref="G4_A-150_TISSUE"/>
+		<solidref ref="Mesh2Tess034"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Absorber_v020__Meshed_">
+		<materialref ref="G4_A-150_TISSUE"/>
+		<solidref ref="Mesh2Tess033"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Absorber_v019__Meshed_">
+		<materialref ref="G4_A-150_TISSUE"/>
+		<solidref ref="Mesh2Tess032"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Absorber_v018__Meshed_">
+		<materialref ref="G4_A-150_TISSUE"/>
+		<solidref ref="Mesh2Tess031"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Absorber_v017__Meshed_">
+		<materialref ref="G4_A-150_TISSUE"/>
+		<solidref ref="Mesh2Tess030"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Absorber_v016__Meshed_">
+		<materialref ref="G4_A-150_TISSUE"/>
+		<solidref ref="Mesh2Tess029"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Absorber_v015__Meshed_">
+		<materialref ref="G4_A-150_TISSUE"/>
+		<solidref ref="Mesh2Tess028"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Absorber_v014__Meshed_">
+		<materialref ref="G4_A-150_TISSUE"/>
+		<solidref ref="Mesh2Tess027"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Absorber_v013__Meshed_">
+		<materialref ref="G4_A-150_TISSUE"/>
+		<solidref ref="Mesh2Tess026"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Absorber_v012__Meshed_">
+		<materialref ref="G4_A-150_TISSUE"/>
+		<solidref ref="Mesh2Tess025"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Absorber_v011__Meshed_">
+		<materialref ref="G4_A-150_TISSUE"/>
+		<solidref ref="Mesh2Tess024"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Absorber_v010__Meshed_">
+		<materialref ref="G4_A-150_TISSUE"/>
+		<solidref ref="Mesh2Tess023"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Absorber_v009__Meshed_">
+		<materialref ref="G4_A-150_TISSUE"/>
+		<solidref ref="Mesh2Tess022"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Absorber_v008__Meshed_">
+		<materialref ref="G4_A-150_TISSUE"/>
+		<solidref ref="Mesh2Tess021"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Absorber_v007__Meshed_">
+		<materialref ref="G4_A-150_TISSUE"/>
+		<solidref ref="Mesh2Tess020"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Absorber_v006__Meshed_">
+		<materialref ref="G4_A-150_TISSUE"/>
+		<solidref ref="Mesh2Tess019"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Absorber_v005__Meshed_">
+		<materialref ref="G4_A-150_TISSUE"/>
+		<solidref ref="Mesh2Tess018"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Absorber_v004__Meshed_">
+		<materialref ref="G4_A-150_TISSUE"/>
+		<solidref ref="Mesh2Tess017"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Absorber_v003__Meshed_">
+		<materialref ref="G4_A-150_TISSUE"/>
+		<solidref ref="Mesh2Tess016"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Absorber_v002__Meshed_">
+		<materialref ref="G4_A-150_TISSUE"/>
+		<solidref ref="Mesh2Tess015"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Absorber_v1__Meshed_">
+		<materialref ref="G4_A-150_TISSUE"/>
+		<solidref ref="Mesh2Tess014"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_APD_Frame_v004__Meshed_">
+		<materialref ref="G4_Al"/>
+		<solidref ref="Mesh2Tess013"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_APD_Frame_v003__Meshed_">
+		<materialref ref="G4_Al"/>
+		<solidref ref="Mesh2Tess012"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_APD_Frame_v002__Meshed_">
+		<materialref ref="G4_Al"/>
+		<solidref ref="Mesh2Tess011"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_APD_Frame_v1__Meshed_">
+		<materialref ref="G4_Al"/>
+		<solidref ref="Mesh2Tess010"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_MAPMT_v004__Meshed_">
+		<materialref ref="G4_GLASS_PLATE"/>
+		<solidref ref="Mesh2Tess009"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_MAPMT_v003__Meshed_">
+		<materialref ref="G4_GLASS_PLATE"/>
+		<solidref ref="Mesh2Tess008"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_MAPMT_v002__Meshed_">
+		<materialref ref="G4_GLASS_PLATE"/>
+		<solidref ref="Mesh2Tess007"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_MAPMT_v1__Meshed_">
+		<materialref ref="G4_GLASS_PLATE"/>
+		<solidref ref="Mesh2Tess006"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_Collimator_Tray_v1__Meshed_">
+		<materialref ref="G4_Al"/>
+		<solidref ref="Mesh2Tess005"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_PCB_payload__Meshed_">
+		<materialref ref="G4_POLYTRIFLUOROCHLOROETHYLENE"/>
+		<solidref ref="Mesh2Tess004"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_PCB_PMPT__Meshed_">
+		<materialref ref="G4_POLYTRIFLUOROCHLOROETHYLENE"/>
+		<solidref ref="Mesh2Tess003"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_PCB_APD_v1__Meshed_">
+		<materialref ref="G4_POLYTRIFLUOROCHLOROETHYLENE"/>
+		<solidref ref="Mesh2Tess002"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="LV_MAMPT_Frame_v1__Meshed_">
+		<materialref ref="G4_Al"/>
+		<solidref ref="Mesh2Tess001"/>
+		<auxiliary auxtype="Color" auxvalue="#00ff7b00"/>
+	</volume>
+	<volume name="LV_Sensor_Tray_v1__Meshed_">
+		<materialref ref="G4_Al"/>
+		<solidref ref="Mesh2Tess"/>
+		<auxiliary auxtype="Color" auxvalue="#00ff7b00"/>
+	</volume>
+	<volume name="worldVOL">
+		<materialref ref="G4_Galactic"/>
+		<solidref ref="WorldBox"/>
+		<physvol name="PV-LV_Sensor_Tray_v1__Meshed_">
+			<volumeref ref="LV_Sensor_Tray_v1__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_MAMPT_Frame_v1__Meshed_">
+			<volumeref ref="LV_MAMPT_Frame_v1__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_PCB_APD_v1__Meshed_">
+			<volumeref ref="LV_PCB_APD_v1__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_PCB_PMPT__Meshed_">
+			<volumeref ref="LV_PCB_PMPT__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_PCB_payload__Meshed_">
+			<volumeref ref="LV_PCB_payload__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Collimator_Tray_v1__Meshed_">
+			<volumeref ref="LV_Collimator_Tray_v1__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_MAPMT_v1__Meshed_">
+			<volumeref ref="LV_MAPMT_v1__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_MAPMT_v002__Meshed_">
+			<volumeref ref="LV_MAPMT_v002__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_MAPMT_v003__Meshed_">
+			<volumeref ref="LV_MAPMT_v003__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_MAPMT_v004__Meshed_">
+			<volumeref ref="LV_MAPMT_v004__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_APD_Frame_v1__Meshed_">
+			<volumeref ref="LV_APD_Frame_v1__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_APD_Frame_v002__Meshed_">
+			<volumeref ref="LV_APD_Frame_v002__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_APD_Frame_v003__Meshed_">
+			<volumeref ref="LV_APD_Frame_v003__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_APD_Frame_v004__Meshed_">
+			<volumeref ref="LV_APD_Frame_v004__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Absorber_v1__Meshed_">
+			<volumeref ref="LV_Absorber_v1__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Absorber_v002__Meshed_">
+			<volumeref ref="LV_Absorber_v002__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Absorber_v003__Meshed_">
+			<volumeref ref="LV_Absorber_v003__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Absorber_v004__Meshed_">
+			<volumeref ref="LV_Absorber_v004__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Absorber_v005__Meshed_">
+			<volumeref ref="LV_Absorber_v005__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Absorber_v006__Meshed_">
+			<volumeref ref="LV_Absorber_v006__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Absorber_v007__Meshed_">
+			<volumeref ref="LV_Absorber_v007__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Absorber_v008__Meshed_">
+			<volumeref ref="LV_Absorber_v008__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Absorber_v009__Meshed_">
+			<volumeref ref="LV_Absorber_v009__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Absorber_v010__Meshed_">
+			<volumeref ref="LV_Absorber_v010__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Absorber_v011__Meshed_">
+			<volumeref ref="LV_Absorber_v011__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Absorber_v012__Meshed_">
+			<volumeref ref="LV_Absorber_v012__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Absorber_v013__Meshed_">
+			<volumeref ref="LV_Absorber_v013__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Absorber_v014__Meshed_">
+			<volumeref ref="LV_Absorber_v014__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Absorber_v015__Meshed_">
+			<volumeref ref="LV_Absorber_v015__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Absorber_v016__Meshed_">
+			<volumeref ref="LV_Absorber_v016__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Absorber_v017__Meshed_">
+			<volumeref ref="LV_Absorber_v017__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Absorber_v018__Meshed_">
+			<volumeref ref="LV_Absorber_v018__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Absorber_v019__Meshed_">
+			<volumeref ref="LV_Absorber_v019__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Absorber_v020__Meshed_">
+			<volumeref ref="LV_Absorber_v020__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Absorber_v021__Meshed_">
+			<volumeref ref="LV_Absorber_v021__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Absorber_v022__Meshed_">
+			<volumeref ref="LV_Absorber_v022__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Absorber_v023__Meshed_">
+			<volumeref ref="LV_Absorber_v023__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Absorber_v024__Meshed_">
+			<volumeref ref="LV_Absorber_v024__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Absorber_v025__Meshed_">
+			<volumeref ref="LV_Absorber_v025__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Absorber_v026__Meshed_">
+			<volumeref ref="LV_Absorber_v026__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Absorber_v027__Meshed_">
+			<volumeref ref="LV_Absorber_v027__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Absorber_v028__Meshed_">
+			<volumeref ref="LV_Absorber_v028__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Absorber_v029__Meshed_">
+			<volumeref ref="LV_Absorber_v029__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Absorber_v030__Meshed_">
+			<volumeref ref="LV_Absorber_v030__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Absorber_v031__Meshed_">
+			<volumeref ref="LV_Absorber_v031__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Absorber_v032__Meshed_">
+			<volumeref ref="LV_Absorber_v032__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v1__Meshed_">
+			<volumeref ref="LV_Scatterer_v1__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v002__Meshed_">
+			<volumeref ref="LV_Scatterer_v002__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v003__Meshed_">
+			<volumeref ref="LV_Scatterer_v003__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v004__Meshed_">
+			<volumeref ref="LV_Scatterer_v004__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v005__Meshed_">
+			<volumeref ref="LV_Scatterer_v005__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v006__Meshed_">
+			<volumeref ref="LV_Scatterer_v006__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v007__Meshed_">
+			<volumeref ref="LV_Scatterer_v007__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v008__Meshed_">
+			<volumeref ref="LV_Scatterer_v008__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v009__Meshed_">
+			<volumeref ref="LV_Scatterer_v009__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v010__Meshed_">
+			<volumeref ref="LV_Scatterer_v010__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v011__Meshed_">
+			<volumeref ref="LV_Scatterer_v011__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v012__Meshed_">
+			<volumeref ref="LV_Scatterer_v012__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v013__Meshed_">
+			<volumeref ref="LV_Scatterer_v013__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v014__Meshed_">
+			<volumeref ref="LV_Scatterer_v014__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v015__Meshed_">
+			<volumeref ref="LV_Scatterer_v015__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v016__Meshed_">
+			<volumeref ref="LV_Scatterer_v016__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v017__Meshed_">
+			<volumeref ref="LV_Scatterer_v017__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v018__Meshed_">
+			<volumeref ref="LV_Scatterer_v018__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v019__Meshed_">
+			<volumeref ref="LV_Scatterer_v019__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v020__Meshed_">
+			<volumeref ref="LV_Scatterer_v020__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v021__Meshed_">
+			<volumeref ref="LV_Scatterer_v021__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v022__Meshed_">
+			<volumeref ref="LV_Scatterer_v022__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v023__Meshed_">
+			<volumeref ref="LV_Scatterer_v023__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v024__Meshed_">
+			<volumeref ref="LV_Scatterer_v024__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v025__Meshed_">
+			<volumeref ref="LV_Scatterer_v025__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v026__Meshed_">
+			<volumeref ref="LV_Scatterer_v026__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v027__Meshed_">
+			<volumeref ref="LV_Scatterer_v027__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v028__Meshed_">
+			<volumeref ref="LV_Scatterer_v028__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v029__Meshed_">
+			<volumeref ref="LV_Scatterer_v029__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v030__Meshed_">
+			<volumeref ref="LV_Scatterer_v030__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v031__Meshed_">
+			<volumeref ref="LV_Scatterer_v031__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v032__Meshed_">
+			<volumeref ref="LV_Scatterer_v032__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v033__Meshed_">
+			<volumeref ref="LV_Scatterer_v033__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v034__Meshed_">
+			<volumeref ref="LV_Scatterer_v034__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v035__Meshed_">
+			<volumeref ref="LV_Scatterer_v035__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v036__Meshed_">
+			<volumeref ref="LV_Scatterer_v036__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v037__Meshed_">
+			<volumeref ref="LV_Scatterer_v037__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v038__Meshed_">
+			<volumeref ref="LV_Scatterer_v038__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v039__Meshed_">
+			<volumeref ref="LV_Scatterer_v039__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v040__Meshed_">
+			<volumeref ref="LV_Scatterer_v040__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v041__Meshed_">
+			<volumeref ref="LV_Scatterer_v041__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v042__Meshed_">
+			<volumeref ref="LV_Scatterer_v042__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v043__Meshed_">
+			<volumeref ref="LV_Scatterer_v043__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v044__Meshed_">
+			<volumeref ref="LV_Scatterer_v044__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v045__Meshed_">
+			<volumeref ref="LV_Scatterer_v045__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v046__Meshed_">
+			<volumeref ref="LV_Scatterer_v046__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v047__Meshed_">
+			<volumeref ref="LV_Scatterer_v047__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v048__Meshed_">
+			<volumeref ref="LV_Scatterer_v048__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v049__Meshed_">
+			<volumeref ref="LV_Scatterer_v049__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v050__Meshed_">
+			<volumeref ref="LV_Scatterer_v050__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v051__Meshed_">
+			<volumeref ref="LV_Scatterer_v051__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v052__Meshed_">
+			<volumeref ref="LV_Scatterer_v052__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v053__Meshed_">
+			<volumeref ref="LV_Scatterer_v053__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v054__Meshed_">
+			<volumeref ref="LV_Scatterer_v054__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v055__Meshed_">
+			<volumeref ref="LV_Scatterer_v055__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v056__Meshed_">
+			<volumeref ref="LV_Scatterer_v056__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v057__Meshed_">
+			<volumeref ref="LV_Scatterer_v057__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v058__Meshed_">
+			<volumeref ref="LV_Scatterer_v058__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v059__Meshed_">
+			<volumeref ref="LV_Scatterer_v059__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v060__Meshed_">
+			<volumeref ref="LV_Scatterer_v060__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v061__Meshed_">
+			<volumeref ref="LV_Scatterer_v061__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v062__Meshed_">
+			<volumeref ref="LV_Scatterer_v062__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v063__Meshed_">
+			<volumeref ref="LV_Scatterer_v063__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Scatterer_v064__Meshed_">
+			<volumeref ref="LV_Scatterer_v064__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Collimator_Scatterer_v1__Meshed_">
+			<volumeref ref="LV_Collimator_Scatterer_v1__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Collimator_Scatterer_v002__Meshed_">
+			<volumeref ref="LV_Collimator_Scatterer_v002__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Collimator_Scatterer_v003__Meshed_">
+			<volumeref ref="LV_Collimator_Scatterer_v003__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Collimator_Scatterer_v004__Meshed_">
+			<volumeref ref="LV_Collimator_Scatterer_v004__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Collimator_Absorber_v1__Meshed_">
+			<volumeref ref="LV_Collimator_Absorber_v1__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Collimator_Absorber_v002__Meshed_">
+			<volumeref ref="LV_Collimator_Absorber_v002__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Collimator_Absorber_v003__Meshed_">
+			<volumeref ref="LV_Collimator_Absorber_v003__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Collimator_Absorber_v004__Meshed_">
+			<volumeref ref="LV_Collimator_Absorber_v004__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Box_v1__Meshed_">
+			<volumeref ref="LV_Box_v1__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Shield_Box_v1__Meshed_">
+			<volumeref ref="LV_Shield_Box_v1__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Lid_v1__Meshed_">
+			<volumeref ref="LV_Lid_v1__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-LV_Gyro__Meshed_">
+			<volumeref ref="LV_Gyro__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+	</volume>
+</structure>
