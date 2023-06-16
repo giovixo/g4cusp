@@ -450,80 +450,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
     
 
     
-/*    sdd00_log = parser.GetVolume("LV_SDD00");
-    sdd01_log = parser.GetVolume("LV_SDD01");
-    sdd02_log = parser.GetVolume("LV_SDD02");
-    sdd03_log = parser.GetVolume("LV_SDD03");
-    sdd04_log = parser.GetVolume("LV_SDD04");
-    sdd05_log = parser.GetVolume("LV_SDD05");
-    sdd06_log = parser.GetVolume("LV_SDD06");
-    sdd07_log = parser.GetVolume("LV_SDD07");
-    sdd08_log = parser.GetVolume("LV_SDD08");
-    sdd09_log = parser.GetVolume("LV_SDD09");
-    sdd10_log = parser.GetVolume("LV_SDD10");
-    sdd11_log = parser.GetVolume("LV_SDD11");
 
-    
-    scint00_log = parser.GetVolume("LV_CRYSTAL00");
-    scint01_log = parser.GetVolume("LV_CRYSTAL01");
-    scint02_log = parser.GetVolume("LV_CRYSTAL02");
-    scint03_log = parser.GetVolume("LV_CRYSTAL03");
-    scint04_log = parser.GetVolume("LV_CRYSTAL04");
-    scint05_log = parser.GetVolume("LV_CRYSTAL05");
-    scint06_log = parser.GetVolume("LV_CRYSTAL06");
-    scint07_log = parser.GetVolume("LV_CRYSTAL07");
-    scint08_log = parser.GetVolume("LV_CRYSTAL08");
-    scint09_log = parser.GetVolume("LV_CRYSTAL09");
-    scint10_log = parser.GetVolume("LV_CRYSTAL10");
-    scint11_log = parser.GetVolume("LV_CRYSTAL11");
-    scint12_log = parser.GetVolume("LV_CRYSTAL12");
-    scint13_log = parser.GetVolume("LV_CRYSTAL13");
-    scint14_log = parser.GetVolume("LV_CRYSTAL14");
-    scint15_log = parser.GetVolume("LV_CRYSTAL15");
-    scint16_log = parser.GetVolume("LV_CRYSTAL16");
-    scint17_log = parser.GetVolume("LV_CRYSTAL17");
-    scint18_log = parser.GetVolume("LV_CRYSTAL18");
-    scint19_log = parser.GetVolume("LV_CRYSTAL19");
-    scint20_log = parser.GetVolume("LV_CRYSTAL20");
-    scint21_log = parser.GetVolume("LV_CRYSTAL21");
-    scint22_log = parser.GetVolume("LV_CRYSTAL22");
-    scint23_log = parser.GetVolume("LV_CRYSTAL23");
-    scint24_log = parser.GetVolume("LV_CRYSTAL24");
-    scint25_log = parser.GetVolume("LV_CRYSTAL25");
-    scint26_log = parser.GetVolume("LV_CRYSTAL26");
-    scint27_log = parser.GetVolume("LV_CRYSTAL27");
-    scint28_log = parser.GetVolume("LV_CRYSTAL28");
-    scint29_log = parser.GetVolume("LV_CRYSTAL29");
-    scint30_log = parser.GetVolume("LV_CRYSTAL30");
-    scint31_log = parser.GetVolume("LV_CRYSTAL31");
-    scint32_log = parser.GetVolume("LV_CRYSTAL32");
-    scint33_log = parser.GetVolume("LV_CRYSTAL33");
-    scint34_log = parser.GetVolume("LV_CRYSTAL34");
-    scint35_log = parser.GetVolume("LV_CRYSTAL35");
-    scint36_log = parser.GetVolume("LV_CRYSTAL36");
-    scint37_log = parser.GetVolume("LV_CRYSTAL37");
-    scint38_log = parser.GetVolume("LV_CRYSTAL38");
-    scint39_log = parser.GetVolume("LV_CRYSTAL39");
-    scint40_log = parser.GetVolume("LV_CRYSTAL40");
-    scint41_log = parser.GetVolume("LV_CRYSTAL41");
-    scint42_log = parser.GetVolume("LV_CRYSTAL42");
-    scint43_log = parser.GetVolume("LV_CRYSTAL43");
-    scint44_log = parser.GetVolume("LV_CRYSTAL44");
-    scint45_log = parser.GetVolume("LV_CRYSTAL45");
-    scint46_log = parser.GetVolume("LV_CRYSTAL46");
-    scint47_log = parser.GetVolume("LV_CRYSTAL47");
-    scint48_log = parser.GetVolume("LV_CRYSTAL48");
-    scint49_log = parser.GetVolume("LV_CRYSTAL49");
-    scint50_log = parser.GetVolume("LV_CRYSTAL50");
-    scint51_log = parser.GetVolume("LV_CRYSTAL51");
-    scint52_log = parser.GetVolume("LV_CRYSTAL52");
-    scint53_log = parser.GetVolume("LV_CRYSTAL53");
-    scint54_log = parser.GetVolume("LV_CRYSTAL54");
-    scint55_log = parser.GetVolume("LV_CRYSTAL55");
-    scint56_log = parser.GetVolume("LV_CRYSTAL56");
-    scint57_log = parser.GetVolume("LV_CRYSTAL57");
-    scint58_log = parser.GetVolume("LV_CRYSTAL58");
-    scint59_log = parser.GetVolume("LV_CRYSTAL59");*/
     
     
     // Multilayer insulation
@@ -618,8 +545,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
     sdd02_log = parser.GetVolume("LV_Absorber102__Meshed_");
     sdd03_log = parser.GetVolume("LV_Absorber103__Meshed_");
     sdd04_log = parser.GetVolume("LV_Absorber104__Meshed_");
- // This volume is missed in the gdml file   
- //   sdd05_log = parser.GetVolume("LV_Absorber005__Meshed_");
+    sdd05_log = parser.GetVolume("LV_Absorber105__Meshed_");
     sdd06_log = parser.GetVolume("LV_Absorber106__Meshed_");
     sdd07_log = parser.GetVolume("LV_Absorber107__Meshed_");
     sdd08_log = parser.GetVolume("LV_Absorber108__Meshed_");
@@ -646,10 +572,6 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
     sdd29_log = parser.GetVolume("LV_Absorber129__Meshed_");
     sdd30_log = parser.GetVolume("LV_Absorber130__Meshed_");
     sdd31_log = parser.GetVolume("LV_Absorber131__Meshed_");
-    sdd32_log = parser.GetVolume("LV_Absorber132__Meshed_");
-    sdd33_log = parser.GetVolume("LV_Absorber133__Meshed_");
-    sdd34_log = parser.GetVolume("LV_Absorber134__Meshed_");
-    sdd35_log = parser.GetVolume("LV_Absorber135__Meshed_");
 
     scint00_log = parser.GetVolume("LV_Scatterer000__Meshed_");
     scint01_log = parser.GetVolume("LV_Scatterer001__Meshed_");
@@ -752,7 +674,7 @@ void DetectorConstruction::ConstructSDandField()
     SetSensitiveDetector(sdd02_log, scint_SD);
     SetSensitiveDetector(sdd03_log, scint_SD);
     SetSensitiveDetector(sdd04_log, scint_SD);
- //   SetSensitiveDetector(sdd05_log, sdd_SD);
+    SetSensitiveDetector(sdd05_log, sdd_SD);
     SetSensitiveDetector(sdd06_log, scint_SD);
     SetSensitiveDetector(sdd07_log, scint_SD);
     SetSensitiveDetector(sdd08_log, scint_SD);
@@ -779,10 +701,6 @@ void DetectorConstruction::ConstructSDandField()
     SetSensitiveDetector(sdd29_log, scint_SD);
     SetSensitiveDetector(sdd30_log, scint_SD);
     SetSensitiveDetector(sdd31_log, scint_SD);
-    SetSensitiveDetector(sdd32_log, scint_SD);
-    SetSensitiveDetector(sdd33_log, scint_SD);
-    SetSensitiveDetector(sdd34_log, scint_SD);
-    SetSensitiveDetector(sdd35_log, scint_SD);
 
     SetSensitiveDetector(scint00_log, scint_SD);
     SetSensitiveDetector(scint01_log, scint_SD);
@@ -847,84 +765,7 @@ void DetectorConstruction::ConstructSDandField()
     SetSensitiveDetector(scint60_log, scint_SD);
     SetSensitiveDetector(scint61_log, scint_SD);
     SetSensitiveDetector(scint62_log, scint_SD);
-    SetSensitiveDetector(scint63_log, scint_SD);
-
-/*  
-    SetSensitiveDetector(scint00_log, scint_SD);
-    SetSensitiveDetector(scint01_log, scint_SD);
-    SetSensitiveDetector(scint02_log, scint_SD);
-    SetSensitiveDetector(scint03_log, scint_SD);
-    SetSensitiveDetector(scint04_log, scint_SD);
-    SetSensitiveDetector(scint05_log, scint_SD);
-    SetSensitiveDetector(scint06_log, scint_SD);
-    SetSensitiveDetector(scint07_log, scint_SD);
-    SetSensitiveDetector(scint08_log, scint_SD);
-    SetSensitiveDetector(scint09_log, scint_SD);
-    SetSensitiveDetector(scint10_log, scint_SD);
-    SetSensitiveDetector(scint11_log, scint_SD);
-    SetSensitiveDetector(scint12_log, scint_SD);
-    SetSensitiveDetector(scint13_log, scint_SD);
-    SetSensitiveDetector(scint14_log, scint_SD);
-    SetSensitiveDetector(scint15_log, scint_SD);
-    SetSensitiveDetector(scint16_log, scint_SD);
-    SetSensitiveDetector(scint17_log, scint_SD);
-    SetSensitiveDetector(scint18_log, scint_SD);
-    SetSensitiveDetector(scint19_log, scint_SD);
-    SetSensitiveDetector(scint20_log, scint_SD);
-    SetSensitiveDetector(scint21_log, scint_SD);
-    SetSensitiveDetector(scint22_log, scint_SD);
-    SetSensitiveDetector(scint23_log, scint_SD);
-    SetSensitiveDetector(scint24_log, scint_SD);
-    SetSensitiveDetector(scint25_log, scint_SD);
-    SetSensitiveDetector(scint26_log, scint_SD);
-    SetSensitiveDetector(scint27_log, scint_SD);
-    SetSensitiveDetector(scint28_log, scint_SD);
-    SetSensitiveDetector(scint29_log, scint_SD);
-    SetSensitiveDetector(scint30_log, scint_SD);
-    SetSensitiveDetector(scint31_log, scint_SD);
-    SetSensitiveDetector(scint32_log, scint_SD);
-    SetSensitiveDetector(scint33_log, scint_SD);
-    SetSensitiveDetector(scint34_log, scint_SD);
-    SetSensitiveDetector(scint35_log, scint_SD);
-    SetSensitiveDetector(scint36_log, scint_SD);
-    SetSensitiveDetector(scint37_log, scint_SD);
-    SetSensitiveDetector(scint38_log, scint_SD);
-    SetSensitiveDetector(scint39_log, scint_SD);
-    SetSensitiveDetector(scint40_log, scint_SD);
-    SetSensitiveDetector(scint41_log, scint_SD);
-    SetSensitiveDetector(scint42_log, scint_SD);
-    SetSensitiveDetector(scint43_log, scint_SD);
-    SetSensitiveDetector(scint44_log, scint_SD);
-    SetSensitiveDetector(scint45_log, scint_SD);
-    SetSensitiveDetector(scint46_log, scint_SD);
-    SetSensitiveDetector(scint47_log, scint_SD);
-    SetSensitiveDetector(scint48_log, scint_SD);
-    SetSensitiveDetector(scint49_log, scint_SD);
-    SetSensitiveDetector(scint50_log, scint_SD);
-    SetSensitiveDetector(scint51_log, scint_SD);
-    SetSensitiveDetector(scint52_log, scint_SD);
-    SetSensitiveDetector(scint53_log, scint_SD);
-    SetSensitiveDetector(scint54_log, scint_SD);
-    SetSensitiveDetector(scint55_log, scint_SD);
-    SetSensitiveDetector(scint56_log, scint_SD);
-    SetSensitiveDetector(scint57_log, scint_SD);
-    SetSensitiveDetector(scint58_log, scint_SD);
-    SetSensitiveDetector(scint59_log, scint_SD);
-    
-    SetSensitiveDetector(sdd00_log, sdd_SD);
-    SetSensitiveDetector(sdd01_log, sdd_SD);
-    SetSensitiveDetector(sdd02_log, sdd_SD);
-    SetSensitiveDetector(sdd03_log, sdd_SD);
-    SetSensitiveDetector(sdd04_log, sdd_SD);
-    SetSensitiveDetector(sdd05_log, sdd_SD);
-    SetSensitiveDetector(sdd06_log, sdd_SD);
-    SetSensitiveDetector(sdd07_log, sdd_SD);
-    SetSensitiveDetector(sdd08_log, sdd_SD);
-    SetSensitiveDetector(sdd09_log, sdd_SD);
-    SetSensitiveDetector(sdd10_log, sdd_SD);
-    SetSensitiveDetector(sdd11_log, sdd_SD);*/
-
-    
+    SetSensitiveDetector(scint63_log, scint_SD);    
 }
 
 

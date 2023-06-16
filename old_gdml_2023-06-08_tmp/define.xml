@@ -1,0 +1,1 @@
+<define xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><constant name="HALFPI" value="pi/2."/><constant name="PI" value="1.*pi"/><constant name="TWOPI" value="2.*pi"/></define>
