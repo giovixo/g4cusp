@@ -114,8 +114,6 @@ G4bool SensitiveDetector::ProcessHits(G4Step* step, G4TouchableHistory* ROhist)
     z_center = targetVisExtent.GetExtentCenter()[2];
 
 
-    //-> G4int volumeNumber = std::stoi( volumeName.substr(volumeName.size()-2, volumeName.size()-1));
-    // Placeholder. Fix the following line
     G4String volumeNum = volumeName.substr(volumeName.size()-12, 3);
     G4int volumeNumber = std::stoi(volumeNum);
     G4cout << "*** DEBUG *** volumeName: " << volumeName << " VolumeNum: " << volumeNumber << G4endl;

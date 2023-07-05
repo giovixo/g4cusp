@@ -138,7 +138,7 @@ void UserRun::RecordEvent(const G4Event* event)
             analysisManager->FillNtupleDColumn(6, theta_primary/deg);
             analysisManager->FillNtupleDColumn(7, phi_primary/deg);
             analysisManager->FillNtupleDColumn(8, en_primary/keV);
-            analysisManager->FillNtupleDColumn(11, lastStepGlobalTime/ns);
+            analysisManager->FillNtupleDColumn(9, lastStepGlobalTime/ns);
             analysisManager->AddNtupleRow();
             
 
