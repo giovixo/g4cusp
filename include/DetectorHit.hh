@@ -64,6 +64,13 @@ class DetectorHit : public G4VHit {
 		inline void SetScintID(G4int id) 			  {scintID = id;}
 		inline G4int GetScintID() 					  {return scintID;}
 
+		// The following methods allow to set and get the position (x,y,z) ID of the scintillator bar:
+		inline void SetScint_x(G4double x) 			  {scint_x = x;}
+		inline void SetScint_y(G4double y) 			  {scint_y = y;}
+		inline void SetScint_z(G4double z) 			  {scint_z = z;}
+		inline G4double GetScint_x()   {return scint_x;} 
+		inline G4double GetScint_y()   {return scint_y;}
+		inline G4double GetScint_z()   {return scint_z;}
 	
 		// The following methods allow to set and get the time:
 		inline void SetTime(G4double t) 		      {globaltime = t;}
@@ -73,6 +80,9 @@ class DetectorHit : public G4VHit {
 		G4double energyDeposit;
 		G4int scintID;
 		G4double globaltime;
+		G4double scint_x;
+		G4double scint_y;
+		G4double scint_z;
 	
 };
 

@@ -73,6 +73,9 @@ void UserRunAction::BeginOfRunAction(const G4Run* run)
         analysisManager->CreateNtupleDColumn("Phi_Primary");
         analysisManager->CreateNtupleDColumn("En_Primary");
         analysisManager->CreateNtupleDColumn("Event_time");
+        analysisManager->CreateNtupleDColumn("X_Detected");
+        analysisManager->CreateNtupleDColumn("Y_Detected");
+        analysisManager->CreateNtupleDColumn("Z_Detected");
         analysisManager->FinishNtuple();
 
     }

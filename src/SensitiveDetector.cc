@@ -88,9 +88,9 @@ G4bool SensitiveDetector::ProcessHits(G4Step* step, G4TouchableHistory* ROhist)
     G4Track* track = step -> GetTrack();
     G4double globaltime = track -> GetGlobalTime();
 
-    G4double x_center = 0 * mm;
-    G4double y_center = 0 * mm;
-    G4double z_center = 0 * mm;
+    G4double x_center;
+    G4double y_center;
+    G4double z_center;
     G4VSolid *targetSolid = 0;
     G4VisExtent targetVisExtent;
     
@@ -144,6 +144,11 @@ G4bool SensitiveDetector::ProcessHits(G4Step* step, G4TouchableHistory* ROhist)
 		DetectorHit* hit = new DetectorHit();
 		hit -> SetEnergyDeposit(energyDeposit);
 		hit -> SetScintID(volumeNumber);
+
+        hit -> SetScint_x(x_center);
+        hit -> SetScint_y(y_center);
+        hit -> SetScint_z(z_center);
+
 		hit -> SetTime(globaltime);
 		icell = hitsCollection -> insert(hit);
         CellID[copyIDinX][copyIDinY] = icell - 1;

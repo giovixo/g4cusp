@@ -112,6 +112,9 @@ void UserRun::RecordEvent(const G4Event* event)
 			DetectorHit* ahit = (*SCI_hitsCollection)[i];
 			G4double energyDeposit = ahit -> GetEnergyDeposit();
             G4int    xpixel    = ahit -> GetScintID();
+            G4double detector_x = ahit -> GetScint_x();
+            G4double detector_y = ahit -> GetScint_y(); 
+            G4double detector_z = ahit -> GetScint_z(); 
 			G4double lastStepGlobalTime = ahit -> GetTime();
             
             // Write energy deposit and pixel in the ROOT file
@@ -139,6 +142,9 @@ void UserRun::RecordEvent(const G4Event* event)
             analysisManager->FillNtupleDColumn(7, phi_primary/deg);
             analysisManager->FillNtupleDColumn(8, en_primary/keV);
             analysisManager->FillNtupleDColumn(9, lastStepGlobalTime/ns);
+            analysisManager->FillNtupleDColumn(10, detector_x);
+            analysisManager->FillNtupleDColumn(11, detector_y);
+            analysisManager->FillNtupleDColumn(12, detector_z);
             analysisManager->AddNtupleRow();
             
 
