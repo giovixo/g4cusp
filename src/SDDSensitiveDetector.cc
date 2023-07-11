@@ -116,11 +116,17 @@ G4bool SDDSensitiveDetector::ProcessHits(G4Step* step, G4TouchableHistory* ROhis
 
     //-> G4int volumeNumber = std::stoi( volumeName.substr(volumeName.size()-2, volumeName.size()-1));
     // Placeholder. Fix the following line
-    G4int volumeNumber = 1;
+    //  G4int volumeNumber = 1;
     // G4int volumeNumber = std::stoi( volumeName.substr(volumeName.size()-11, 2) );
-    G4String volumeNum = volumeName.substr(volumeName.size()-11, 2);
-    G4cout << "*** DEBUG *** volumeName: " << volumeName << " VolumeNum: " << volumeNum << G4endl;
+    //  G4String volumeNum = volumeName.substr(volumeName.size()-11, 2);
+    //  G4cout << "*** DEBUG *** volumeName: " << volumeName << " VolumeNum: " << volumeNum << G4endl;
+    //  G4cout << "*** DEBUG *** volume position (x, y, z of the center): " << x_center << " " << y_center << " " << z_center << G4endl;
+
+    G4String volumeNum = volumeName.substr(volumeName.size()-12, 3);
+    G4int volumeNumber = std::stoi(volumeNum);
+    G4cout << "*** DEBUG *** volumeName: " << volumeName << " VolumeNum (str): " << volumeNum  <<  " VolumeNum (int): " << volumeNumber << G4endl;
     G4cout << "*** DEBUG *** volume position (x, y, z of the center): " << x_center << " " << y_center << " " << z_center << G4endl;
+    //volumeNumber = 0; // For some reasone a true volume numbe causes a crash (to fix)
 
     // Get position
     G4ThreeVector position = track -> GetPosition();

@@ -12,9 +12,15 @@
 #/gps/pos/centre  1.1225 1.5525 -8.0 cm
 #/gps/pos/halfx 0.1825 cm
 #/gps/pos/halfy 0.1825 cm
-/gps/pos/centre  -10.6142 -9.38399 -80.0 mm
-/gps/pos/halfx 1.0 mm
-/gps/pos/halfy 1.0 mm
+
+#/gps/pos/centre  -10.6142 -9.38399 -80.0 mm
+#/gps/pos/halfx 1.0 mm
+#/gps/pos/halfy 1.0 mm
+
+/gps/pos/centre -20.0 0. -80.0 mm
+/gps/pos/halfx 40.0 mm
+/gps/pos/halfy 40.0 mm
+
 
 /run/beamOn 120000
 #/run/beamOn 100

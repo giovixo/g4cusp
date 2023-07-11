@@ -663,18 +663,18 @@ void DetectorConstruction::ConstructSDandField()
     SensitiveDetector* scint_SD  = new SensitiveDetector("SCI");
     
     // Instantiation of the SDD sensitive detector and readout geometry
-    SDDSensitiveDetector* sdd_SD  = new SDDSensitiveDetector("SDD");
+    // SDDSensitiveDetector* sdd_SD  = new SDDSensitiveDetector("SDD");
 
 
     sdman->AddNewDetector(scint_SD); // Mandatory since Geant v. 4.10.03
-    sdman->AddNewDetector(sdd_SD); // Mandatory since Geant v. 4.10.03
+    // sdman->AddNewDetector(sdd_SD); // Mandatory since Geant v. 4.10.03
 
     SetSensitiveDetector(sdd00_log, scint_SD);
     SetSensitiveDetector(sdd01_log, scint_SD);
     SetSensitiveDetector(sdd02_log, scint_SD);
     SetSensitiveDetector(sdd03_log, scint_SD);
     SetSensitiveDetector(sdd04_log, scint_SD);
-    SetSensitiveDetector(sdd05_log, sdd_SD);
+    SetSensitiveDetector(sdd05_log, scint_SD);
     SetSensitiveDetector(sdd06_log, scint_SD);
     SetSensitiveDetector(sdd07_log, scint_SD);
     SetSensitiveDetector(sdd08_log, scint_SD);
