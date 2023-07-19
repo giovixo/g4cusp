@@ -6,6 +6,10 @@
 /gps/particle gamma
 /gps/energy 60 keV
 /gps/direction 0.0  0.0 1.0
+
+# Polarization
+/gps/polarization 1. 0. 0.
+
 #/gps/position 1.0 1.0 8.0 cm
 /gps/pos/type Plane
 /gps/pos/shape Square

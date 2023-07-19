@@ -31,9 +31,9 @@ fDecPhysicsList(0)
     fDecPhysicsList = new G4DecayPhysics(0);
     fRadioDecPhysicsList = new G4RadioactiveDecayPhysics(0);
 
-    // EM physics
-    fEmPhysicsList = new G4EmLivermorePhysics(0);
-//    fEmPhysicsList = new G4EmLivermorePolarizedPhysics(0);
+    // EM physics (polarization ON)
+    // fEmPhysicsList = new G4EmLivermorePhysics(0);
+    fEmPhysicsList = new G4EmLivermorePolarizedPhysics(0);
 
     // Hadronic physics (vector of processes)
     fHadronPhys.push_back( new G4HadronElasticPhysics(0));
