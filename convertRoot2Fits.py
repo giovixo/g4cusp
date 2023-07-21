@@ -19,45 +19,38 @@ tree = f.Get("Events")
 tree_len = tree.GetEntries()
 
 
-# t_ID = np.zeros(tree_len, dtype=int)
-# t_ED = np.zeros(tree_len, dtype=float)
-# t_SI = np.zeros(tree_len, dtype=float)
-# t_SD = np.zeros(tree_len, dtype=float)
-# t_SC = np.zeros(tree_len, dtype=float)
-# t_XP = np.zeros(tree_len, dtype=float)
-# t_YP = np.zeros(tree_len, dtype=float)
-# t_ZP = np.zeros(tree_len, dtype=float)
-# t_TP = np.zeros(tree_len, dtype=float)
-# t_PP = np.zeros(tree_len, dtype=float)
-# t_EP = np.zeros(tree_len, dtype=float)
-# t_TI = np.zeros(tree_len, dtype=float)
-
-t_ID = np.zeros(tree_len, dtype=int)
-t_ED = np.zeros(tree_len, dtype=float)
-t_SI = np.zeros(tree_len, dtype=int)
-t_XP = np.zeros(tree_len, dtype=float)
-t_YP = np.zeros(tree_len, dtype=float)
-t_ZP = np.zeros(tree_len, dtype=float)
-t_TP = np.zeros(tree_len, dtype=float)
-t_PP = np.zeros(tree_len, dtype=float)
-t_EP = np.zeros(tree_len, dtype=float)
-t_TI = np.zeros(tree_len, dtype=float)
+EventID       = np.zeros(tree_len, dtype=int)     
+En_dep        = np.zeros(tree_len, dtype=float)      
+Scint_ID      = np.zeros(tree_len, dtype=int)     
+X_Primary     = np.zeros(tree_len, dtype=float)   
+Y_Primary     = np.zeros(tree_len, dtype=float)      
+Z_Primary     = np.zeros(tree_len, dtype=float)      
+Theta_Primary = np.zeros(tree_len, dtype=float)   
+Phi_Primary   = np.zeros(tree_len, dtype=float)    
+En_Primary    = np.zeros(tree_len, dtype=float)     
+Event_time    = np.zeros(tree_len, dtype=float)     
+X_Detected    = np.zeros(tree_len, dtype=float)     
+Y_Detected    = np.zeros(tree_len, dtype=float)     
+Z_Detected    = np.zeros(tree_len, dtype=float)     
 
 for i, entry in enumerate(tree):
-      t_ID[i] = entry.EventID
-      t_ED[i] = entry.En_dep
-      t_SI[i] = entry.Scint_ID
-      t_XP[i] = entry.X_Primary
-      t_YP[i] = entry.Y_Primary
-      t_ZP[i] = entry.Z_Primary
-      t_TP[i] = entry.Theta_Primary
-      t_PP[i] = entry.Phi_Primary
-      t_EP[i] = entry.En_Primary
-      t_TI[i] = entry.Event_time
+    EventID[i]       = entry.EventID
+    En_dep[i]        = entry.En_dep 
+    Scint_ID[i]      = entry.Scint_ID
+    X_Primary[i]     = entry.X_Primary
+    Y_Primary[i]     = entry.Y_Primary
+    Z_Primary[i]     = entry.Z_Primary
+    Theta_Primary[i] = entry.Theta_Primary
+    Phi_Primary[i]   = entry.Phi_Primary
+    En_Primary[i]    = entry.En_Primary
+    Event_time[i]    = entry.Event_time
+    X_Detected[i]    = entry.X_Detected
+    Y_Detected[i]    = entry.Y_Detected
+    Z_Detected[i]    = entry.Z_Detected
 
 
 
-sorting = np.argsort(t_ID)
+sorting = np.argsort(EventID)
 
 # Write FITS file
 # "Null" primary array
@@ -66,42 +59,11 @@ prhdu = pyfits.PrimaryHDU()
 tbhdu = pyfits.BinTableHDU.from_columns([
                                           pyfits.Column(name='EventID', 
                                                         format='1K', 
-                                                        array=t_ID[sorting]), 
+                                                        array=EventID[sorting]), 
                                           pyfits.Column(name='En_dep', 
                                                         format='1D', 
                                                         unit='keV',
-                                                        array=t_ED[sorting]), 
-                                          pyfits.Column(name='Scint_ID', 
-                                                        format='1K',
-                                                        array=t_SI[sorting]),
-                                          pyfits.Column(name='X_Primary',
-                                                        format='1D',
-                                                        unit='cm',
-                                                        array=t_XP[sorting]),
-                                          pyfits.Column(name='Y_Primary',
-                                                        format='1D',
-                                                        unit='cm',
-                                                        array=t_YP[sorting]),
-                                          pyfits.Column(name='Z_Primary',
-                                                        format='1D',
-                                                        unit='cm',
-                                                        array=t_ZP[sorting]),
-                                          pyfits.Column(name='Theta_Primary',
-                                                        format='1D',
-                                                        unit='deg',
-                                                        array=t_TP[sorting]),
-                                          pyfits.Column(name='Phi_Primary',
-                                                        format='1D',
-                                                        unit='deg',
-                                                        array=t_PP[sorting]),
-                                          pyfits.Column(name='En_Primary',
-                                                        format='1D',
-                                                        unit='keV',
-                                                        array=t_EP[sorting]),
-                                        pyfits.Column(name='Event_time', 
-                                                        format='1D', 
-                                                        unit='ns',
-                                                        array=t_TI[sorting])
+                                                        array=En_dep[sorting]), 
                                         ])
 
 tbhdu.header.set('EXTNAME', 'EVENTS', 'Name of this binary table extension')
