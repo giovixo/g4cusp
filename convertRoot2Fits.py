@@ -57,19 +57,60 @@ sorting = np.argsort(EventID)
 prhdu = pyfits.PrimaryHDU()
 # Extension
 tbhdu = pyfits.BinTableHDU.from_columns([
-                                          pyfits.Column(name='EventID', 
-                                                        format='1K', 
-                                                        array=EventID[sorting]), 
-                                          pyfits.Column(name='En_dep', 
-                                                        format='1D', 
-                                                        unit='keV',
-                                                        array=En_dep[sorting]), 
-                                        ])
+    pyfits.Column(name='EventID', 
+                  format='1K', 
+                  array=EventID[sorting]), 
+    pyfits.Column(name='En_dep', 
+                  format='1D', 
+                  unit='keV',
+                  array=En_dep[sorting]),
+    pyfits.Column(name='Scint_ID', 
+                  format='1K', 
+                  array=Scint_ID[sorting]),
+    pyfits.Column(name='X_Primary', 
+                  format='1D', 
+                  unit='cm',
+                  array=X_Primary[sorting]),
+    pyfits.Column(name='Y_Primary', 
+                  format='1D', 
+                  unit='cm',
+                  array=Y_Primary[sorting]),
+    pyfits.Column(name='Z_Primary', 
+                  format='1D', 
+                  unit='cm',
+                  array=Z_Primary[sorting]),
+    pyfits.Column(name='Theta_Primary', 
+                  format='1D', 
+                  unit='degree',
+                  array=Theta_Primary[sorting]),
+    pyfits.Column(name='Phi_Primary', 
+                  format='1D', 
+                  unit='degree',
+                  array=Phi_Primary[sorting]),
+    pyfits.Column(name='En_Primary', 
+                  format='1D', 
+                  unit='keV',
+                  array=En_Primary[sorting]),
+    pyfits.Column(name='X_Detected', 
+                  format='1D', 
+                  unit='cm',
+                  array=X_Detected[sorting]),
+    pyfits.Column(name='Y_Detected', 
+                  format='1D', 
+                  unit='cm',
+                  array=Y_Detected[sorting]),
+    pyfits.Column(name='Z_Detected', 
+                  format='1D', 
+                  unit='cm',
+                  array=Z_Detected[sorting])
+])
 
 tbhdu.header.set('EXTNAME', 'EVENTS', 'Name of this binary table extension')
 
 hdulist = pyfits.HDUList([prhdu, tbhdu])
-hdulist.writeto(outfilename.split(".")[0] + ".fits", overwrite=True)
+file_name_out = outfilename.split(".")[0] + ".fits"
+hdulist.writeto(file_name_out, overwrite=True)
+print("Wrote " + file_name_out)
 
 # os.system("gzip -f " + outfilename.split(".")[0] + ".fits")
 
