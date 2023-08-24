@@ -73,24 +73,6 @@ int main(int argc, char **argv)
         // execute an argument macro file if exist
         G4String command = "/control/execute ";
         G4String fileName = argv[1];
-        if(argc==3)
-        {
-            // If there are two batch files (e.g. a General Particle Source macro)
-            // load this first
-            G4String fileGPS = argv[2];
-            uiManager->ApplyCommand(command+fileGPS);
-            G4cout << "GPS macro file executed: " << fileGPS << G4endl;
-        }
-        else
-        {
-            // Default GPS
-            uiManager->ApplyCommand("/gps/particle gamma");
-            uiManager->ApplyCommand("/gps/energy 100 keV");
-            uiManager->ApplyCommand("/gps/position     0.0  0.0 +50.0 cm");
-            uiManager->ApplyCommand("/gps/direction    0.0  0.0 -1.0");
-            //uiManager->ApplyCommand("/gps/polarization 1.0  0.0  0.0");
-        }
-        // Execute batch file
         uiManager->ApplyCommand(command+fileName);
         G4cout << "Batch file executed: " << fileName << G4endl;
     }
