@@ -119,18 +119,6 @@ G4bool SensitiveDetector::ProcessHits(G4Step* step, G4TouchableHistory* ROhist)
     G4cout << "*** DEBUG *** volumeName: " << volumeName << " VolumeNum (str): " << volumeNum  <<  " VolumeNum (int): " << volumeNumber << G4endl;
     G4cout << "*** DEBUG *** volume position (x, y, z of the center): " << x_center << " " << y_center << " " << z_center << G4endl;
     
-    // G4cout << "*** DEBUG *** volumeName " << volumeName << " volumeNumber " << volumeNumber << " energyDeposit " << energyDeposit/keV <<  G4endl;
-
-//    G4ThreeVector translation = track -> GetVolume() -> GetTranslation();
-//    G4cout << "*** DEBUG *** translation " << translation/mm << G4endl;
-
-
-    // Get position
-//    G4ThreeVector position = track -> GetPosition();
-//    G4double position_x = position.x();
-//    G4double position_y = position.y();
-//    G4double position_z = position.z();
-    
 
     G4int copyIDinX   =  volumeNumber;
     G4int copyIDinY   =  0;

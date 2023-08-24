@@ -47,80 +47,6 @@
 // Constructor 
 DetectorConstruction::DetectorConstruction() 
 :	experimentalHall_log(0),
-/*  
-    sdd00_log(0),
-    sdd01_log(0),
-    sdd02_log(0),
-    sdd03_log(0),
-    sdd04_log(0),
-    sdd05_log(0),
-    sdd06_log(0),
-    sdd07_log(0),
-    sdd08_log(0),
-    sdd09_log(0),
-    sdd10_log(0),
-    sdd11_log(0),
-    scint00_log(0),
-    scint01_log(0),
-    scint02_log(0),
-    scint03_log(0),
-    scint04_log(0),
-    scint05_log(0),
-    scint06_log(0),
-    scint07_log(0),
-    scint08_log(0),
-    scint09_log(0),
-    scint10_log(0),
-    scint11_log(0),
-    scint12_log(0),
-    scint13_log(0),
-    scint14_log(0),
-    scint15_log(0),
-    scint16_log(0),
-    scint17_log(0),
-    scint18_log(0),
-    scint19_log(0),
-    scint20_log(0),
-    scint21_log(0),
-    scint22_log(0),
-    scint23_log(0),
-    scint24_log(0),
-    scint25_log(0),
-    scint26_log(0),
-    scint27_log(0),
-    scint28_log(0),
-    scint29_log(0),
-    scint30_log(0),
-    scint31_log(0),
-    scint32_log(0),
-    scint33_log(0),
-    scint34_log(0),
-    scint35_log(0),
-    scint36_log(0),
-    scint37_log(0),
-    scint38_log(0),
-    scint39_log(0),
-    scint40_log(0),
-    scint41_log(0),
-    scint42_log(0),
-    scint43_log(0),
-    scint44_log(0),
-    scint45_log(0),
-    scint46_log(0),
-    scint47_log(0),
-    scint48_log(0),
-    scint49_log(0),
-    scint50_log(0),
-    scint51_log(0),
-    scint52_log(0),
-    scint53_log(0),
-    scint54_log(0),
-    scint55_log(0),
-    scint56_log(0),
-    scint57_log(0),
-    scint58_log(0),
-    scint59_log(0),
-*/	
     sdd00_log(0),
     sdd01_log(0),
     sdd02_log(0),
@@ -345,30 +271,9 @@ void DetectorConstruction::DefineMaterials()
     Kovar -> AddElement(Co, 17*perCent);
 
 
-    // LaBr3
-//    G4Material* LaBr3 = new G4Material("LaBr3", density = 5.06 *g/cm3, nel = 2);
-//    LaBr3 -> AddElement(La, 36.68*perCent);
-//    LaBr3 -> AddElement(Br, 63.32*perCent);
-
-    // Polymide
-//    G4Material* Polymide = new G4Material("Polymide", density = 1.43*g/cm3, nel = 4);
-//    Polymide -> AddElement(C, natoms=22);
-//    Polymide -> AddElement(H, natoms=10);
-//    Polymide -> AddElement(N, natoms=2);
-//    Polymide -> AddElement(O, natoms=5);
-    
-    // OpticalFilter material (1 um kapton + 300 nm Al)
-    // WARNING: in the GDML file the filter overall thickness is 10 um instead of 1.3 um!
-    // So we scale the 1.71*g/cm3 effective density by a 1.3/10 factor.
     G4Material* OpticalFilter = new G4Material("OpticalFilter", density = 0.2223*g/cm3, ncomponents=2);
     OpticalFilter -> AddMaterial(G4_KAPTON, fractionmass=63.2*perCent);
     OpticalFilter -> AddMaterial(G4_Al,  fractionmass=36.8*perCent);
-
-
-    // Silicon Oxide
-//    G4Material* SiliconOxide = new G4Material("SiliconOxide", density = 2.65*g/cm3, nel = 2);
-//    SiliconOxide -> AddElement(Si, natoms=1);
-//    SiliconOxide -> AddElement(O,  natoms=2);
 
     // Diglycidyl Ether of Bisphenol A (First compound of epoxy resin Epotek 301-1)
     G4Material* Epoxy_1 = new G4Material("Epoxy_1", density = 1.16*g/cm3, nel = 3);
@@ -417,14 +322,9 @@ void DetectorConstruction::DefineMaterials()
     mli2Material = G4_Al;
     mli3Material = G4_POLYPROPYLENE;
 
-//    mli1Material = Vacuum;
-//    mli2Material = Vacuum;
-//    mli3Material = Vacuum;
-
     solarPanel1Material = G4_Al;
     solarPanel2Material = G4_SILICON_DIOXIDE;
     busMaterial = EffectiveAluminiumSolid_Bus;
-
 }
 
 
@@ -448,97 +348,6 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
     experimentalHall_phys = parser.GetWorldVolume(); // get world
     experimentalHall_log = parser.GetVolume("worldVOL");
     
-
-    
-
-    
-    
-    // Multilayer insulation
-    // Single layer: 12.5 um kapton + 100 nm Al
-    // Netting: 165.1 um polypropylene with an open fraction of 98.5% (i.e. 2.4765 um effective thickness)
-    
-/*    G4int nlayers = 3;
-    G4double mli_1_thick = nlayers * 12.5 * um;
-    G4double mli_2_thick = nlayers * 100 * nm;
-    G4double mli_3_thick = (nlayers-1) * 2.4765 * um;
-    
-    G4double mli_side = 110 * mm;
-    G4double mli_height = 50 * mm;*/
-
-
-	// Set visualization attributes
-	// RGB components
-/*	G4Colour white   (1.0, 1.0, 1.0);
-	G4Colour red     (1.0, 0.0, 0.0);
-	G4Colour green   (0.0, 1.0, 0.0);
-	G4Colour blue    (0.0, 0.0, 1.0);
-	G4Colour yellow  (1.0, 1.0, 0.0);
-	G4Colour magenta (1.0, 0.0, 1.0);
-	G4Colour cyan    (0.0, 1.0, 1.0);
-
-    experimentalHall_log -> SetVisAttributes(G4VisAttributes::GetInvisible());
-
-	G4VisAttributes* ScintVisAtt= new G4VisAttributes(yellow);
-    scint00_log -> SetVisAttributes(ScintVisAtt);
-    scint01_log -> SetVisAttributes(ScintVisAtt);
-    scint02_log -> SetVisAttributes(ScintVisAtt);
-    scint03_log -> SetVisAttributes(ScintVisAtt);
-    scint04_log -> SetVisAttributes(ScintVisAtt);
-    scint05_log -> SetVisAttributes(ScintVisAtt);
-    scint06_log -> SetVisAttributes(ScintVisAtt);
-    scint07_log -> SetVisAttributes(ScintVisAtt);
-    scint08_log -> SetVisAttributes(ScintVisAtt);
-    scint09_log -> SetVisAttributes(ScintVisAtt);
-    scint10_log -> SetVisAttributes(ScintVisAtt);
-    scint11_log -> SetVisAttributes(ScintVisAtt);
-    scint12_log -> SetVisAttributes(ScintVisAtt);
-    scint13_log -> SetVisAttributes(ScintVisAtt);
-    scint14_log -> SetVisAttributes(ScintVisAtt);
-    scint15_log -> SetVisAttributes(ScintVisAtt);
-    scint16_log -> SetVisAttributes(ScintVisAtt);
-    scint17_log -> SetVisAttributes(ScintVisAtt);
-    scint18_log -> SetVisAttributes(ScintVisAtt);
-    scint19_log -> SetVisAttributes(ScintVisAtt);
-    scint20_log -> SetVisAttributes(ScintVisAtt);
-    scint21_log -> SetVisAttributes(ScintVisAtt);
-    scint22_log -> SetVisAttributes(ScintVisAtt);
-    scint23_log -> SetVisAttributes(ScintVisAtt);
-    scint24_log -> SetVisAttributes(ScintVisAtt);
-    scint25_log -> SetVisAttributes(ScintVisAtt);
-    scint26_log -> SetVisAttributes(ScintVisAtt);
-    scint27_log -> SetVisAttributes(ScintVisAtt);
-    scint28_log -> SetVisAttributes(ScintVisAtt);
-    scint29_log -> SetVisAttributes(ScintVisAtt);
-    scint30_log -> SetVisAttributes(ScintVisAtt);
-    scint31_log -> SetVisAttributes(ScintVisAtt);
-    scint32_log -> SetVisAttributes(ScintVisAtt);
-    scint33_log -> SetVisAttributes(ScintVisAtt);
-    scint34_log -> SetVisAttributes(ScintVisAtt);
-    scint35_log -> SetVisAttributes(ScintVisAtt);
-    scint36_log -> SetVisAttributes(ScintVisAtt);
-    scint37_log -> SetVisAttributes(ScintVisAtt);
-    scint38_log -> SetVisAttributes(ScintVisAtt);
-    scint39_log -> SetVisAttributes(ScintVisAtt);
-    scint40_log -> SetVisAttributes(ScintVisAtt);
-    scint41_log -> SetVisAttributes(ScintVisAtt);
-    scint42_log -> SetVisAttributes(ScintVisAtt);
-    scint43_log -> SetVisAttributes(ScintVisAtt);
-    scint44_log -> SetVisAttributes(ScintVisAtt);
-    scint45_log -> SetVisAttributes(ScintVisAtt);
-    scint46_log -> SetVisAttributes(ScintVisAtt);
-    scint47_log -> SetVisAttributes(ScintVisAtt);
-    scint48_log -> SetVisAttributes(ScintVisAtt);
-    scint49_log -> SetVisAttributes(ScintVisAtt);
-    scint50_log -> SetVisAttributes(ScintVisAtt);
-    scint51_log -> SetVisAttributes(ScintVisAtt);
-    scint52_log -> SetVisAttributes(ScintVisAtt);
-    scint53_log -> SetVisAttributes(ScintVisAtt);
-    scint54_log -> SetVisAttributes(ScintVisAtt);
-    scint55_log -> SetVisAttributes(ScintVisAtt);
-    scint56_log -> SetVisAttributes(ScintVisAtt);
-    scint57_log -> SetVisAttributes(ScintVisAtt);
-    scint58_log -> SetVisAttributes(ScintVisAtt);
-    scint59_log -> SetVisAttributes(ScintVisAtt);*/
 
     sdd00_log = parser.GetVolume("LV_Absorber_v1__Meshed_");
     sdd01_log = parser.GetVolume("LV_Absorber_v002__Meshed_");
@@ -661,13 +470,9 @@ void DetectorConstruction::ConstructSDandField()
 
     // Instantiation of the scintillator sensitive detector and readout geometry
     SensitiveDetector* scint_SD  = new SensitiveDetector("SCI");
-    
-    // Instantiation of the SDD sensitive detector and readout geometry
-    // SDDSensitiveDetector* sdd_SD  = new SDDSensitiveDetector("SDD");
 
 
     sdman->AddNewDetector(scint_SD); // Mandatory since Geant v. 4.10.03
-    // sdman->AddNewDetector(sdd_SD); // Mandatory since Geant v. 4.10.03
 
     SetSensitiveDetector(sdd00_log, scint_SD);
     SetSensitiveDetector(sdd01_log, scint_SD);
