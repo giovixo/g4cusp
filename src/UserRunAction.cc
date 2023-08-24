@@ -39,46 +39,22 @@ void UserRunAction::BeginOfRunAction(const G4Run* run)
     // Ntuple merging (only for Geant v. 4.10.03 or higher)
     analysisManager->SetNtupleMerging(true);
     
-//    if (IsMaster()){
-//        analysisManager->CreateNtuple("Keyword", "Keyword");
-//        analysisManager->CreateNtupleDColumn("RunID");
-//        analysisManager->CreateNtupleDColumn("NumberOfEvents");
-//        analysisManager->FinishNtuple();
-//    }
-//    else
-    {
-/*        analysisManager->CreateNtuple("Events", "Events");
-        analysisManager->CreateNtupleDColumn("EventID");
-        analysisManager->CreateNtupleDColumn("En_dep");
-        analysisManager->CreateNtupleDColumn("Scint_ID");
-        analysisManager->CreateNtupleDColumn("SDD_ID");
-        analysisManager->CreateNtupleDColumn("SDD_Cell");
-        analysisManager->CreateNtupleDColumn("X_Primary");
-        analysisManager->CreateNtupleDColumn("Y_Primary");
-        analysisManager->CreateNtupleDColumn("Z_Primary");
-        analysisManager->CreateNtupleDColumn("Theta_Primary");
-        analysisManager->CreateNtupleDColumn("Phi_Primary");
-        analysisManager->CreateNtupleDColumn("En_Primary");
-        analysisManager->CreateNtupleDColumn("Event_time");
-        analysisManager->FinishNtuple();*/
-
-        analysisManager->CreateNtuple("Events", "Events");
-        analysisManager->CreateNtupleDColumn("EventID");
-        analysisManager->CreateNtupleDColumn("En_dep");
-        analysisManager->CreateNtupleIColumn("Scint_ID");
-        analysisManager->CreateNtupleDColumn("X_Primary");
-        analysisManager->CreateNtupleDColumn("Y_Primary");
-        analysisManager->CreateNtupleDColumn("Z_Primary");
-        analysisManager->CreateNtupleDColumn("Theta_Primary");
-        analysisManager->CreateNtupleDColumn("Phi_Primary");
-        analysisManager->CreateNtupleDColumn("En_Primary");
-        analysisManager->CreateNtupleDColumn("Event_time");
-        analysisManager->CreateNtupleDColumn("X_Detected");
-        analysisManager->CreateNtupleDColumn("Y_Detected");
-        analysisManager->CreateNtupleDColumn("Z_Detected");
-        analysisManager->FinishNtuple();
-
-    }
+    analysisManager->CreateNtuple("Events", "Events");
+    analysisManager->CreateNtupleDColumn("EventID");
+    analysisManager->CreateNtupleDColumn("En_dep");
+    analysisManager->CreateNtupleIColumn("Scint_ID");
+    analysisManager->CreateNtupleDColumn("X_Primary");
+    analysisManager->CreateNtupleDColumn("Y_Primary");
+    analysisManager->CreateNtupleDColumn("Z_Primary");
+    analysisManager->CreateNtupleDColumn("Theta_Primary");
+    analysisManager->CreateNtupleDColumn("Phi_Primary");
+    analysisManager->CreateNtupleDColumn("En_Primary");
+    analysisManager->CreateNtupleDColumn("Event_time");
+    analysisManager->CreateNtupleDColumn("X_Detected");
+    analysisManager->CreateNtupleDColumn("Y_Detected");
+    analysisManager->CreateNtupleDColumn("Z_Detected");
+    analysisManager->FinishNtuple();
+    
     analysisManager->OpenFile("scorefile.root");
     
     
@@ -87,9 +63,6 @@ void UserRunAction::BeginOfRunAction(const G4Run* run)
         // The run ID is printed at the beginning of each master run
         G4cout << "INFORMATION: Run No. " << run -> GetRunID() << " start." << G4endl;
         fTimer->Start();
-//        analysisManager->FillNtupleDColumn(0, run->GetRunID());
-//        analysisManager->FillNtupleDColumn(1, run->GetNumberOfEventToBeProcessed());
-//        analysisManager->AddNtupleRow();
     }
 }
 
@@ -108,6 +81,6 @@ void UserRunAction::EndOfRunAction(const G4Run* run)
         if (NbOfEvents == 0) return;
         G4cout << "INFORMATION: Run No " << run -> GetRunID() << " end." << G4endl;
         G4cout << "INFORMATION: Number of events = " << NbOfEvents << G4endl;
-        G4cout << "INFORMATION: Elapsed time = " << *fTimer << G4endl;
+        G4cout << "INFORMATION: Elapsed time: " << *fTimer << G4endl;
     }
 }

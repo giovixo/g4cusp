@@ -45,20 +45,15 @@ void UserRun::RecordEvent(const G4Event* event)
     
 	// Retrieve the hit collections.
     DetectorHitsCollection* SCI_hitsCollection = 0;
-    //SDDDetectorHitsCollection* SDD_hitsCollection = 0;
 
-    
 	if(HCE) {
         SCI_hitsCollection = (DetectorHitsCollection*)(HCE -> GetHC(SCI_hitsCollectionIndex));
-        //SDD_hitsCollection = (SDDDetectorHitsCollection*)(HCE -> GetHC(SDD_hitsCollectionIndex));
 	}
     
-    // If both hit collections are empty, nothing happens.
-    int SDD_numberHits = 0;
+    // If hit collection is empty, nothing happens.
     int SCI_numberHits = 0;
     if(SCI_hitsCollection) {SCI_numberHits = SCI_hitsCollection -> entries();}
-    //if(SDD_hitsCollection) {SDD_numberHits = SDD_hitsCollection -> entries();}
-    if (SCI_numberHits == 0 && SDD_numberHits == 0) return;
+    if (SCI_numberHits == 0) return;
 
 
 //     Get primary event informations
@@ -89,15 +84,6 @@ void UserRun::RecordEvent(const G4Event* event)
 			x_primary=position.x();
 			y_primary=position.y();
 			z_primary=position.z();
-//			G4cout << " *** DEBUG " << " position " << position << G4endl;
-//			G4cout << " *** DEBUG " << " direction " << direction << G4endl;
-//			G4cout << " *** DEBUG " << " P " << P << G4endl;
-//			G4cout << " *** DEBUG " << " en_primary " << en_primary << G4endl;
-//			G4cout << " *** DEBUG " << " x " << x_primary << G4endl;
-//			G4cout << " *** DEBUG " << " y " << y_primary << G4endl;
-//			G4cout << " *** DEBUG " << " z " << z_primary << G4endl;
-//			G4cout << " *** DEBUG " << " Theta " << theta_primary/deg << G4endl;
-//			G4cout << " *** DEBUG " << " Phi " << phi_primary/deg << G4endl;
 		}
 	}
     
@@ -117,21 +103,6 @@ void UserRun::RecordEvent(const G4Event* event)
             G4double detector_z = ahit -> GetScint_z(); 
 			G4double lastStepGlobalTime = ahit -> GetTime();
             
-            // Write energy deposit and pixel in the ROOT file
-/*            analysisManager->FillNtupleDColumn(0, eventID);
-            analysisManager->FillNtupleDColumn(1, energyDeposit/keV);
-            analysisManager->FillNtupleDColumn(2, xpixel);
-            analysisManager->FillNtupleDColumn(3, -1);
-            analysisManager->FillNtupleDColumn(4, -1);
-            analysisManager->FillNtupleDColumn(5, x_primary/cm);
-            analysisManager->FillNtupleDColumn(6, y_primary/cm);
-            analysisManager->FillNtupleDColumn(7, z_primary/cm);
-            analysisManager->FillNtupleDColumn(8, theta_primary/deg);
-            analysisManager->FillNtupleDColumn(9, phi_primary/deg);
-            analysisManager->FillNtupleDColumn(10, en_primary/keV);
-            analysisManager->FillNtupleDColumn(11, lastStepGlobalTime/ns);
-            analysisManager->AddNtupleRow();*/
-
             analysisManager->FillNtupleDColumn(0, eventID);
             analysisManager->FillNtupleDColumn(1, energyDeposit/keV);
             analysisManager->FillNtupleIColumn(2, xpixel);
@@ -150,54 +121,7 @@ void UserRun::RecordEvent(const G4Event* event)
 
 		}
 	}
-    
-    // Process SDD hits
-    //if(SDD_hitsCollection) {
-
-    //    for(int i = 0; i < SDD_numberHits ; i++) {
-    //        SDDDetectorHit* ahit = (*SDD_hitsCollection)[i];
-    //        G4double energyDeposit = ahit -> GetEnergyDeposit();
-    //        G4int    sddID    = ahit -> GetSDDID();
-    //        G4int    sddCell   = ahit -> GetSDDCell();
-
-    //        G4double lastStepGlobalTime = ahit -> GetTime();
-
-
-
-            // Write energy deposit and pixel in the ROOT file
-/*            analysisManager->FillNtupleDColumn(0, eventID);
-            analysisManager->FillNtupleDColumn(1, energyDeposit/keV);
-            analysisManager->FillNtupleDColumn(2, -1);
-            analysisManager->FillNtupleDColumn(3, sddID);
-            analysisManager->FillNtupleDColumn(4, sddCell);
-            analysisManager->FillNtupleDColumn(5, x_primary/cm);
-            analysisManager->FillNtupleDColumn(6, y_primary/cm);
-            analysisManager->FillNtupleDColumn(7, z_primary/cm);
-            analysisManager->FillNtupleDColumn(8, theta_primary/deg);
-            analysisManager->FillNtupleDColumn(9, phi_primary/deg);
-            analysisManager->FillNtupleDColumn(10, en_primary/keV);
-            analysisManager->FillNtupleDColumn(11, lastStepGlobalTime/ns);
-            analysisManager->AddNtupleRow();*/
-
-/*            analysisManager->FillNtupleDColumn(0, eventID);
-            analysisManager->FillNtupleDColumn(1, energyDeposit/keV);
-            analysisManager->FillNtupleIColumn(2, xpixel);
-            analysisManager->FillNtupleDColumn(3, x_primary/cm);
-            analysisManager->FillNtupleDColumn(4, y_primary/cm);
-            analysisManager->FillNtupleDColumn(5, z_primary/cm);
-            analysisManager->FillNtupleDColumn(6, theta_primary/deg);
-            analysisManager->FillNtupleDColumn(7, phi_primary/deg);
-            analysisManager->FillNtupleDColumn(8, en_primary/keV);
-            analysisManager->FillNtupleDColumn(9, lastStepGlobalTime/ns);
-            analysisManager->FillNtupleDColumn(10, detector_x);
-            analysisManager->FillNtupleDColumn(11, detector_y);
-            analysisManager->FillNtupleDColumn(12, detector_z);
-            analysisManager->AddNtupleRow();*/
-        //}
-   // }
-
-    
-    
+        
     // Record the event
     G4cout << "---> (Record Event) End of event: " << event -> GetEventID() << G4endl;
     G4Run::RecordEvent(event);

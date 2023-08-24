@@ -28,7 +28,6 @@ void UserEventAction::BeginOfEventAction(const G4Event* event) {
     // This method specifies the actions that must be performed at the
     // beginning of each event.
     G4int nEvent = event -> GetEventID();
-    //    G4cout << "---> UserEventAction: Start of event: " << nEvent << G4endl;
     if(!(nEvent % 100000))
     {
         G4cout << "INFORMATION: event " << nEvent << " in progress..." << G4endl;

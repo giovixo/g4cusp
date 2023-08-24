@@ -54,19 +54,12 @@ int main(int argc, char **argv)
     
     // Visualization manager construction
     auto visManager = new G4VisExecutive;
-    // G4VisExecutive can take a verbosity argument - see /vis/verbose guidance.
-    // G4VisManager* visManager = new G4VisExecutive("Quiet");
     visManager->Initialize();
     
     // Get the pointer to the User Interface manager
     auto uiManager = G4UImanager::GetUIpointer();
     
-    // Activation of atomic EM de-excitation processes
     uiManager->ApplyCommand("/run/initialize");
-//    uiManager->ApplyCommand("/process/em/deexcitation World true true true");
-//    uiManager->ApplyCommand("/process/em/fluo true");
-//    uiManager->ApplyCommand("/process/em/auger true");
-//    uiManager->ApplyCommand("/run/physicsModified");
     
     if (!ui) // Batch mode
     {
