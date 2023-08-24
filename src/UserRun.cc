@@ -1,7 +1,7 @@
 #include "UserRun.hh"
 
 #include "G4SDManager.hh"
-#include "SDDDetectorHit.hh"
+//#include "SDDDetectorHit.hh"
 #include "DetectorHit.hh"
 #include "G4Event.hh"
 #include "G4Trajectory.hh"

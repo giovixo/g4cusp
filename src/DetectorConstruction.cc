@@ -1,7 +1,7 @@
 #include "DetectorConstruction.hh"
 
 #include "SensitiveDetector.hh"
-#include "SDDSensitiveDetector.hh"
+//#include "SDDSensitiveDetector.hh"
 
 #include "G4SystemOfUnits.hh"
 #include "G4PhysicalConstants.hh"
@@ -79,10 +79,6 @@ DetectorConstruction::DetectorConstruction()
     sdd29_log(0),
     sdd30_log(0),
     sdd31_log(0),
-    sdd32_log(0),
-    sdd33_log(0),
-    sdd34_log(0),
-    sdd35_log(0),
 
     scint00_log(0),
     scint01_log(0),

@@ -318,54 +318,6 @@ src/PrimaryGeneratorAction.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cusp_gdml.dir/build.make CMakeFiles/cusp_gdml.dir/src/PrimaryGeneratorAction.cc.s
 .PHONY : src/PrimaryGeneratorAction.cc.s
 
-src/SDDDetectorHit.o: src/SDDDetectorHit.cc.o
-.PHONY : src/SDDDetectorHit.o
-
-# target to build an object file
-src/SDDDetectorHit.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cusp_gdml.dir/build.make CMakeFiles/cusp_gdml.dir/src/SDDDetectorHit.cc.o
-.PHONY : src/SDDDetectorHit.cc.o
-
-src/SDDDetectorHit.i: src/SDDDetectorHit.cc.i
-.PHONY : src/SDDDetectorHit.i
-
-# target to preprocess a source file
-src/SDDDetectorHit.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cusp_gdml.dir/build.make CMakeFiles/cusp_gdml.dir/src/SDDDetectorHit.cc.i
-.PHONY : src/SDDDetectorHit.cc.i
-
-src/SDDDetectorHit.s: src/SDDDetectorHit.cc.s
-.PHONY : src/SDDDetectorHit.s
-
-# target to generate assembly for a file
-src/SDDDetectorHit.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cusp_gdml.dir/build.make CMakeFiles/cusp_gdml.dir/src/SDDDetectorHit.cc.s
-.PHONY : src/SDDDetectorHit.cc.s
-
-src/SDDSensitiveDetector.o: src/SDDSensitiveDetector.cc.o
-.PHONY : src/SDDSensitiveDetector.o
-
-# target to build an object file
-src/SDDSensitiveDetector.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cusp_gdml.dir/build.make CMakeFiles/cusp_gdml.dir/src/SDDSensitiveDetector.cc.o
-.PHONY : src/SDDSensitiveDetector.cc.o
-
-src/SDDSensitiveDetector.i: src/SDDSensitiveDetector.cc.i
-.PHONY : src/SDDSensitiveDetector.i
-
-# target to preprocess a source file
-src/SDDSensitiveDetector.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cusp_gdml.dir/build.make CMakeFiles/cusp_gdml.dir/src/SDDSensitiveDetector.cc.i
-.PHONY : src/SDDSensitiveDetector.cc.i
-
-src/SDDSensitiveDetector.s: src/SDDSensitiveDetector.cc.s
-.PHONY : src/SDDSensitiveDetector.s
-
-# target to generate assembly for a file
-src/SDDSensitiveDetector.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cusp_gdml.dir/build.make CMakeFiles/cusp_gdml.dir/src/SDDSensitiveDetector.cc.s
-.PHONY : src/SDDSensitiveDetector.cc.s
-
 src/SensitiveDetector.o: src/SensitiveDetector.cc.o
 .PHONY : src/SensitiveDetector.o
 
@@ -517,12 +469,6 @@ help:
 	@echo "... src/PrimaryGeneratorAction.o"
 	@echo "... src/PrimaryGeneratorAction.i"
 	@echo "... src/PrimaryGeneratorAction.s"
-	@echo "... src/SDDDetectorHit.o"
-	@echo "... src/SDDDetectorHit.i"
-	@echo "... src/SDDDetectorHit.s"
-	@echo "... src/SDDSensitiveDetector.o"
-	@echo "... src/SDDSensitiveDetector.i"
-	@echo "... src/SDDSensitiveDetector.s"
 	@echo "... src/SensitiveDetector.o"
 	@echo "... src/SensitiveDetector.i"
 	@echo "... src/SensitiveDetector.s"

@@ -153,38 +153,10 @@ CMakeFiles/cusp_gdml.dir/src/PrimaryGeneratorAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cusp_gdml.dir/src/PrimaryGeneratorAction.cc.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/giovanni/dev/CUSP/g4cusp/src/PrimaryGeneratorAction.cc -o CMakeFiles/cusp_gdml.dir/src/PrimaryGeneratorAction.cc.s
 
-CMakeFiles/cusp_gdml.dir/src/SDDDetectorHit.cc.o: CMakeFiles/cusp_gdml.dir/flags.make
-CMakeFiles/cusp_gdml.dir/src/SDDDetectorHit.cc.o: ../src/SDDDetectorHit.cc
-CMakeFiles/cusp_gdml.dir/src/SDDDetectorHit.cc.o: CMakeFiles/cusp_gdml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/giovanni/dev/CUSP/g4cusp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/cusp_gdml.dir/src/SDDDetectorHit.cc.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cusp_gdml.dir/src/SDDDetectorHit.cc.o -MF CMakeFiles/cusp_gdml.dir/src/SDDDetectorHit.cc.o.d -o CMakeFiles/cusp_gdml.dir/src/SDDDetectorHit.cc.o -c /Users/giovanni/dev/CUSP/g4cusp/src/SDDDetectorHit.cc
-
-CMakeFiles/cusp_gdml.dir/src/SDDDetectorHit.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cusp_gdml.dir/src/SDDDetectorHit.cc.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/giovanni/dev/CUSP/g4cusp/src/SDDDetectorHit.cc > CMakeFiles/cusp_gdml.dir/src/SDDDetectorHit.cc.i
-
-CMakeFiles/cusp_gdml.dir/src/SDDDetectorHit.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cusp_gdml.dir/src/SDDDetectorHit.cc.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/giovanni/dev/CUSP/g4cusp/src/SDDDetectorHit.cc -o CMakeFiles/cusp_gdml.dir/src/SDDDetectorHit.cc.s
-
-CMakeFiles/cusp_gdml.dir/src/SDDSensitiveDetector.cc.o: CMakeFiles/cusp_gdml.dir/flags.make
-CMakeFiles/cusp_gdml.dir/src/SDDSensitiveDetector.cc.o: ../src/SDDSensitiveDetector.cc
-CMakeFiles/cusp_gdml.dir/src/SDDSensitiveDetector.cc.o: CMakeFiles/cusp_gdml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/giovanni/dev/CUSP/g4cusp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/cusp_gdml.dir/src/SDDSensitiveDetector.cc.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cusp_gdml.dir/src/SDDSensitiveDetector.cc.o -MF CMakeFiles/cusp_gdml.dir/src/SDDSensitiveDetector.cc.o.d -o CMakeFiles/cusp_gdml.dir/src/SDDSensitiveDetector.cc.o -c /Users/giovanni/dev/CUSP/g4cusp/src/SDDSensitiveDetector.cc
-
-CMakeFiles/cusp_gdml.dir/src/SDDSensitiveDetector.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cusp_gdml.dir/src/SDDSensitiveDetector.cc.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/giovanni/dev/CUSP/g4cusp/src/SDDSensitiveDetector.cc > CMakeFiles/cusp_gdml.dir/src/SDDSensitiveDetector.cc.i
-
-CMakeFiles/cusp_gdml.dir/src/SDDSensitiveDetector.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cusp_gdml.dir/src/SDDSensitiveDetector.cc.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/giovanni/dev/CUSP/g4cusp/src/SDDSensitiveDetector.cc -o CMakeFiles/cusp_gdml.dir/src/SDDSensitiveDetector.cc.s
-
 CMakeFiles/cusp_gdml.dir/src/SensitiveDetector.cc.o: CMakeFiles/cusp_gdml.dir/flags.make
 CMakeFiles/cusp_gdml.dir/src/SensitiveDetector.cc.o: ../src/SensitiveDetector.cc
 CMakeFiles/cusp_gdml.dir/src/SensitiveDetector.cc.o: CMakeFiles/cusp_gdml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/giovanni/dev/CUSP/g4cusp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/cusp_gdml.dir/src/SensitiveDetector.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/giovanni/dev/CUSP/g4cusp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/cusp_gdml.dir/src/SensitiveDetector.cc.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cusp_gdml.dir/src/SensitiveDetector.cc.o -MF CMakeFiles/cusp_gdml.dir/src/SensitiveDetector.cc.o.d -o CMakeFiles/cusp_gdml.dir/src/SensitiveDetector.cc.o -c /Users/giovanni/dev/CUSP/g4cusp/src/SensitiveDetector.cc
 
 CMakeFiles/cusp_gdml.dir/src/SensitiveDetector.cc.i: cmake_force
@@ -198,7 +170,7 @@ CMakeFiles/cusp_gdml.dir/src/SensitiveDetector.cc.s: cmake_force
 CMakeFiles/cusp_gdml.dir/src/UserActionInitialization.cc.o: CMakeFiles/cusp_gdml.dir/flags.make
 CMakeFiles/cusp_gdml.dir/src/UserActionInitialization.cc.o: ../src/UserActionInitialization.cc
 CMakeFiles/cusp_gdml.dir/src/UserActionInitialization.cc.o: CMakeFiles/cusp_gdml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/giovanni/dev/CUSP/g4cusp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/cusp_gdml.dir/src/UserActionInitialization.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/giovanni/dev/CUSP/g4cusp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/cusp_gdml.dir/src/UserActionInitialization.cc.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cusp_gdml.dir/src/UserActionInitialization.cc.o -MF CMakeFiles/cusp_gdml.dir/src/UserActionInitialization.cc.o.d -o CMakeFiles/cusp_gdml.dir/src/UserActionInitialization.cc.o -c /Users/giovanni/dev/CUSP/g4cusp/src/UserActionInitialization.cc
 
 CMakeFiles/cusp_gdml.dir/src/UserActionInitialization.cc.i: cmake_force
@@ -212,7 +184,7 @@ CMakeFiles/cusp_gdml.dir/src/UserActionInitialization.cc.s: cmake_force
 CMakeFiles/cusp_gdml.dir/src/UserEventAction.cc.o: CMakeFiles/cusp_gdml.dir/flags.make
 CMakeFiles/cusp_gdml.dir/src/UserEventAction.cc.o: ../src/UserEventAction.cc
 CMakeFiles/cusp_gdml.dir/src/UserEventAction.cc.o: CMakeFiles/cusp_gdml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/giovanni/dev/CUSP/g4cusp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/cusp_gdml.dir/src/UserEventAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/giovanni/dev/CUSP/g4cusp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/cusp_gdml.dir/src/UserEventAction.cc.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cusp_gdml.dir/src/UserEventAction.cc.o -MF CMakeFiles/cusp_gdml.dir/src/UserEventAction.cc.o.d -o CMakeFiles/cusp_gdml.dir/src/UserEventAction.cc.o -c /Users/giovanni/dev/CUSP/g4cusp/src/UserEventAction.cc
 
 CMakeFiles/cusp_gdml.dir/src/UserEventAction.cc.i: cmake_force
@@ -226,7 +198,7 @@ CMakeFiles/cusp_gdml.dir/src/UserEventAction.cc.s: cmake_force
 CMakeFiles/cusp_gdml.dir/src/UserRun.cc.o: CMakeFiles/cusp_gdml.dir/flags.make
 CMakeFiles/cusp_gdml.dir/src/UserRun.cc.o: ../src/UserRun.cc
 CMakeFiles/cusp_gdml.dir/src/UserRun.cc.o: CMakeFiles/cusp_gdml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/giovanni/dev/CUSP/g4cusp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/cusp_gdml.dir/src/UserRun.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/giovanni/dev/CUSP/g4cusp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/cusp_gdml.dir/src/UserRun.cc.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cusp_gdml.dir/src/UserRun.cc.o -MF CMakeFiles/cusp_gdml.dir/src/UserRun.cc.o.d -o CMakeFiles/cusp_gdml.dir/src/UserRun.cc.o -c /Users/giovanni/dev/CUSP/g4cusp/src/UserRun.cc
 
 CMakeFiles/cusp_gdml.dir/src/UserRun.cc.i: cmake_force
@@ -240,7 +212,7 @@ CMakeFiles/cusp_gdml.dir/src/UserRun.cc.s: cmake_force
 CMakeFiles/cusp_gdml.dir/src/UserRunAction.cc.o: CMakeFiles/cusp_gdml.dir/flags.make
 CMakeFiles/cusp_gdml.dir/src/UserRunAction.cc.o: ../src/UserRunAction.cc
 CMakeFiles/cusp_gdml.dir/src/UserRunAction.cc.o: CMakeFiles/cusp_gdml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/giovanni/dev/CUSP/g4cusp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/cusp_gdml.dir/src/UserRunAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/giovanni/dev/CUSP/g4cusp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/cusp_gdml.dir/src/UserRunAction.cc.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cusp_gdml.dir/src/UserRunAction.cc.o -MF CMakeFiles/cusp_gdml.dir/src/UserRunAction.cc.o.d -o CMakeFiles/cusp_gdml.dir/src/UserRunAction.cc.o -c /Users/giovanni/dev/CUSP/g4cusp/src/UserRunAction.cc
 
 CMakeFiles/cusp_gdml.dir/src/UserRunAction.cc.i: cmake_force
@@ -259,8 +231,6 @@ cusp_gdml_OBJECTS = \
 "CMakeFiles/cusp_gdml.dir/src/DetectorHit.cc.o" \
 "CMakeFiles/cusp_gdml.dir/src/PhysicsList.cc.o" \
 "CMakeFiles/cusp_gdml.dir/src/PrimaryGeneratorAction.cc.o" \
-"CMakeFiles/cusp_gdml.dir/src/SDDDetectorHit.cc.o" \
-"CMakeFiles/cusp_gdml.dir/src/SDDSensitiveDetector.cc.o" \
 "CMakeFiles/cusp_gdml.dir/src/SensitiveDetector.cc.o" \
 "CMakeFiles/cusp_gdml.dir/src/UserActionInitialization.cc.o" \
 "CMakeFiles/cusp_gdml.dir/src/UserEventAction.cc.o" \
@@ -276,8 +246,6 @@ cusp_gdml: CMakeFiles/cusp_gdml.dir/src/DetectorConstruction.cc.o
 cusp_gdml: CMakeFiles/cusp_gdml.dir/src/DetectorHit.cc.o
 cusp_gdml: CMakeFiles/cusp_gdml.dir/src/PhysicsList.cc.o
 cusp_gdml: CMakeFiles/cusp_gdml.dir/src/PrimaryGeneratorAction.cc.o
-cusp_gdml: CMakeFiles/cusp_gdml.dir/src/SDDDetectorHit.cc.o
-cusp_gdml: CMakeFiles/cusp_gdml.dir/src/SDDSensitiveDetector.cc.o
 cusp_gdml: CMakeFiles/cusp_gdml.dir/src/SensitiveDetector.cc.o
 cusp_gdml: CMakeFiles/cusp_gdml.dir/src/UserActionInitialization.cc.o
 cusp_gdml: CMakeFiles/cusp_gdml.dir/src/UserEventAction.cc.o
@@ -341,7 +309,7 @@ cusp_gdml: /Users/giovanni/sw/geant4/geant4-v11.0.2-gdml-new-install/lib/libG4gl
 cusp_gdml: /Users/giovanni/sw/geant4/geant4-v11.0.2-gdml-new-install/lib/libG4clhep.dylib
 cusp_gdml: /Users/giovanni/sw/geant4/geant4-v11.0.2-gdml-new-install/lib/libG4ptl.0.0.2.dylib
 cusp_gdml: CMakeFiles/cusp_gdml.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/giovanni/dev/CUSP/g4cusp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable cusp_gdml"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/giovanni/dev/CUSP/g4cusp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable cusp_gdml"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cusp_gdml.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
