@@ -21,7 +21,6 @@
 UserRun::UserRun()
 {
     SCI_hitsCollectionIndex = G4SDManager::GetSDMpointer()->GetCollectionID("SCI");
-    SDD_hitsCollectionIndex = G4SDManager::GetSDMpointer()->GetCollectionID("SDD");
 }
 
 UserRun::~UserRun() {;}
