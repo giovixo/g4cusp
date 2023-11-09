@@ -1,0 +1,18 @@
+# Specify style (surface, wireframe, auxiliary edges,...)
+/vis/viewer/set/style wireframe
+/vis/viewer/set/auxiliaryEdge true
+/vis/viewer/set/lineSegmentsPerCircle 100
+
+# Define the primary particle (photon)
+/gps/particle gamma
+/gps/energy 20 keV
+/gps/direction 0.0  0.0 1.0
+/gps/polarization 1. 0. 0.
+
+/gps/pos/type Plane
+/gps/pos/shape Square
+/gps/pos/centre -20.0 0. -80.0 mm
+/gps/pos/halfx 40.0 mm
+/gps/pos/halfy 40.0 mm
+
+
