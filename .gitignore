@@ -31,10 +31,8 @@
 *.out
 *.app
 
-# Build dir
-build/
-
 # Some stuff
+build
 .DS_Store
 */.ipynb_checkpoints
 abstracts
