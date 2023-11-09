@@ -380,162 +380,162 @@
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_Absorber_v032__Meshed_">
-		<materialref ref="G4_A-150_TISSUE"/>
+		<materialref ref="GAGG"/>
 		<solidref ref="Mesh2Tess045"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_Absorber_v031__Meshed_">
-		<materialref ref="G4_A-150_TISSUE"/>
+		<materialref ref="GAGG"/>
 		<solidref ref="Mesh2Tess044"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_Absorber_v030__Meshed_">
-		<materialref ref="G4_A-150_TISSUE"/>
+		<materialref ref="GAGG"/>
 		<solidref ref="Mesh2Tess043"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_Absorber_v029__Meshed_">
-		<materialref ref="G4_A-150_TISSUE"/>
+		<materialref ref="GAGG"/>
 		<solidref ref="Mesh2Tess042"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_Absorber_v028__Meshed_">
-		<materialref ref="G4_A-150_TISSUE"/>
+		<materialref ref="GAGG"/>
 		<solidref ref="Mesh2Tess041"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_Absorber_v027__Meshed_">
-		<materialref ref="G4_A-150_TISSUE"/>
+		<materialref ref="GAGG"/>
 		<solidref ref="Mesh2Tess040"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_Absorber_v026__Meshed_">
-		<materialref ref="G4_A-150_TISSUE"/>
+		<materialref ref="GAGG"/>
 		<solidref ref="Mesh2Tess039"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_Absorber_v025__Meshed_">
-		<materialref ref="G4_A-150_TISSUE"/>
+		<materialref ref="GAGG"/>
 		<solidref ref="Mesh2Tess038"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_Absorber_v024__Meshed_">
-		<materialref ref="G4_A-150_TISSUE"/>
+		<materialref ref="GAGG"/>
 		<solidref ref="Mesh2Tess037"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_Absorber_v023__Meshed_">
-		<materialref ref="G4_A-150_TISSUE"/>
+		<materialref ref="GAGG"/>
 		<solidref ref="Mesh2Tess036"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_Absorber_v022__Meshed_">
-		<materialref ref="G4_A-150_TISSUE"/>
+		<materialref ref="GAGG"/>
 		<solidref ref="Mesh2Tess035"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_Absorber_v021__Meshed_">
-		<materialref ref="G4_A-150_TISSUE"/>
+		<materialref ref="GAGG"/>
 		<solidref ref="Mesh2Tess034"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_Absorber_v020__Meshed_">
-		<materialref ref="G4_A-150_TISSUE"/>
+		<materialref ref="GAGG"/>
 		<solidref ref="Mesh2Tess033"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_Absorber_v019__Meshed_">
-		<materialref ref="G4_A-150_TISSUE"/>
+		<materialref ref="GAGG"/>
 		<solidref ref="Mesh2Tess032"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_Absorber_v018__Meshed_">
-		<materialref ref="G4_A-150_TISSUE"/>
+		<materialref ref="GAGG"/>
 		<solidref ref="Mesh2Tess031"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_Absorber_v017__Meshed_">
-		<materialref ref="G4_A-150_TISSUE"/>
+		<materialref ref="GAGG"/>
 		<solidref ref="Mesh2Tess030"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_Absorber_v016__Meshed_">
-		<materialref ref="G4_A-150_TISSUE"/>
+		<materialref ref="GAGG"/>
 		<solidref ref="Mesh2Tess029"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_Absorber_v015__Meshed_">
-		<materialref ref="G4_A-150_TISSUE"/>
+		<materialref ref="GAGG"/>
 		<solidref ref="Mesh2Tess028"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_Absorber_v014__Meshed_">
-		<materialref ref="G4_A-150_TISSUE"/>
+		<materialref ref="GAGG"/>
 		<solidref ref="Mesh2Tess027"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_Absorber_v013__Meshed_">
-		<materialref ref="G4_A-150_TISSUE"/>
+		<materialref ref="GAGG"/>
 		<solidref ref="Mesh2Tess026"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_Absorber_v012__Meshed_">
-		<materialref ref="G4_A-150_TISSUE"/>
+		<materialref ref="GAGG"/>
 		<solidref ref="Mesh2Tess025"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_Absorber_v011__Meshed_">
-		<materialref ref="G4_A-150_TISSUE"/>
+		<materialref ref="GAGG"/>
 		<solidref ref="Mesh2Tess024"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_Absorber_v010__Meshed_">
-		<materialref ref="G4_A-150_TISSUE"/>
+		<materialref ref="GAGG"/>
 		<solidref ref="Mesh2Tess023"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_Absorber_v009__Meshed_">
-		<materialref ref="G4_A-150_TISSUE"/>
+		<materialref ref="GAGG"/>
 		<solidref ref="Mesh2Tess022"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_Absorber_v008__Meshed_">
-		<materialref ref="G4_A-150_TISSUE"/>
+		<materialref ref="GAGG"/>
 		<solidref ref="Mesh2Tess021"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_Absorber_v007__Meshed_">
-		<materialref ref="G4_A-150_TISSUE"/>
+		<materialref ref="GAGG"/>
 		<solidref ref="Mesh2Tess020"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_Absorber_v006__Meshed_">
-		<materialref ref="G4_A-150_TISSUE"/>
+		<materialref ref="GAGG"/>
 		<solidref ref="Mesh2Tess019"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_Absorber_v005__Meshed_">
-		<materialref ref="G4_A-150_TISSUE"/>
+		<materialref ref="GAGG"/>
 		<solidref ref="Mesh2Tess018"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_Absorber_v004__Meshed_">
-		<materialref ref="G4_A-150_TISSUE"/>
+		<materialref ref="GAGG"/>
 		<solidref ref="Mesh2Tess017"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_Absorber_v003__Meshed_">
-		<materialref ref="G4_A-150_TISSUE"/>
+		<materialref ref="GAGG"/>
 		<solidref ref="Mesh2Tess016"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_Absorber_v002__Meshed_">
-		<materialref ref="G4_A-150_TISSUE"/>
+		<materialref ref="GAGG"/>
 		<solidref ref="Mesh2Tess015"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_Absorber_v1__Meshed_">
-		<materialref ref="G4_A-150_TISSUE"/>
+		<materialref ref="GAGG"/>
 		<solidref ref="Mesh2Tess014"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
