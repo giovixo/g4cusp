@@ -1,0 +1,4 @@
+New mass model release
+LV_Absorber__Meshed_
+from LV_Absorber2__Meshed_ to LV_Absorber8__Meshed_
+from LV_Absorber009__Meshed_ to LV_Absorber032__Meshed_

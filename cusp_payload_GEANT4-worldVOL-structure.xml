@@ -595,7 +595,7 @@
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="LV_PCB_APD_v1__Meshed_">
-		<materialref ref="G4_POLYTRIFLUOROCHLOROETHYLENE"/>
+		<materialref ref="FR4"/>
 		<solidref ref="Mesh2Tess002"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
