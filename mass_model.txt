@@ -1,0 +1,7 @@
+MASS MODEL RELEASE HISTORY
+Active release: CUSP_GEANT4_20231121
+
+IMPORTANT NOTE 
+All the mass model releases, provided by Giovanni Lombardi, are avaliable in mass_model_gdml directory 
+The active mass model is a modified version of a given release. These changes are mandatory to define all the materials and to have a correct detectors naming.
+In the mass_model_gdml directory <cusp_payload_GEANT4-worldVOL-structure_release.xml> file contain the release, <cusp_payload_GEANT4-worldVOL-structure.xml> contains the active mass model.
