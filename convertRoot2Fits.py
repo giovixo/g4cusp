@@ -32,6 +32,9 @@ Event_time    = np.zeros(tree_len, dtype=float)
 X_Detected    = np.zeros(tree_len, dtype=float)     
 Y_Detected    = np.zeros(tree_len, dtype=float)     
 Z_Detected    = np.zeros(tree_len, dtype=float)     
+X_Pol         = np.zeros(tree_len, dtype=float) 
+Y_Pol         = np.zeros(tree_len, dtype=float) 
+Z_Pol         = np.zeros(tree_len, dtype=float) 
 
 for i, entry in enumerate(tree):
     EventID[i]       = entry.EventID
@@ -47,6 +50,9 @@ for i, entry in enumerate(tree):
     X_Detected[i]    = entry.X_Detected
     Y_Detected[i]    = entry.Y_Detected
     Z_Detected[i]    = entry.Z_Detected
+    X_Pol[i]         = entry.X_Pol
+    Y_Pol[i]         = entry.Y_Pol
+    Z_Pol[i]         = entry.Z_Pol
 
 
 
@@ -67,6 +73,18 @@ tbhdu = pyfits.BinTableHDU.from_columns([
     pyfits.Column(name='Scint_ID', 
                   format='1K', 
                   array=Scint_ID[sorting]),
+    pyfits.Column(name='X_Detected', 
+                  format='1D', 
+                  unit='cm',
+                  array=X_Detected[sorting]),
+    pyfits.Column(name='Y_Detected', 
+                  format='1D', 
+                  unit='cm',
+                  array=Y_Detected[sorting]),
+    pyfits.Column(name='Z_Detected', 
+                  format='1D', 
+                  unit='cm',
+                  array=Z_Detected[sorting]),
     pyfits.Column(name='X_Primary', 
                   format='1D', 
                   unit='cm',
@@ -91,18 +109,18 @@ tbhdu = pyfits.BinTableHDU.from_columns([
                   format='1D', 
                   unit='keV',
                   array=En_Primary[sorting]),
-    pyfits.Column(name='X_Detected', 
+    pyfits.Column(name='X_Pol', 
                   format='1D', 
-                  unit='cm',
-                  array=X_Detected[sorting]),
-    pyfits.Column(name='Y_Detected', 
+                  unit='',
+                  array=X_Pol[sorting]),
+    pyfits.Column(name='Y_Pol', 
                   format='1D', 
-                  unit='cm',
-                  array=Y_Detected[sorting]),
-    pyfits.Column(name='Z_Detected', 
+                  unit='',
+                  array=Y_Pol[sorting]),
+    pyfits.Column(name='Z_Pol', 
                   format='1D', 
-                  unit='cm',
-                  array=Z_Detected[sorting])
+                  unit='',
+                  array=Z_Pol[sorting])
 ])
 
 tbhdu.header.set('EXTNAME', 'EVENTS', 'Name of this binary table extension')

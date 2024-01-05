@@ -60,6 +60,9 @@ void UserRun::RecordEvent(const G4Event* event)
 	G4double x_primary     = 0.*cm;
 	G4double y_primary     = 0.*cm;
 	G4double z_primary     = 0.*cm;
+	G4double pol_x         = 0.*cm;
+	G4double pol_y         = 0.*cm;
+	G4double pol_z         = 0.*cm;
 	G4double theta_primary = 0.*deg;
 	G4double phi_primary   = 0.*deg;
 	G4int nVertex = event -> GetNumberOfPrimaryVertex();
@@ -70,6 +73,7 @@ void UserRun::RecordEvent(const G4Event* event)
 		for ( G4int i = 0; i < nPart; i++) {
 			G4ThreeVector position = event -> GetPrimaryVertex(j) -> GetPosition();
 			G4ThreeVector direction = event -> GetPrimaryVertex(j) -> GetPrimary(i) -> GetMomentum();
+			G4ThreeVector polarization = event->GetPrimaryVertex(j)->GetPrimary(i)->GetPolarization();
 			G4double P = direction.mag();
 			en_primary = event->GetPrimaryVertex(j)->GetPrimary(i)->GetMass();
 			G4double E0 = event->GetPrimaryVertex(j)->GetPrimary(i)->GetG4code()->GetPDGMass();
@@ -83,6 +87,9 @@ void UserRun::RecordEvent(const G4Event* event)
 			x_primary=position.x();
 			y_primary=position.y();
 			z_primary=position.z();
+			pol_x = polarization.x();
+			pol_y = polarization.y();
+			pol_z = polarization.z();
 		}
 	}
     
@@ -115,6 +122,10 @@ void UserRun::RecordEvent(const G4Event* event)
             analysisManager->FillNtupleDColumn(10, detector_x);
             analysisManager->FillNtupleDColumn(11, detector_y);
             analysisManager->FillNtupleDColumn(12, detector_z);
+            analysisManager->FillNtupleDColumn(13, pol_x);
+            analysisManager->FillNtupleDColumn(14, pol_y);
+            analysisManager->FillNtupleDColumn(15, pol_z);
+            // ToDO analysisManager->FillNtupleDColumn(, polarization)
             analysisManager->AddNtupleRow();
             
 

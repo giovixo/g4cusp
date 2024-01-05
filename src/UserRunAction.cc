@@ -53,6 +53,9 @@ void UserRunAction::BeginOfRunAction(const G4Run* run)
     analysisManager->CreateNtupleDColumn("X_Detected");
     analysisManager->CreateNtupleDColumn("Y_Detected");
     analysisManager->CreateNtupleDColumn("Z_Detected");
+    analysisManager->CreateNtupleDColumn("X_Pol");
+    analysisManager->CreateNtupleDColumn("Y_Pol");
+    analysisManager->CreateNtupleDColumn("Z_Pol");
     analysisManager->FinishNtuple();
     
     analysisManager->OpenFile("scorefile.root");

@@ -1,0 +1,6 @@
+Basic tests
+===========
+- read fit files
+- make some simple statistics
+- detect the hits (pixel position)
+- evaluate the spectrum

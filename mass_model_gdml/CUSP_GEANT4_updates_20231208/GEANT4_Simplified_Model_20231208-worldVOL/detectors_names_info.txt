@@ -1,0 +1,29 @@
+Volume names collected by the GEANT4 code
+
+New
+		<physvol name="PV-Absorber001">
+			<volumeref ref="Absorber001"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+
+Old
+		<physvol name="PV-LV_Absorber111__Meshed_">
+			<volumeref ref="LV_Absorber_v011__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+
+
+New 
+		<physvol name="PV-Scatterer001">
+			<volumeref ref="Scatterer001"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+Old
+		<physvol name="PV-LV_Scatterer011__Meshed_">
+			<volumeref ref="LV_Scatterer_v011__Meshed_"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>

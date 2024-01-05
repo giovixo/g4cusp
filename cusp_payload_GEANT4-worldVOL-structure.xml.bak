@@ -865,8 +865,8 @@
 		<auxiliary auxtype="Color" auxvalue="#f500ff00"/>
 	</volume>
 	<volume name="worldVOL">
-		<materialref ref="G4_Galactic"/>
-		<solidref ref="WorldBox"/>
+		<materialref ref="G4_POLYTRIFLUOROCHLOROETHYLENE"/>
+		<solidref ref="Mesh2Tess"/>
 		<physvol name="PV-PCB_ext_CUSP003">
 			<volumeref ref="PCB_ext_CUSP003"/>
 			<positionref ref="center"/>
