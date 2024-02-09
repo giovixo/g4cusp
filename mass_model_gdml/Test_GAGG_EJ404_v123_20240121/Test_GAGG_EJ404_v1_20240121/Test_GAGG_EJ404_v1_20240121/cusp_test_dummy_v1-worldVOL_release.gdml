@@ -2,8 +2,8 @@
 <!DOCTYPE gdml [
 <!ENTITY define SYSTEM "define.xml">
 <!ENTITY materials SYSTEM "materials.xml">
-<!ENTITY solids SYSTEM "cusp_test_dummy_v1-worldVOL-solids.xml">
-<!ENTITY structure SYSTEM "cusp_test_dummy_v1-worldVOL-structure.xml">
+<!ENTITY solids SYSTEM "Test_GAGG_EJ404_v1_20240121-worldVOL-solids.xml">
+<!ENTITY structure SYSTEM "Test_GAGG_EJ404_v1_20240121-worldVOL-structure.xml">
 <!ENTITY setup SYSTEM "setup.xml">
 ]>
 

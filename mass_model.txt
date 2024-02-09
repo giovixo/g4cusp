@@ -1,9 +1,9 @@
 MASS MODEL RELEASE HISTORY
-Active release: CUSP_GEANT4_updates_20231208
-Old releases:
-CUSP_GEANT4_20231121 used from 2023-11-21 to 2023-12-14
+Active release: mmrel_20231121
+Toy model: mmrel_Test_GAGG_EJ404_v123_20240121
+
 
 IMPORTANT NOTE 
 All the mass model releases, provided by Giovanni Lombardi, are avaliable in mass_model_gdml directory 
 The active mass model is a modified version of a given release. These changes are mandatory to define all the materials and to have a correct detectors naming.
-In the mass_model_gdml directory <cusp_payload_GEANT4-worldVOL-structure_release.xml> file contain the release, <cusp_payload_GEANT4-worldVOL-structure.xml> contains the active mass model. 
+In the mass_model_gdml directory <cusp_payload_GEANT4-worldVOL-structure_release.xml> file contains the release, <cusp_payload_GEANT4-worldVOL-structure.xml> contains the active mass model. 
