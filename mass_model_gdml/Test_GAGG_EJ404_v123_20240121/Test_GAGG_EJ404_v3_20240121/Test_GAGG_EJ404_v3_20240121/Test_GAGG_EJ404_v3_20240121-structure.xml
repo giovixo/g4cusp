@@ -1,1 +1,336 @@
-<structure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><volume name="EJ404"><materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/><solidref ref="Mesh2Tess032"/><auxiliary auxtype="Color" auxvalue="#0600ff00"/></volume><volume name="GAGG031"><materialref ref="G4_A-150_TISSUE"/><solidref ref="Mesh2Tess031"/><auxiliary auxtype="Color" auxvalue="#80808000"/></volume><volume name="GAGG030"><materialref ref="G4_A-150_TISSUE"/><solidref ref="Mesh2Tess030"/><auxiliary auxtype="Color" auxvalue="#80808000"/></volume><volume name="GAGG029"><materialref ref="G4_A-150_TISSUE"/><solidref ref="Mesh2Tess029"/><auxiliary auxtype="Color" auxvalue="#80808000"/></volume><volume name="GAGG028"><materialref ref="G4_A-150_TISSUE"/><solidref ref="Mesh2Tess028"/><auxiliary auxtype="Color" auxvalue="#80808000"/></volume><volume name="GAGG027"><materialref ref="G4_A-150_TISSUE"/><solidref ref="Mesh2Tess027"/><auxiliary auxtype="Color" auxvalue="#80808000"/></volume><volume name="GAGG026"><materialref ref="G4_A-150_TISSUE"/><solidref ref="Mesh2Tess026"/><auxiliary auxtype="Color" auxvalue="#80808000"/></volume><volume name="GAGG025"><materialref ref="G4_A-150_TISSUE"/><solidref ref="Mesh2Tess025"/><auxiliary auxtype="Color" auxvalue="#80808000"/></volume><volume name="GAGG024"><materialref ref="G4_A-150_TISSUE"/><solidref ref="Mesh2Tess024"/><auxiliary auxtype="Color" auxvalue="#80808000"/></volume><volume name="GAGG023"><materialref ref="G4_A-150_TISSUE"/><solidref ref="Mesh2Tess023"/><auxiliary auxtype="Color" auxvalue="#80808000"/></volume><volume name="GAGG022"><materialref ref="G4_A-150_TISSUE"/><solidref ref="Mesh2Tess022"/><auxiliary auxtype="Color" auxvalue="#80808000"/></volume><volume name="GAGG021"><materialref ref="G4_A-150_TISSUE"/><solidref ref="Mesh2Tess021"/><auxiliary auxtype="Color" auxvalue="#80808000"/></volume><volume name="GAGG020"><materialref ref="G4_A-150_TISSUE"/><solidref ref="Mesh2Tess020"/><auxiliary auxtype="Color" auxvalue="#80808000"/></volume><volume name="GAGG019"><materialref ref="G4_A-150_TISSUE"/><solidref ref="Mesh2Tess019"/><auxiliary auxtype="Color" auxvalue="#80808000"/></volume><volume name="GAGG018"><materialref ref="G4_A-150_TISSUE"/><solidref ref="Mesh2Tess018"/><auxiliary auxtype="Color" auxvalue="#80808000"/></volume><volume name="GAGG017"><materialref ref="G4_A-150_TISSUE"/><solidref ref="Mesh2Tess017"/><auxiliary auxtype="Color" auxvalue="#80808000"/></volume><volume name="GAGG016"><materialref ref="G4_A-150_TISSUE"/><solidref ref="Mesh2Tess016"/><auxiliary auxtype="Color" auxvalue="#80808000"/></volume><volume name="GAGG015"><materialref ref="G4_A-150_TISSUE"/><solidref ref="Mesh2Tess015"/><auxiliary auxtype="Color" auxvalue="#80808000"/></volume><volume name="GAGG014"><materialref ref="G4_A-150_TISSUE"/><solidref ref="Mesh2Tess014"/><auxiliary auxtype="Color" auxvalue="#80808000"/></volume><volume name="GAGG013"><materialref ref="G4_A-150_TISSUE"/><solidref ref="Mesh2Tess013"/><auxiliary auxtype="Color" auxvalue="#80808000"/></volume><volume name="GAGG012"><materialref ref="G4_A-150_TISSUE"/><solidref ref="Mesh2Tess012"/><auxiliary auxtype="Color" auxvalue="#80808000"/></volume><volume name="GAGG011"><materialref ref="G4_A-150_TISSUE"/><solidref ref="Mesh2Tess011"/><auxiliary auxtype="Color" auxvalue="#80808000"/></volume><volume name="GAGG010"><materialref ref="G4_A-150_TISSUE"/><solidref ref="Mesh2Tess010"/><auxiliary auxtype="Color" auxvalue="#80808000"/></volume><volume name="GAGG009"><materialref ref="G4_A-150_TISSUE"/><solidref ref="Mesh2Tess009"/><auxiliary auxtype="Color" auxvalue="#80808000"/></volume><volume name="GAGG008"><materialref ref="G4_A-150_TISSUE"/><solidref ref="Mesh2Tess008"/><auxiliary auxtype="Color" auxvalue="#80808000"/></volume><volume name="GAGG007"><materialref ref="G4_A-150_TISSUE"/><solidref ref="Mesh2Tess007"/><auxiliary auxtype="Color" auxvalue="#80808000"/></volume><volume name="GAGG006"><materialref ref="G4_A-150_TISSUE"/><solidref ref="Mesh2Tess006"/><auxiliary auxtype="Color" auxvalue="#80808000"/></volume><volume name="GAGG005"><materialref ref="G4_A-150_TISSUE"/><solidref ref="Mesh2Tess005"/><auxiliary auxtype="Color" auxvalue="#80808000"/></volume><volume name="GAGG004"><materialref ref="G4_A-150_TISSUE"/><solidref ref="Mesh2Tess004"/><auxiliary auxtype="Color" auxvalue="#80808000"/></volume><volume name="GAGG003"><materialref ref="G4_A-150_TISSUE"/><solidref ref="Mesh2Tess003"/><auxiliary auxtype="Color" auxvalue="#80808000"/></volume><volume name="GAGG002"><materialref ref="G4_A-150_TISSUE"/><solidref ref="Mesh2Tess002"/><auxiliary auxtype="Color" auxvalue="#80808000"/></volume><volume name="GAGG001"><materialref ref="G4_A-150_TISSUE"/><solidref ref="Mesh2Tess001"/><auxiliary auxtype="Color" auxvalue="#80808000"/></volume><volume name="GAGG032"><materialref ref="G4_A-150_TISSUE"/><solidref ref="Mesh2Tess"/><auxiliary auxtype="Color" auxvalue="#80808000"/></volume><volume name="worldVOL"><materialref ref="G4_Galactic"/><solidref ref="WorldBox"/><physvol name="PV-GAGG032"><volumeref ref="GAGG032"/><positionref ref="P-GAGG0321"/><rotationref ref="identity"/></physvol><physvol name="PV-GAGG001"><volumeref ref="GAGG001"/><positionref ref="P-GAGG0012"/><rotationref ref="identity"/></physvol><physvol name="PV-GAGG002"><volumeref ref="GAGG002"/><positionref ref="P-GAGG0023"/><rotationref ref="identity"/></physvol><physvol name="PV-GAGG003"><volumeref ref="GAGG003"/><positionref ref="P-GAGG0034"/><rotationref ref="identity"/></physvol><physvol name="PV-GAGG004"><volumeref ref="GAGG004"/><positionref ref="P-GAGG0045"/><rotationref ref="identity"/></physvol><physvol name="PV-GAGG005"><volumeref ref="GAGG005"/><positionref ref="P-GAGG0056"/><rotationref ref="identity"/></physvol><physvol name="PV-GAGG006"><volumeref ref="GAGG006"/><positionref ref="P-GAGG0067"/><rotationref ref="identity"/></physvol><physvol name="PV-GAGG007"><volumeref ref="GAGG007"/><positionref ref="P-GAGG0078"/><rotationref ref="identity"/></physvol><physvol name="PV-GAGG008"><volumeref ref="GAGG008"/><positionref ref="P-GAGG0089"/><rotationref ref="identity"/></physvol><physvol name="PV-GAGG009"><volumeref ref="GAGG009"/><positionref ref="P-GAGG00910"/><rotationref ref="identity"/></physvol><physvol name="PV-GAGG010"><volumeref ref="GAGG010"/><positionref ref="P-GAGG01011"/><rotationref ref="identity"/></physvol><physvol name="PV-GAGG011"><volumeref ref="GAGG011"/><positionref ref="P-GAGG01112"/><rotationref ref="identity"/></physvol><physvol name="PV-GAGG012"><volumeref ref="GAGG012"/><positionref ref="P-GAGG01213"/><rotationref ref="identity"/></physvol><physvol name="PV-GAGG013"><volumeref ref="GAGG013"/><positionref ref="P-GAGG01314"/><rotationref ref="identity"/></physvol><physvol name="PV-GAGG014"><volumeref ref="GAGG014"/><positionref ref="P-GAGG01415"/><rotationref ref="identity"/></physvol><physvol name="PV-GAGG015"><volumeref ref="GAGG015"/><positionref ref="P-GAGG01516"/><rotationref ref="identity"/></physvol><physvol name="PV-GAGG016"><volumeref ref="GAGG016"/><positionref ref="P-GAGG01617"/><rotationref ref="identity"/></physvol><physvol name="PV-GAGG017"><volumeref ref="GAGG017"/><positionref ref="P-GAGG01718"/><rotationref ref="identity"/></physvol><physvol name="PV-GAGG018"><volumeref ref="GAGG018"/><positionref ref="P-GAGG01819"/><rotationref ref="identity"/></physvol><physvol name="PV-GAGG019"><volumeref ref="GAGG019"/><positionref ref="P-GAGG01920"/><rotationref ref="identity"/></physvol><physvol name="PV-GAGG020"><volumeref ref="GAGG020"/><positionref ref="P-GAGG02021"/><rotationref ref="identity"/></physvol><physvol name="PV-GAGG021"><volumeref ref="GAGG021"/><positionref ref="P-GAGG02122"/><rotationref ref="identity"/></physvol><physvol name="PV-GAGG022"><volumeref ref="GAGG022"/><positionref ref="P-GAGG02223"/><rotationref ref="identity"/></physvol><physvol name="PV-GAGG023"><volumeref ref="GAGG023"/><positionref ref="P-GAGG02324"/><rotationref ref="identity"/></physvol><physvol name="PV-GAGG024"><volumeref ref="GAGG024"/><positionref ref="P-GAGG02425"/><rotationref ref="identity"/></physvol><physvol name="PV-GAGG025"><volumeref ref="GAGG025"/><positionref ref="P-GAGG02526"/><rotationref ref="identity"/></physvol><physvol name="PV-GAGG026"><volumeref ref="GAGG026"/><positionref ref="P-GAGG02627"/><rotationref ref="identity"/></physvol><physvol name="PV-GAGG027"><volumeref ref="GAGG027"/><positionref ref="P-GAGG02728"/><rotationref ref="identity"/></physvol><physvol name="PV-GAGG028"><volumeref ref="GAGG028"/><positionref ref="P-GAGG02829"/><rotationref ref="identity"/></physvol><physvol name="PV-GAGG029"><volumeref ref="GAGG029"/><positionref ref="P-GAGG02930"/><rotationref ref="identity"/></physvol><physvol name="PV-GAGG030"><volumeref ref="GAGG030"/><positionref ref="P-GAGG03031"/><rotationref ref="identity"/></physvol><physvol name="PV-GAGG031"><volumeref ref="GAGG031"/><positionref ref="P-GAGG03132"/><rotationref ref="identity"/></physvol><physvol name="PV-EJ404"><volumeref ref="EJ404"/><positionref ref="center"/><rotationref ref="identity"/></physvol></volume></structure>
+<structure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<volume name="EJ100">
+		<materialref ref="G4_PLASTIC_SC_VINYLTOLUENE"/>
+		<solidref ref="Mesh2Tess032"/>
+		<auxiliary auxtype="Color" auxvalue="#0600ff00"/>
+	</volume>
+	<volume name="GAGG031">
+		<materialref ref="GAGG"/>
+		<solidref ref="Mesh2Tess031"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="GAGG030">
+		<materialref ref="GAGG"/>
+		<solidref ref="Mesh2Tess030"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="GAGG029">
+		<materialref ref="GAGG"/>
+		<solidref ref="Mesh2Tess029"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="GAGG028">
+		<materialref ref="GAGG"/>
+		<solidref ref="Mesh2Tess028"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="GAGG027">
+		<materialref ref="GAGG"/>
+		<solidref ref="Mesh2Tess027"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="GAGG026">
+		<materialref ref="GAGG"/>
+		<solidref ref="Mesh2Tess026"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="GAGG025">
+		<materialref ref="GAGG"/>
+		<solidref ref="Mesh2Tess025"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="GAGG024">
+		<materialref ref="GAGG"/>
+		<solidref ref="Mesh2Tess024"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="GAGG023">
+		<materialref ref="GAGG"/>
+		<solidref ref="Mesh2Tess023"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="GAGG022">
+		<materialref ref="GAGG"/>
+		<solidref ref="Mesh2Tess022"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="GAGG021">
+		<materialref ref="GAGG"/>
+		<solidref ref="Mesh2Tess021"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="GAGG020">
+		<materialref ref="GAGG"/>
+		<solidref ref="Mesh2Tess020"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="GAGG019">
+		<materialref ref="GAGG"/>
+		<solidref ref="Mesh2Tess019"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="GAGG018">
+		<materialref ref="GAGG"/>
+		<solidref ref="Mesh2Tess018"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="GAGG017">
+		<materialref ref="GAGG"/>
+		<solidref ref="Mesh2Tess017"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="GAGG016">
+		<materialref ref="GAGG"/>
+		<solidref ref="Mesh2Tess016"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="GAGG015">
+		<materialref ref="GAGG"/>
+		<solidref ref="Mesh2Tess015"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="GAGG014">
+		<materialref ref="GAGG"/>
+		<solidref ref="Mesh2Tess014"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="GAGG013">
+		<materialref ref="GAGG"/>
+		<solidref ref="Mesh2Tess013"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="GAGG012">
+		<materialref ref="GAGG"/>
+		<solidref ref="Mesh2Tess012"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="GAGG011">
+		<materialref ref="GAGG"/>
+		<solidref ref="Mesh2Tess011"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="GAGG010">
+		<materialref ref="GAGG"/>
+		<solidref ref="Mesh2Tess010"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="GAGG009">
+		<materialref ref="GAGG"/>
+		<solidref ref="Mesh2Tess009"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="GAGG008">
+		<materialref ref="GAGG"/>
+		<solidref ref="Mesh2Tess008"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="GAGG007">
+		<materialref ref="GAGG"/>
+		<solidref ref="Mesh2Tess007"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="GAGG006">
+		<materialref ref="GAGG"/>
+		<solidref ref="Mesh2Tess006"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="GAGG005">
+		<materialref ref="GAGG"/>
+		<solidref ref="Mesh2Tess005"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="GAGG004">
+		<materialref ref="GAGG"/>
+		<solidref ref="Mesh2Tess004"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="GAGG003">
+		<materialref ref="GAGG"/>
+		<solidref ref="Mesh2Tess003"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="GAGG002">
+		<materialref ref="GAGG"/>
+		<solidref ref="Mesh2Tess002"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="GAGG001">
+		<materialref ref="GAGG"/>
+		<solidref ref="Mesh2Tess001"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="GAGG032">
+		<materialref ref="GAGG"/>
+		<solidref ref="Mesh2Tess"/>
+		<auxiliary auxtype="Color" auxvalue="#80808000"/>
+	</volume>
+	<volume name="worldVOL">
+		<materialref ref="G4_Galactic"/>
+		<solidref ref="WorldBox"/>
+		<physvol name="PV-GAGG032">
+			<volumeref ref="GAGG032"/>
+			<positionref ref="P-GAGG0321"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-GAGG001">
+			<volumeref ref="GAGG001"/>
+			<positionref ref="P-GAGG0012"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-GAGG002">
+			<volumeref ref="GAGG002"/>
+			<positionref ref="P-GAGG0023"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-GAGG003">
+			<volumeref ref="GAGG003"/>
+			<positionref ref="P-GAGG0034"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-GAGG004">
+			<volumeref ref="GAGG004"/>
+			<positionref ref="P-GAGG0045"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-GAGG005">
+			<volumeref ref="GAGG005"/>
+			<positionref ref="P-GAGG0056"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-GAGG006">
+			<volumeref ref="GAGG006"/>
+			<positionref ref="P-GAGG0067"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-GAGG007">
+			<volumeref ref="GAGG007"/>
+			<positionref ref="P-GAGG0078"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-GAGG008">
+			<volumeref ref="GAGG008"/>
+			<positionref ref="P-GAGG0089"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-GAGG009">
+			<volumeref ref="GAGG009"/>
+			<positionref ref="P-GAGG00910"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-GAGG010">
+			<volumeref ref="GAGG010"/>
+			<positionref ref="P-GAGG01011"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-GAGG011">
+			<volumeref ref="GAGG011"/>
+			<positionref ref="P-GAGG01112"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-GAGG012">
+			<volumeref ref="GAGG012"/>
+			<positionref ref="P-GAGG01213"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-GAGG013">
+			<volumeref ref="GAGG013"/>
+			<positionref ref="P-GAGG01314"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-GAGG014">
+			<volumeref ref="GAGG014"/>
+			<positionref ref="P-GAGG01415"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-GAGG015">
+			<volumeref ref="GAGG015"/>
+			<positionref ref="P-GAGG01516"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-GAGG016">
+			<volumeref ref="GAGG016"/>
+			<positionref ref="P-GAGG01617"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-GAGG017">
+			<volumeref ref="GAGG017"/>
+			<positionref ref="P-GAGG01718"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-GAGG018">
+			<volumeref ref="GAGG018"/>
+			<positionref ref="P-GAGG01819"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-GAGG019">
+			<volumeref ref="GAGG019"/>
+			<positionref ref="P-GAGG01920"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-GAGG020">
+			<volumeref ref="GAGG020"/>
+			<positionref ref="P-GAGG02021"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-GAGG021">
+			<volumeref ref="GAGG021"/>
+			<positionref ref="P-GAGG02122"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-GAGG022">
+			<volumeref ref="GAGG022"/>
+			<positionref ref="P-GAGG02223"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-GAGG023">
+			<volumeref ref="GAGG023"/>
+			<positionref ref="P-GAGG02324"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-GAGG024">
+			<volumeref ref="GAGG024"/>
+			<positionref ref="P-GAGG02425"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-GAGG025">
+			<volumeref ref="GAGG025"/>
+			<positionref ref="P-GAGG02526"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-GAGG026">
+			<volumeref ref="GAGG026"/>
+			<positionref ref="P-GAGG02627"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-GAGG027">
+			<volumeref ref="GAGG027"/>
+			<positionref ref="P-GAGG02728"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-GAGG028">
+			<volumeref ref="GAGG028"/>
+			<positionref ref="P-GAGG02829"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-GAGG029">
+			<volumeref ref="GAGG029"/>
+			<positionref ref="P-GAGG02930"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-GAGG030">
+			<volumeref ref="GAGG030"/>
+			<positionref ref="P-GAGG03031"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-GAGG031">
+			<volumeref ref="GAGG031"/>
+			<positionref ref="P-GAGG03132"/>
+			<rotationref ref="identity"/>
+		</physvol>
+		<physvol name="PV-EJ100">
+			<volumeref ref="EJ100"/>
+			<positionref ref="center"/>
+			<rotationref ref="identity"/>
+		</physvol>
+	</volume>
+</structure>
