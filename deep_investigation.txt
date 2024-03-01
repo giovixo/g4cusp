@@ -1,0 +1,4 @@
+1) 60 keV, current settings (energy threshold 50 eV, length threshold 100 um), but with a log file of all the interaction as shown by Giovanni
+2) 60 keV,  energy threshold  set to 0 eV, length threshold unchanged (100 um), with log
+3) 60 keV, energy threshold  unchanged (50 eV), length threshold unchanged (0.1 um), with log
+4) 60 keV, energy threshold  set to 0 eV, length threshold unchanged (0.1 um), with log
