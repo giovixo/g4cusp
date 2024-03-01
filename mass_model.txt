@@ -1,7 +1,5 @@
-MASS MODEL RELEASE HISTORY
-Active release: CUSP_GEANT4_updates_20231208
-Old releases:
-CUSP_GEANT4_20231121 used from 2023-11-21 to 2023-12-14
+MASS MODEL RELEASE
+The code contain a given number on branches. A branch can corresponds to a given release of the mass model, as for example "20240223_mass_model", or to a specifit model, as for example "toy_model". All the reports are in the main branch. 
 
 IMPORTANT NOTE 
 All the mass model releases, provided by Giovanni Lombardi, are avaliable in mass_model_gdml directory 
