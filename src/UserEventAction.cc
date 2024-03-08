@@ -32,7 +32,8 @@ void UserEventAction::BeginOfEventAction(const G4Event* event) {
     {
         G4cout << "INFORMATION: event " << nEvent << " in progress..." << G4endl;
     }
-    
+    //G4cout << G4endl;
+    //G4cout << "---> Start of event: " << event -> GetEventID() << G4endl;
 }
 
 

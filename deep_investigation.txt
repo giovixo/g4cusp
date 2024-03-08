@@ -1,4 +1,19 @@
-1) 60 keV, current settings (energy threshold 50 eV, length threshold 100 um), but with a log file of all the interaction as shown by Giovanni
+1) 60 keV, current settings (energy threshold 50 eV, length threshold 100 um), but with a log file of
+ all the interaction (/tracking/verbose 2)
 2) 60 keV,  energy threshold  set to 0 eV, length threshold unchanged (100 um), with log
-3) 60 keV, energy threshold  unchanged (50 eV), length threshold unchanged (0.1 um), with log
-4) 60 keV, energy threshold  set to 0 eV, length threshold unchanged (0.1 um), with log
+3) 60 keV, energy threshold  unchanged (50 eV), length threshold changed (0.1 um), with log
+4) 60 keV, energy threshold  set to 0 eV, length threshold changed (0.1 um), with log
+
+Putting the energy threshold to zero (tests 2 and 4) does not make sense: with this option any photon is stored as an event also when it is not. See the screenshot and the test 2 directory. I suggest to set the energy threshold to a given low non zero value.
+
+The Google Drive test 3 directory also contains the following 10 milion simulations for either polarized and unpolarized photons.
+
+With an energy threshold setted to 50 eV:
+scorefile_10mil_60keV_pol.(fits or root)
+scorefile_10mil_60keV_unpol.(fits or root)
+
+With an energy threshold setted to 1 eV:
+scorefile_10mil_60keV_eth1eV_pol.(fits or root) 
+scorefile_10mil_60keV_eth1eV_unpol.(fits or root)
+
+For the all the above event files the radiation lenght is equal to 0.1 um

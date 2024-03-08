@@ -25,7 +25,8 @@ fDecPhysicsList(0)
 {
     SetVerboseLevel(0);
     // Default cut value  (1.0 mm is the Geant4 default)
-    defaultCutValue = 100*um;
+    //defaultCutValue = 100*um;
+    defaultCutValue = 0.1*um;
     
     // Decay physics and all particles
     fDecPhysicsList = new G4DecayPhysics(0);

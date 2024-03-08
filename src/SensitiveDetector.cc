@@ -82,7 +82,8 @@ G4bool SensitiveDetector::ProcessHits(G4Step* step, G4TouchableHistory* ROhist)
 
     // Retrieve the energy deposited from the step
     G4double energyDeposit = step -> GetTotalEnergyDeposit();
-    G4double energy_threshold = 0.05 * keV;
+    //G4double energy_threshold = 0.05 * keV;
+    G4double energy_threshold = 0.001 * keV;
     if (energyDeposit < energy_threshold) return false;
     
     G4Track* track = step -> GetTrack();
@@ -118,8 +119,8 @@ G4bool SensitiveDetector::ProcessHits(G4Step* step, G4TouchableHistory* ROhist)
     //G4String volumeNum = volumeName.substr(volumeName.size()-12, 3);
     G4String volumeNum = volumeName.substr(volumeName.size()-3, 3);
     G4int volumeNumber = std::stoi(volumeNum);
-    G4cout << "*** DEBUG *** volumeName: " << volumeName << " VolumeNum (str): " << volumeNum  <<  " VolumeNum (int): " << volumeNumber << G4endl;
-    G4cout << "*** DEBUG *** volume position (x, y, z of the center): " << x_center << " " << y_center << " " << z_center << G4endl;
+    //G4cout << "*** DEBUG *** volumeName: " << volumeName << " VolumeNum (str): " << volumeNum  <<  " VolumeNum (int): " << volumeNumber << G4endl;
+    //G4cout << "*** DEBUG *** volume position (x, y, z of the center): " << x_center << " " << y_center << " " << z_center << G4endl;
     
 
     G4int copyIDinX   =  volumeNumber;
