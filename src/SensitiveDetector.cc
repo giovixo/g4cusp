@@ -82,7 +82,8 @@ G4bool SensitiveDetector::ProcessHits(G4Step* step, G4TouchableHistory* ROhist)
 
     // Retrieve the energy deposited from the step
     G4double energyDeposit = step -> GetTotalEnergyDeposit();
-    G4double energy_threshold = 0.05 * keV;
+    //G4double energy_threshold = 0.05 * keV;
+    G4double energy_threshold = 0.005 * keV;
     if (energyDeposit < energy_threshold) return false;
     
     G4Track* track = step -> GetTrack();
