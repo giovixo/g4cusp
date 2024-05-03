@@ -301,8 +301,12 @@ void DetectorConstruction::DefineMaterials()
     FR4 -> AddMaterial(Epoxy_Resin,  fractionmass=40*perCent);
 
     // W with 90 % density (=0.9*19.3)
-    G4Material* W90 = new G4Material("W90", density = 17.37*g/cm3 *g/cm3, nel = 1);
+    G4Material* W90 = new G4Material("W90", density = 17.37*g/cm3, nel = 1);
     W90 -> AddElement(W, 100*perCent);
+
+    // Al with 10 % density (=0.1*2.699)
+    G4Material* Al10 = new G4Material("Al10", density = 0.2699*g/cm3, nel = 1);
+    Al10 -> AddElement(Al, 100*perCent);
     
     // Silicone (Dowsil 93-500, Polydimethylsiloxane C2H6OSi)
     G4Material* Silicone = new G4Material("Silicone", density = 1.08 *g/cm3, nel = 4);
