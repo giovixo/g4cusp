@@ -9,7 +9,7 @@ import ROOT
 if len(sys.argv) != 1:
     outfilename = sys.argv[1]
 else:
-    outfilename = "scorefile.root"
+    outfilename = "scorefile.root"#"scorefile.root"
 
 
 ROOT.gROOT.Reset()

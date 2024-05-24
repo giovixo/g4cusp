@@ -133,7 +133,7 @@ void UserRun::RecordEvent(const G4Event* event)
 	}
         
     // Record the event
-    G4cout << "---> (Record Event) End of event: " << event -> GetEventID() << G4endl;
+    //G4cout << "---> (Record Event) End of event: " << event -> GetEventID() << G4endl;
     G4Run::RecordEvent(event);
 }
 

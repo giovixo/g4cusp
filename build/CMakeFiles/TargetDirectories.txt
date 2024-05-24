@@ -1,7 +1,7 @@
-/Users/giovanni/dev/CUSP/g4cusp/build/CMakeFiles/cusp_gdml.dir
-/Users/giovanni/dev/CUSP/g4cusp/build/CMakeFiles/edit_cache.dir
-/Users/giovanni/dev/CUSP/g4cusp/build/CMakeFiles/rebuild_cache.dir
-/Users/giovanni/dev/CUSP/g4cusp/build/CMakeFiles/list_install_components.dir
-/Users/giovanni/dev/CUSP/g4cusp/build/CMakeFiles/install.dir
-/Users/giovanni/dev/CUSP/g4cusp/build/CMakeFiles/install/local.dir
-/Users/giovanni/dev/CUSP/g4cusp/build/CMakeFiles/install/strip.dir
+/home/sergio/Lavoro/GruppoPolarimetria/Missioni/CUSP/Sofware/g4cusp-20240502_mass_model/build/CMakeFiles/cusp_gdml.dir
+/home/sergio/Lavoro/GruppoPolarimetria/Missioni/CUSP/Sofware/g4cusp-20240502_mass_model/build/CMakeFiles/edit_cache.dir
+/home/sergio/Lavoro/GruppoPolarimetria/Missioni/CUSP/Sofware/g4cusp-20240502_mass_model/build/CMakeFiles/rebuild_cache.dir
+/home/sergio/Lavoro/GruppoPolarimetria/Missioni/CUSP/Sofware/g4cusp-20240502_mass_model/build/CMakeFiles/list_install_components.dir
+/home/sergio/Lavoro/GruppoPolarimetria/Missioni/CUSP/Sofware/g4cusp-20240502_mass_model/build/CMakeFiles/install.dir
+/home/sergio/Lavoro/GruppoPolarimetria/Missioni/CUSP/Sofware/g4cusp-20240502_mass_model/build/CMakeFiles/install/local.dir
+/home/sergio/Lavoro/GruppoPolarimetria/Missioni/CUSP/Sofware/g4cusp-20240502_mass_model/build/CMakeFiles/install/strip.dir

@@ -1,4 +1,4 @@
-# Install script for directory: /Users/giovanni/dev/CUSP/g4cusp
+# Install script for directory: /home/sergio/Lavoro/GruppoPolarimetria/Missioni/CUSP/Sofware/g4cusp-20240502_mass_model
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -27,6 +27,11 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -34,22 +39,31 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/objdump")
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin/Darwin-g++" TYPE EXECUTABLE FILES "/Users/giovanni/dev/CUSP/g4cusp/build/cusp_gdml")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Darwin-g++/cusp_gdml" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Darwin-g++/cusp_gdml")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/usr/local/lib"
-      -delete_rpath "/Users/giovanni/sw/geant4/geant4-v11.0.2-gdml-new-install/lib"
-      -delete_rpath "/Users/giovanni/miniconda3/lib"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Darwin-g++/cusp_gdml")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Darwin-g++/cusp_gdml"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin/Darwin-g++" TYPE EXECUTABLE FILES "/home/sergio/Lavoro/GruppoPolarimetria/Missioni/CUSP/Sofware/g4cusp-20240502_mass_model/build/cusp_gdml")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Darwin-g++/cusp_gdml" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Darwin-g++/cusp_gdml")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Darwin-g++/cusp_gdml"
+         OLD_RPATH "/usr/local/lib:/home/sergio/Lavoro/geant4-v11.2.0-install/lib:"
+         NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip" -u -r "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Darwin-g++/cusp_gdml")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Darwin-g++/cusp_gdml")
     endif()
   endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  include("/home/sergio/Lavoro/GruppoPolarimetria/Missioni/CUSP/Sofware/g4cusp-20240502_mass_model/build/CMakeFiles/cusp_gdml.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -60,5 +74,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/giovanni/dev/CUSP/g4cusp/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/sergio/Lavoro/GruppoPolarimetria/Missioni/CUSP/Sofware/g4cusp-20240502_mass_model/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -75,22 +75,22 @@
 		<auxiliary auxtype="Color" auxvalue="#00ff7b00"/>
 	</volume>
 	<volume name="MAPMT_01">
-		<materialref ref="G4_GLASS_PLATE"/>
+		<materialref ref="Al10"/>
 		<solidref ref="MAPMT__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#ff950000"/>
 	</volume>
 	<volume name="MAPMT_02">
-		<materialref ref="G4_GLASS_PLATE"/>
+		<materialref ref="Al10"/>
 		<solidref ref="MAPMT001__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#ff950000"/>
 	</volume>
 	<volume name="MAPMT_03">
-		<materialref ref="G4_GLASS_PLATE"/>
+		<materialref ref="Al10"/>
 		<solidref ref="MAPMT002__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#ff950000"/>
 	</volume>
 	<volume name="MAPMT_04">
-		<materialref ref="G4_GLASS_PLATE"/>
+		<materialref ref="Al10"/>
 		<solidref ref="MAPMT003__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#ff950000"/>
 	</volume>
@@ -185,22 +185,22 @@
 		<auxiliary auxtype="Color" auxvalue="#f500ff00"/>
 	</volume>
 	<volume name="PCB_APD_001">
-		<materialref ref="G4_POLYTRIFLUOROCHLOROETHYLENE"/>
+		<materialref ref="FR4"/>
 		<solidref ref="APD_PCB_baseline__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#f500ff00"/>
 	</volume>
 	<volume name="PCB_APD_002">
-		<materialref ref="G4_POLYTRIFLUOROCHLOROETHYLENE"/>
+		<materialref ref="FR4"/>
 		<solidref ref="APD_PCB_baseline001__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#f500ff00"/>
 	</volume>
 	<volume name="PCB_APD_003">
-		<materialref ref="G4_POLYTRIFLUOROCHLOROETHYLENE"/>
+		<materialref ref="FR4"/>
 		<solidref ref="APD_PCB_baseline002__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#f500ff00"/>
 	</volume>
 	<volume name="PCB_APD_004">
-		<materialref ref="G4_POLYTRIFLUOROCHLOROETHYLENE"/>
+		<materialref ref="FR4"/>
 		<solidref ref="APD_PCB_baseline003__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#f500ff00"/>
 	</volume>
@@ -225,7 +225,7 @@
 		<auxiliary auxtype="Color" auxvalue="#dc00ff00"/>
 	</volume>
 	<volume name="Scatterer_Collimator_001">
-		<materialref ref="G4_A-150_TISSUE"/>
+		<materialref ref="G4_W"/>
 		<solidref ref="Scatterer_Collimator__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
@@ -704,163 +704,163 @@
 		<solidref ref="Wrapping_Absorber4__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#e100ff00"/>
 	</volume>
-	<volume name="Absorber_001">
-		<materialref ref="G4_A-150_TISSUE"/>
+	<volume name="Absorber_101">
+		<materialref ref="GAGG"/>
 		<solidref ref="Absorber_1__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
-	<volume name="Absorber_002">
-		<materialref ref="G4_A-150_TISSUE"/>
+	<volume name="Absorber_102">
+		<materialref ref="GAGG"/>
 		<solidref ref="Absorber_2__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
-	<volume name="Absorber_003">
-		<materialref ref="G4_A-150_TISSUE"/>
+	<volume name="Absorber_103">
+		<materialref ref="GAGG"/>
 		<solidref ref="Absorber_3__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
-	<volume name="Absorber_004">
-		<materialref ref="G4_A-150_TISSUE"/>
+	<volume name="Absorber_104">
+		<materialref ref="GAGG"/>
 		<solidref ref="Absorber_4__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
-	<volume name="Absorber_005">
-		<materialref ref="G4_A-150_TISSUE"/>
+	<volume name="Absorber_105">
+		<materialref ref="GAGG"/>
 		<solidref ref="Absorber_5__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
-	<volume name="Absorber_006">
-		<materialref ref="G4_A-150_TISSUE"/>
+	<volume name="Absorber_106">
+		<materialref ref="GAGG"/>
 		<solidref ref="Absorber_6__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
-	<volume name="Absorber_007">
-		<materialref ref="G4_A-150_TISSUE"/>
+	<volume name="Absorber_107">
+		<materialref ref="GAGG"/>
 		<solidref ref="Absorber_7__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
-	<volume name="Absorber_008">
-		<materialref ref="G4_A-150_TISSUE"/>
+	<volume name="Absorber_108">
+		<materialref ref="GAGG"/>
 		<solidref ref="Absorber_8__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
-	<volume name="Absorber_009">
-		<materialref ref="G4_A-150_TISSUE"/>
+	<volume name="Absorber_109">
+		<materialref ref="GAGG"/>
 		<solidref ref="Absorber_9__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
-	<volume name="Absorber_010">
-		<materialref ref="G4_A-150_TISSUE"/>
+	<volume name="Absorber_110">
+		<materialref ref="GAGG"/>
 		<solidref ref="Absorber_10__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
-	<volume name="Absorber_011">
-		<materialref ref="G4_A-150_TISSUE"/>
+	<volume name="Absorber_111">
+		<materialref ref="GAGG"/>
 		<solidref ref="Absorber_11__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
-	<volume name="Absorber_012">
-		<materialref ref="G4_A-150_TISSUE"/>
+	<volume name="Absorber_112">
+		<materialref ref="GAGG"/>
 		<solidref ref="Absorber_12__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
-	<volume name="Absorber_013">
-		<materialref ref="G4_A-150_TISSUE"/>
+	<volume name="Absorber_113">
+		<materialref ref="GAGG"/>
 		<solidref ref="Absorber_13__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
-	<volume name="Absorber_014">
-		<materialref ref="G4_A-150_TISSUE"/>
+	<volume name="Absorber_114">
+		<materialref ref="GAGG"/>
 		<solidref ref="Absorber_14__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
-	<volume name="Absorber_015">
-		<materialref ref="G4_A-150_TISSUE"/>
+	<volume name="Absorber_115">
+		<materialref ref="GAGG"/>
 		<solidref ref="Absorber_15__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
-	<volume name="Absorber_016">
-		<materialref ref="G4_A-150_TISSUE"/>
+	<volume name="Absorber_116">
+		<materialref ref="GAGG"/>
 		<solidref ref="Absorber_16__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
-	<volume name="Absorber_017">
-		<materialref ref="G4_A-150_TISSUE"/>
+	<volume name="Absorber_117">
+		<materialref ref="GAGG"/>
 		<solidref ref="Absorber_17__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
-	<volume name="Absorber_018">
-		<materialref ref="G4_A-150_TISSUE"/>
+	<volume name="Absorber_118">
+		<materialref ref="GAGG"/>
 		<solidref ref="Absorber_18__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
-	<volume name="Absorber_019">
-		<materialref ref="G4_A-150_TISSUE"/>
+	<volume name="Absorber_119">
+		<materialref ref="GAGG"/>
 		<solidref ref="Absorber_19__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
-	<volume name="Absorber_020">
-		<materialref ref="G4_A-150_TISSUE"/>
+	<volume name="Absorber_120">
+		<materialref ref="GAGG"/>
 		<solidref ref="Absorber_20__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
-	<volume name="Absorber_021">
-		<materialref ref="G4_A-150_TISSUE"/>
+	<volume name="Absorber_121">
+		<materialref ref="GAGG"/>
 		<solidref ref="Absorber_21__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
-	<volume name="Absorber_022">
-		<materialref ref="G4_A-150_TISSUE"/>
+	<volume name="Absorber_122">
+		<materialref ref="GAGG"/>
 		<solidref ref="Absorber_22__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
-	<volume name="Absorber_023">
-		<materialref ref="G4_A-150_TISSUE"/>
+	<volume name="Absorber_123">
+		<materialref ref="GAGG"/>
 		<solidref ref="Absorber_23__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
-	<volume name="Absorber_024">
-		<materialref ref="G4_A-150_TISSUE"/>
+	<volume name="Absorber_124">
+		<materialref ref="GAGG"/>
 		<solidref ref="Absorber_24__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
-	<volume name="Absorber_025">
-		<materialref ref="G4_A-150_TISSUE"/>
+	<volume name="Absorber_125">
+		<materialref ref="GAGG"/>
 		<solidref ref="Absorber_25__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
-	<volume name="Absorber_026">
-		<materialref ref="G4_A-150_TISSUE"/>
+	<volume name="Absorber_126">
+		<materialref ref="GAGG"/>
 		<solidref ref="Absorber_26__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
-	<volume name="Absorber_027">
-		<materialref ref="G4_A-150_TISSUE"/>
+	<volume name="Absorber_127">
+		<materialref ref="GAGG"/>
 		<solidref ref="Absorber_27__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
-	<volume name="Absorber_028">
-		<materialref ref="G4_A-150_TISSUE"/>
+	<volume name="Absorber_128">
+		<materialref ref="GAGG"/>
 		<solidref ref="Absorber_28__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
-	<volume name="Absorber_029">
-		<materialref ref="G4_A-150_TISSUE"/>
+	<volume name="Absorber_129">
+		<materialref ref="GAGG"/>
 		<solidref ref="Absorber_29__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
-	<volume name="Absorber_030">
-		<materialref ref="G4_A-150_TISSUE"/>
+	<volume name="Absorber_130">
+		<materialref ref="GAGG"/>
 		<solidref ref="Absorber_30__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
-	<volume name="Absorber_031">
-		<materialref ref="G4_A-150_TISSUE"/>
+	<volume name="Absorber_131">
+		<materialref ref="GAGG"/>
 		<solidref ref="Absorber_31__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
-	<volume name="Absorber_032">
-		<materialref ref="G4_A-150_TISSUE"/>
+	<volume name="Absorber_132">
+		<materialref ref="GAGG"/>
 		<solidref ref="Absorber_32__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
@@ -1572,163 +1572,163 @@
 			<positionref ref="center"/>
 			<rotationref ref="identity"/>
 		</physvol>
-		<physvol name="PV-Absorber_001">
-			<volumeref ref="Absorber_001"/>
+		<physvol name="PV-Absorber_101">
+			<volumeref ref="Absorber_101"/>
 			<positionref ref="center"/>
 			<rotationref ref="identity"/>
 		</physvol>
-		<physvol name="PV-Absorber_002">
-			<volumeref ref="Absorber_002"/>
+		<physvol name="PV-Absorber_102">
+			<volumeref ref="Absorber_102"/>
 			<positionref ref="center"/>
 			<rotationref ref="identity"/>
 		</physvol>
-		<physvol name="PV-Absorber_003">
-			<volumeref ref="Absorber_003"/>
+		<physvol name="PV-Absorber_103">
+			<volumeref ref="Absorber_103"/>
 			<positionref ref="center"/>
 			<rotationref ref="identity"/>
 		</physvol>
-		<physvol name="PV-Absorber_004">
-			<volumeref ref="Absorber_004"/>
+		<physvol name="PV-Absorber_104">
+			<volumeref ref="Absorber_104"/>
 			<positionref ref="center"/>
 			<rotationref ref="identity"/>
 		</physvol>
-		<physvol name="PV-Absorber_005">
-			<volumeref ref="Absorber_005"/>
+		<physvol name="PV-Absorber_105">
+			<volumeref ref="Absorber_105"/>
 			<positionref ref="center"/>
 			<rotationref ref="identity"/>
 		</physvol>
-		<physvol name="PV-Absorber_006">
-			<volumeref ref="Absorber_006"/>
+		<physvol name="PV-Absorber_106">
+			<volumeref ref="Absorber_106"/>
 			<positionref ref="center"/>
 			<rotationref ref="identity"/>
 		</physvol>
-		<physvol name="PV-Absorber_007">
-			<volumeref ref="Absorber_007"/>
+		<physvol name="PV-Absorber_107">
+			<volumeref ref="Absorber_107"/>
 			<positionref ref="center"/>
 			<rotationref ref="identity"/>
 		</physvol>
-		<physvol name="PV-Absorber_008">
-			<volumeref ref="Absorber_008"/>
+		<physvol name="PV-Absorber_108">
+			<volumeref ref="Absorber_108"/>
 			<positionref ref="center"/>
 			<rotationref ref="identity"/>
 		</physvol>
-		<physvol name="PV-Absorber_009">
-			<volumeref ref="Absorber_009"/>
+		<physvol name="PV-Absorber_109">
+			<volumeref ref="Absorber_109"/>
 			<positionref ref="center"/>
 			<rotationref ref="identity"/>
 		</physvol>
-		<physvol name="PV-Absorber_010">
-			<volumeref ref="Absorber_010"/>
+		<physvol name="PV-Absorber_110">
+			<volumeref ref="Absorber_110"/>
 			<positionref ref="center"/>
 			<rotationref ref="identity"/>
 		</physvol>
-		<physvol name="PV-Absorber_011">
-			<volumeref ref="Absorber_011"/>
+		<physvol name="PV-Absorber_111">
+			<volumeref ref="Absorber_111"/>
 			<positionref ref="center"/>
 			<rotationref ref="identity"/>
 		</physvol>
-		<physvol name="PV-Absorber_012">
-			<volumeref ref="Absorber_012"/>
+		<physvol name="PV-Absorber_112">
+			<volumeref ref="Absorber_112"/>
 			<positionref ref="center"/>
 			<rotationref ref="identity"/>
 		</physvol>
-		<physvol name="PV-Absorber_013">
-			<volumeref ref="Absorber_013"/>
+		<physvol name="PV-Absorber_113">
+			<volumeref ref="Absorber_113"/>
 			<positionref ref="center"/>
 			<rotationref ref="identity"/>
 		</physvol>
-		<physvol name="PV-Absorber_014">
-			<volumeref ref="Absorber_014"/>
+		<physvol name="PV-Absorber_114">
+			<volumeref ref="Absorber_114"/>
 			<positionref ref="center"/>
 			<rotationref ref="identity"/>
 		</physvol>
-		<physvol name="PV-Absorber_015">
-			<volumeref ref="Absorber_015"/>
+		<physvol name="PV-Absorber_115">
+			<volumeref ref="Absorber_115"/>
 			<positionref ref="center"/>
 			<rotationref ref="identity"/>
 		</physvol>
-		<physvol name="PV-Absorber_016">
-			<volumeref ref="Absorber_016"/>
+		<physvol name="PV-Absorber_116">
+			<volumeref ref="Absorber_116"/>
 			<positionref ref="center"/>
 			<rotationref ref="identity"/>
 		</physvol>
-		<physvol name="PV-Absorber_017">
-			<volumeref ref="Absorber_017"/>
+		<physvol name="PV-Absorber_117">
+			<volumeref ref="Absorber_117"/>
 			<positionref ref="center"/>
 			<rotationref ref="identity"/>
 		</physvol>
-		<physvol name="PV-Absorber_018">
-			<volumeref ref="Absorber_018"/>
+		<physvol name="PV-Absorber_118">
+			<volumeref ref="Absorber_118"/>
 			<positionref ref="center"/>
 			<rotationref ref="identity"/>
 		</physvol>
-		<physvol name="PV-Absorber_019">
-			<volumeref ref="Absorber_019"/>
+		<physvol name="PV-Absorber_119">
+			<volumeref ref="Absorber_119"/>
 			<positionref ref="center"/>
 			<rotationref ref="identity"/>
 		</physvol>
-		<physvol name="PV-Absorber_020">
-			<volumeref ref="Absorber_020"/>
+		<physvol name="PV-Absorber_120">
+			<volumeref ref="Absorber_120"/>
 			<positionref ref="center"/>
 			<rotationref ref="identity"/>
 		</physvol>
-		<physvol name="PV-Absorber_021">
-			<volumeref ref="Absorber_021"/>
+		<physvol name="PV-Absorber_121">
+			<volumeref ref="Absorber_121"/>
 			<positionref ref="center"/>
 			<rotationref ref="identity"/>
 		</physvol>
-		<physvol name="PV-Absorber_022">
-			<volumeref ref="Absorber_022"/>
+		<physvol name="PV-Absorber_122">
+			<volumeref ref="Absorber_122"/>
 			<positionref ref="center"/>
 			<rotationref ref="identity"/>
 		</physvol>
-		<physvol name="PV-Absorber_023">
-			<volumeref ref="Absorber_023"/>
+		<physvol name="PV-Absorber_123">
+			<volumeref ref="Absorber_123"/>
 			<positionref ref="center"/>
 			<rotationref ref="identity"/>
 		</physvol>
-		<physvol name="PV-Absorber_024">
-			<volumeref ref="Absorber_024"/>
+		<physvol name="PV-Absorber_124">
+			<volumeref ref="Absorber_124"/>
 			<positionref ref="center"/>
 			<rotationref ref="identity"/>
 		</physvol>
-		<physvol name="PV-Absorber_025">
-			<volumeref ref="Absorber_025"/>
+		<physvol name="PV-Absorber_125">
+			<volumeref ref="Absorber_125"/>
 			<positionref ref="center"/>
 			<rotationref ref="identity"/>
 		</physvol>
-		<physvol name="PV-Absorber_026">
-			<volumeref ref="Absorber_026"/>
+		<physvol name="PV-Absorber_126">
+			<volumeref ref="Absorber_126"/>
 			<positionref ref="center"/>
 			<rotationref ref="identity"/>
 		</physvol>
-		<physvol name="PV-Absorber_027">
-			<volumeref ref="Absorber_027"/>
+		<physvol name="PV-Absorber_127">
+			<volumeref ref="Absorber_127"/>
 			<positionref ref="center"/>
 			<rotationref ref="identity"/>
 		</physvol>
-		<physvol name="PV-Absorber_028">
-			<volumeref ref="Absorber_028"/>
+		<physvol name="PV-Absorber_128">
+			<volumeref ref="Absorber_128"/>
 			<positionref ref="center"/>
 			<rotationref ref="identity"/>
 		</physvol>
-		<physvol name="PV-Absorber_029">
-			<volumeref ref="Absorber_029"/>
+		<physvol name="PV-Absorber_129">
+			<volumeref ref="Absorber_129"/>
 			<positionref ref="center"/>
 			<rotationref ref="identity"/>
 		</physvol>
-		<physvol name="PV-Absorber_030">
-			<volumeref ref="Absorber_030"/>
+		<physvol name="PV-Absorber_130">
+			<volumeref ref="Absorber_130"/>
 			<positionref ref="center"/>
 			<rotationref ref="identity"/>
 		</physvol>
-		<physvol name="PV-Absorber_031">
-			<volumeref ref="Absorber_031"/>
+		<physvol name="PV-Absorber_131">
+			<volumeref ref="Absorber_131"/>
 			<positionref ref="center"/>
 			<rotationref ref="identity"/>
 		</physvol>
-		<physvol name="PV-Absorber_032">
-			<volumeref ref="Absorber_032"/>
+		<physvol name="PV-Absorber_132">
+			<volumeref ref="Absorber_132"/>
 			<positionref ref="center"/>
 			<rotationref ref="identity"/>
 		</physvol>
