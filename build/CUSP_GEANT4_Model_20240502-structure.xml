@@ -1,76 +1,76 @@
 <structure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<volume name="PCB_ext_01">
-		<materialref ref="G4_POLYTRIFLUOROCHLOROETHYLENE"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="PCB_ext_CUSP__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#f500ff00"/>
 	</volume>
 	<volume name="PCB_ext_04">
-		<materialref ref="G4_POLYTRIFLUOROCHLOROETHYLENE"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="PCB_ext_CUSP001__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#f500ff00"/>
 	</volume>
 	<volume name="PCB_ext_03">
-		<materialref ref="G4_POLYTRIFLUOROCHLOROETHYLENE"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="PCB_ext_CUSP002__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#f500ff00"/>
 	</volume>
 	<volume name="PCB_ext_02">
-		<materialref ref="G4_POLYTRIFLUOROCHLOROETHYLENE"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="PCB_ext_CUSP003__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#f500ff00"/>
 	</volume>
 	<volume name="IF_Payload_Truss_01">
-		<materialref ref="G4_Al"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="IF_Payload_Truss__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ff7b00"/>
 	</volume>
 	<volume name="IF_Payload_Truss_02">
-		<materialref ref="G4_Al"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="IF_Payload_Truss001__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ff7b00"/>
 	</volume>
 	<volume name="Top_Lid">
-		<materialref ref="G4_Al"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Top_Lid__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ff7b00"/>
 	</volume>
 	<volume name="Detector_Frame">
-		<materialref ref="G4_Al"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Detector_Frame__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ff7b00"/>
 	</volume>
 	<volume name="Bottom_Lid">
-		<materialref ref="G4_Al"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Bottom_Lid__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ff7b00"/>
 	</volume>
 	<volume name="Scintillator_Frame">
-		<materialref ref="G4_PLEXIGLASS"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Scintillator_Frame__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#9100ff00"/>
 	</volume>
 	<volume name="Collimator_frame">
-		<materialref ref="G4_Al"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Top_Collimator_frame__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ff7b00"/>
 	</volume>
 	<volume name="Ext_Panel_01">
-		<materialref ref="G4_Al"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="CUSP_ext_panel__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ff7b00"/>
 	</volume>
 	<volume name="Ext_Panel_02">
-		<materialref ref="G4_Al"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="CUSP_ext_panel2__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ff7b00"/>
 	</volume>
 	<volume name="Ext_Panel_03">
-		<materialref ref="G4_Al"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="CUSP_ext_panel003__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ff7b00"/>
 	</volume>
 	<volume name="Ext_Panel_04">
-		<materialref ref="G4_Al"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="CUSP_ext_panel004__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ff7b00"/>
 	</volume>
@@ -95,272 +95,272 @@
 		<auxiliary auxtype="Color" auxvalue="#ff950000"/>
 	</volume>
 	<volume name="PCB_board">
-		<materialref ref="G4_POLYTRIFLUOROCHLOROETHYLENE"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="PCB_board__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#f500ff00"/>
 	</volume>
 	<volume name="PCB_board_MAPMT">
-		<materialref ref="G4_POLYTRIFLUOROCHLOROETHYLENE"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="PCB_board_MAPMT__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#f500ff00"/>
 	</volume>
 	<volume name="Column_001">
-		<materialref ref="G4_Al"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Column__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ff7b00"/>
 	</volume>
 	<volume name="Column_002">
-		<materialref ref="G4_Al"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Column001__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ff7b00"/>
 	</volume>
 	<volume name="Column_003">
-		<materialref ref="G4_Al"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Column2__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ff7b00"/>
 	</volume>
 	<volume name="Column_004">
-		<materialref ref="G4_Al"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Column002__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ff7b00"/>
 	</volume>
 	<volume name="Spacer_001">
-		<materialref ref="G4_Al"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="spacer__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ff7b00"/>
 	</volume>
 	<volume name="Spacer_002">
-		<materialref ref="G4_Al"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="spacer2__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ff7b00"/>
 	</volume>
 	<volume name="Spacer_003">
-		<materialref ref="G4_Al"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="spacer003__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ff7b00"/>
 	</volume>
 	<volume name="Spacer_004">
-		<materialref ref="G4_Al"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="spacer004__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ff7b00"/>
 	</volume>
 	<volume name="Spacer_005">
-		<materialref ref="G4_Al"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="spacer005__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ff7b00"/>
 	</volume>
 	<volume name="Spacer_006">
-		<materialref ref="G4_Al"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="spacer006__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ff7b00"/>
 	</volume>
 	<volume name="Spacer_007">
-		<materialref ref="G4_Al"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="spacer007__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ff7b00"/>
 	</volume>
 	<volume name="Spacer_008">
-		<materialref ref="G4_Al"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="spacer008__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ff7b00"/>
 	</volume>
 	<volume name="PCB_APD_sensor_001">
-		<materialref ref="G4_POLYTRIFLUOROCHLOROETHYLENE"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="APD_sensor_pcb__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#f500ff00"/>
 	</volume>
 	<volume name="PCB_APD_sensor_002">
-		<materialref ref="G4_POLYTRIFLUOROCHLOROETHYLENE"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="APD_sensor_pcb001__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#f500ff00"/>
 	</volume>
 	<volume name="PCB_APD_sensor_003">
-		<materialref ref="G4_POLYTRIFLUOROCHLOROETHYLENE"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="APD_sensor_pcb002__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#f500ff00"/>
 	</volume>
 	<volume name="PCB_APD_sensor_004">
-		<materialref ref="G4_POLYTRIFLUOROCHLOROETHYLENE"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="APD_sensor_pcb003__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#f500ff00"/>
 	</volume>
 	<volume name="PCB_APD_001">
-		<materialref ref="FR4"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="APD_PCB_baseline__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#f500ff00"/>
 	</volume>
 	<volume name="PCB_APD_002">
-		<materialref ref="FR4"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="APD_PCB_baseline001__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#f500ff00"/>
 	</volume>
 	<volume name="PCB_APD_003">
-		<materialref ref="FR4"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="APD_PCB_baseline002__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#f500ff00"/>
 	</volume>
 	<volume name="PCB_APD_004">
-		<materialref ref="FR4"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="APD_PCB_baseline003__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#f500ff00"/>
 	</volume>
 	<volume name="Absorber_Collimator_001">
-		<materialref ref="G4_W"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Absorber_Collimator__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#dc00ff00"/>
 	</volume>
 	<volume name="Absorber_Collimator_002">
-		<materialref ref="G4_W"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Absorber_Collimator001__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#dc00ff00"/>
 	</volume>
 	<volume name="Absorber_Collimator_003">
-		<materialref ref="G4_W"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Absorber_Collimator002__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#dc00ff00"/>
 	</volume>
 	<volume name="Absorber_Collimator_004">
-		<materialref ref="G4_W"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Absorber_Collimator003__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#dc00ff00"/>
 	</volume>
 	<volume name="Scatterer_Collimator_001">
-		<materialref ref="G4_W"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Scatterer_Collimator__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#80808000"/>
 	</volume>
 	<volume name="Scatterer_Collimator_002">
-		<materialref ref="G4_W"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Scatterer_Collimator001__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#dc00ff00"/>
 	</volume>
 	<volume name="Scatterer_Collimator_003">
-		<materialref ref="G4_W"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Scatterer_Collimator002__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#dc00ff00"/>
 	</volume>
 	<volume name="Scatterer_Collimator_004">
-		<materialref ref="G4_W"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Scatterer_Collimator003__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#dc00ff00"/>
 	</volume>
 	<volume name="Scatterer_Filter_Al_001">
-		<materialref ref="G4_Al"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Scatterer_Filter_Al__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ff7b00"/>
 	</volume>
 	<volume name="Scatterer_Filter_Al_002">
-		<materialref ref="G4_Al"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Scatterer_Filter_Al2__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ff7b00"/>
 	</volume>
 	<volume name="Scatterer_Filter_Al_003">
-		<materialref ref="G4_Al"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Scatterer_Filter_Al3__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ff7b00"/>
 	</volume>
 	<volume name="Scatterer_Filter_Al_004">
-		<materialref ref="G4_Al"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Scatterer_Filter_Al4__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ff7b00"/>
 	</volume>
 	<volume name="Scatterer_Filter_Ti_001">
-		<materialref ref="G4_Ti"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Scatterer_Filter_Ti__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ffd400"/>
 	</volume>
 	<volume name="Scatterer_Filter_Ti_002">
-		<materialref ref="G4_Ti"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Scatterer_Filter_Ti2__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ffd400"/>
 	</volume>
 	<volume name="Scatterer_Filter_Ti_003">
-		<materialref ref="G4_Ti"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Scatterer_Filter_Ti3__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ffd400"/>
 	</volume>
 	<volume name="Scatterer_Filter_Ti_004">
-		<materialref ref="G4_Ti"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Scatterer_Filter_Ti4__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ffd400"/>
 	</volume>
 	<volume name="Absorber_filter_Al_001">
-		<materialref ref="G4_Al"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Absorber_filter_Al__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ff7b00"/>
 	</volume>
 	<volume name="Absorber_filter_Ti_001">
-		<materialref ref="G4_Ti"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Absorber_filter_Ti__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ffd400"/>
 	</volume>
 	<volume name="Absorber_filter_W_001">
-		<materialref ref="G4_W"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Absorber_filter_W__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#dc00ff00"/>
 	</volume>
 	<volume name="Absorber_filter_Al_002">
-		<materialref ref="G4_Al"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Absorber_filter_Al2__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ff7b00"/>
 	</volume>
 	<volume name="Absorber_filter_Ti_002">
-		<materialref ref="G4_Ti"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Absorber_filter_Ti2__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ffd400"/>
 	</volume>
 	<volume name="Absorber_filter_W_002">
-		<materialref ref="G4_W"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Absorber_filter_W2__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#dc00ff00"/>
 	</volume>
 	<volume name="Absorber_filter_Al_003">
-		<materialref ref="G4_Al"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Absorber_filter_Al3__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ff7b00"/>
 	</volume>
 	<volume name="Absorber_filter_Ti_003">
-		<materialref ref="G4_Ti"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Absorber_filter_Ti3__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ffd400"/>
 	</volume>
 	<volume name="Absorber_filter_W_003">
-		<materialref ref="G4_W"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Absorber_filter_W3__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#dc00ff00"/>
 	</volume>
 	<volume name="Absorber_filter_Al_004">
-		<materialref ref="G4_Al"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Absorber_filter_Al4__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ff7b00"/>
 	</volume>
 	<volume name="Absorber_filter_Ti_004">
-		<materialref ref="G4_Ti"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Absorber_filter_Ti4__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#00ffd400"/>
 	</volume>
 	<volume name="Absorber_filter_W_004">
-		<materialref ref="G4_W"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Absorber_filter_W4__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#dc00ff00"/>
 	</volume>
 	<volume name="Wrapping_Scatterer_001">
-		<materialref ref="G4_TEFLON"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Wrapping_Scatterer__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#e100ff00"/>
 	</volume>
 	<volume name="Wrapping_Scatterer_002">
-		<materialref ref="G4_TEFLON"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Wrapping_Scatterer2__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#e100ff00"/>
 	</volume>
 	<volume name="Wrapping_Scatterer_003">
-		<materialref ref="G4_TEFLON"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Wrapping_Scatterer3__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#e100ff00"/>
 	</volume>
 	<volume name="Wrapping_Scatterer_004">
-		<materialref ref="G4_TEFLON"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Wrapping_Scatterer4__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#e100ff00"/>
 	</volume>
@@ -685,22 +685,22 @@
 		<auxiliary auxtype="Color" auxvalue="#0600ff00"/>
 	</volume>
 	<volume name="Wrapping_Absorber_001">
-		<materialref ref="G4_TEFLON"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Wrapping_Absorber__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#e100ff00"/>
 	</volume>
 	<volume name="Wrapping_Absorber_002">
-		<materialref ref="G4_TEFLON"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Wrapping_Absorber2__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#e100ff00"/>
 	</volume>
 	<volume name="Wrapping_Absorber_003">
-		<materialref ref="G4_TEFLON"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Wrapping_Absorber3__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#e100ff00"/>
 	</volume>
 	<volume name="Wrapping_Absorber_004">
-		<materialref ref="G4_TEFLON"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="Wrapping_Absorber4__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#e100ff00"/>
 	</volume>
