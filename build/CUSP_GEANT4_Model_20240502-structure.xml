@@ -75,22 +75,22 @@
 		<auxiliary auxtype="Color" auxvalue="#00ff7b00"/>
 	</volume>
 	<volume name="MAPMT_01">
-		<materialref ref="Al10"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="MAPMT__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#ff950000"/>
 	</volume>
 	<volume name="MAPMT_02">
-		<materialref ref="Al10"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="MAPMT001__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#ff950000"/>
 	</volume>
 	<volume name="MAPMT_03">
-		<materialref ref="Al10"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="MAPMT002__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#ff950000"/>
 	</volume>
 	<volume name="MAPMT_04">
-		<materialref ref="Al10"/>
+		<materialref ref="G4_Galactic"/>
 		<solidref ref="MAPMT003__Meshed"/>
 		<auxiliary auxtype="Color" auxvalue="#ff950000"/>
 	</volume>
