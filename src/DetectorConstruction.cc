@@ -146,6 +146,9 @@ DetectorConstruction::DetectorConstruction()
     scint63_log(0),
     experimentalHall_phys(0)
 {
+    // User messanger
+    // fMessenger = new G4GenericMessenger(this, "/parameters/", "Output file name");
+    // fMessenger->DeclareProperty("filename", file_name, "Name of the output file");
 
 	// Define the materials
 	DefineMaterials();

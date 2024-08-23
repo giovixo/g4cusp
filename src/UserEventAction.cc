@@ -27,10 +27,10 @@ UserEventAction::~UserEventAction()
 void UserEventAction::BeginOfEventAction(const G4Event* event) {
     // This method specifies the actions that must be performed at the
     // beginning of each event.
-    G4int nEvent = event -> GetEventID();
-    if(!(nEvent % 100000))
+    G4int nEvent = event -> GetEventID()+1;
+    if(!(nEvent % 10000))
     {
-        G4cout << "INFORMATION: event " << nEvent << " in progress..." << G4endl;
+        G4cout << "INFORMATION: event number " << nEvent << G4endl;
     }
     
 }
@@ -46,7 +46,7 @@ void UserEventAction::EndOfEventAction(const G4Event* event) {
     G4int nmbEvents = (event -> GetEventID()) + 1;
     
     // The average CPU time is printed if a run has at least 10000 events
-    if(!(nmbEvents % 10000))
+    if(!(nmbEvents % 100000))
     {
         G4cout << "INFORMATION: " << nmbEvents << " events processed." << G4endl;
     }

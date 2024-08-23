@@ -9,7 +9,7 @@
 #include "ConfigFile.hh"
 // Change this header if you want different AnalysisManager output (e.g. XML)
 //#include "g4root.hh"
-#include "G4AnalysisManager.hh"
+//#include "G4AnalysisManager.hh"
 
 #include <fstream>
 #include <vector>
@@ -35,6 +35,20 @@ void UserRunAction::BeginOfRunAction(const G4Run* run)
     // Notice: it must be done the same way in master and workers
     G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
     analysisManager->SetVerboseLevel(1);
+    analysisManager->SetNtupleMerging(true);
+
+
+    // Open the output file name
+    G4String fileName = analysisManager->GetFileName();
+    if (!fileName.empty()) {
+        G4cout << "Output file: " << fileName << G4endl;
+        analysisManager->OpenFile(fileName);
+    } else {
+        G4cout << "Output file: " << "scorefile.root" << G4endl;
+        analysisManager->OpenFile("scorefile.root");
+    }
+
+    analysisManager->SetVerboseLevel(1);
     analysisManager->SetFirstNtupleId(1);
     // Ntuple merging (only for Geant v. 4.10.03 or higher)
     analysisManager->SetNtupleMerging(true);
@@ -57,8 +71,6 @@ void UserRunAction::BeginOfRunAction(const G4Run* run)
     analysisManager->CreateNtupleDColumn("Y_Pol");
     analysisManager->CreateNtupleDColumn("Z_Pol");
     analysisManager->FinishNtuple();
-    
-    analysisManager->OpenFile("scorefile.root");
     
     
     if(IsMaster())

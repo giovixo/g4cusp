@@ -8,6 +8,7 @@ class SensitiveDetector;
 class G4VPVParameterisation;
 
 #include "G4VUserDetectorConstruction.hh"
+#include "G4GenericMessenger.hh"
 
 // Mandatory user class that defines the detector used in the
 // simulation, its geometry and its materials.
@@ -29,6 +30,8 @@ class DetectorConstruction : public G4VUserDetectorConstruction
         void DefineMaterials();
         // Method to read the values of parameters from file
         void DefineParameters();
+        // My messanger
+        G4GenericMessenger *fMessenger;
 
 	public:
 		// Get methods
@@ -40,6 +43,10 @@ class DetectorConstruction : public G4VUserDetectorConstruction
 
 
 	private:
+        // Outout (root) file name
+        G4String file_name;
+
+
 		// Logical volumes
 		G4LogicalVolume* experimentalHall_log;
     

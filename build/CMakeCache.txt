@@ -232,7 +232,7 @@ Fontconfig_INCLUDE_DIR:PATH=/usr/local/Cellar/fontconfig/2.14.2/include
 Fontconfig_LIBRARY:FILEPATH=/usr/local/lib/libfontconfig.dylib
 
 //The directory containing a CMake configuration file for Geant4.
-Geant4_DIR:PATH=/Users/giovanni/sw/geant4/geant4-v11.0.2-gdml-new-install/lib/Geant4-11.0.2
+Geant4_DIR:PATH=/Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/lib/Geant4-11.0.2
 
 //Include for OpenGL on OS X
 OPENGL_INCLUDE_DIR:PATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/OpenGL.framework
@@ -250,34 +250,13 @@ PKG_CONFIG_ARGN:STRING=
 PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/local/bin/pkg-config
 
 //The directory containing a CMake configuration file for PTL.
-PTL_DIR:PATH=/Users/giovanni/sw/geant4/geant4-v11.0.2-gdml-new-install/lib/Geant4-11.0.2/PTL
-
-//The directory containing a CMake configuration file for Qt53DCore.
-Qt53DCore_DIR:PATH=/Users/giovanni/miniconda3/lib/cmake/Qt53DCore
-
-//The directory containing a CMake configuration file for Qt53DExtras.
-Qt53DExtras_DIR:PATH=/Users/giovanni/miniconda3/lib/cmake/Qt53DExtras
-
-//The directory containing a CMake configuration file for Qt53DInput.
-Qt53DInput_DIR:PATH=/Users/giovanni/miniconda3/lib/cmake/Qt53DInput
-
-//The directory containing a CMake configuration file for Qt53DLogic.
-Qt53DLogic_DIR:PATH=/Users/giovanni/miniconda3/lib/cmake/Qt53DLogic
-
-//The directory containing a CMake configuration file for Qt53DRender.
-Qt53DRender_DIR:PATH=/Users/giovanni/miniconda3/lib/cmake/Qt53DRender
+PTL_DIR:PATH=/Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/lib/Geant4-11.0.2/PTL
 
 //The directory containing a CMake configuration file for Qt5Core.
 Qt5Core_DIR:PATH=/Users/giovanni/miniconda3/lib/cmake/Qt5Core
 
-//The directory containing a CMake configuration file for Qt5Gamepad.
-Qt5Gamepad_DIR:PATH=/Users/giovanni/miniconda3/lib/cmake/Qt5Gamepad
-
 //The directory containing a CMake configuration file for Qt5Gui.
 Qt5Gui_DIR:PATH=/Users/giovanni/miniconda3/lib/cmake/Qt5Gui
-
-//The directory containing a CMake configuration file for Qt5Network.
-Qt5Network_DIR:PATH=/Users/giovanni/miniconda3/lib/cmake/Qt5Network
 
 //The directory containing a CMake configuration file for Qt5OpenGL.
 Qt5OpenGL_DIR:PATH=/Users/giovanni/miniconda3/lib/cmake/Qt5OpenGL
@@ -712,7 +691,7 @@ EXPAT_LIBRARY-ADVANCED:INTERNAL=1
 //Details about finding EXPAT
 FIND_PACKAGE_MESSAGE_DETAILS_EXPAT:INTERNAL=[/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/lib/libexpat.tbd][/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include][v2.4.1(2.4.1)]
 //Details about finding Geant4
-FIND_PACKAGE_MESSAGE_DETAILS_Geant4:INTERNAL=[/Users/giovanni/sw/geant4/geant4-v11.0.2-gdml-new-install/lib/Geant4-11.0.2/Geant4Config.cmake][v11.0.2()]
+FIND_PACKAGE_MESSAGE_DETAILS_Geant4:INTERNAL=[/Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/lib/Geant4-11.0.2/Geant4Config.cmake][v11.0.2()]
 //Details about finding OpenGL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/OpenGL.framework][/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/OpenGL.framework][c ][v()]
 //Details about finding Threads

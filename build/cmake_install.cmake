@@ -43,7 +43,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Darwin-g++/cusp_gdml")
     execute_process(COMMAND /usr/bin/install_name_tool
       -delete_rpath "/usr/local/lib"
-      -delete_rpath "/Users/giovanni/sw/geant4/geant4-v11.0.2-gdml-new-install/lib"
+      -delete_rpath "/Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/lib"
       -delete_rpath "/Users/giovanni/miniconda3/lib"
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Darwin-g++/cusp_gdml")
     if(CMAKE_INSTALL_DO_STRIP)

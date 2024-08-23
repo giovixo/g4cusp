@@ -3,6 +3,9 @@
 /vis/viewer/set/auxiliaryEdge true
 /vis/viewer/set/lineSegmentsPerCircle 100
 
+# Define the file name
+# /parameters/filename "output.root"
+
 # Define the primary particle (photon)
 /gps/particle gamma
 /gps/energy 60 keV

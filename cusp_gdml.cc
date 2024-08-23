@@ -17,11 +17,14 @@
 #include "UserRunAction.hh"
 #include "UserEventAction.hh"
 
+#include "G4GenericMessenger.hh"
+
 
 
 
 int main(int argc, char **argv)
 {
+
 //    G4Random::setTheEngine(new CLHEP::RanecuEngine);
 //    G4Random::setTheSeed(time(0));
     
@@ -35,7 +38,7 @@ int main(int argc, char **argv)
     // Construct the run manager
 #ifdef G4MULTITHREADED
     G4MTRunManager * runManager = new G4MTRunManager;
-    runManager->SetNumberOfThreads(1);
+    runManager->SetNumberOfThreads(6);
 #else
     G4RunManager * runManager = new G4RunManager;
 #endif
