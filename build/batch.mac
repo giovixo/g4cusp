@@ -29,4 +29,4 @@
 /gps/pos/rot1 0 0 1
 /gps/pos/rot2 0 1 0
 
-/run/beamOn 200000
+/run/beamOn 10

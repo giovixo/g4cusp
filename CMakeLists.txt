@@ -48,6 +48,10 @@ file(COPY ${GDML_FILES} DESTINATION ${PROJECT_BINARY_DIR})
 add_executable(cusp_gdml cusp_gdml.cc ${sources} ${headers})
 target_link_libraries(cusp_gdml ${Geant4_LIBRARIES})
 
+#----------------------------------------------------------------------------
+# Enable the DEBUG directive for this target
+#
+target_compile_definitions(cusp_gdml PRIVATE DEBUG)
 
 #----------------------------------------------------------------------------
 # Install the executable to 'bin/Darwin-g++' directory under CMAKE_INSTALL_PREFIX
