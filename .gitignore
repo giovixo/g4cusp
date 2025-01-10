@@ -32,7 +32,7 @@
 *.app
 
 # Some stuff
-#build
+build
 results
 gdml_backup
 .DS_Store

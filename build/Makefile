@@ -438,6 +438,30 @@ src/UserRunAction.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cusp_gdml.dir/build.make CMakeFiles/cusp_gdml.dir/src/UserRunAction.cc.s
 .PHONY : src/UserRunAction.cc.s
 
+src/WriteToFile.o: src/WriteToFile.cc.o
+.PHONY : src/WriteToFile.o
+
+# target to build an object file
+src/WriteToFile.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cusp_gdml.dir/build.make CMakeFiles/cusp_gdml.dir/src/WriteToFile.cc.o
+.PHONY : src/WriteToFile.cc.o
+
+src/WriteToFile.i: src/WriteToFile.cc.i
+.PHONY : src/WriteToFile.i
+
+# target to preprocess a source file
+src/WriteToFile.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cusp_gdml.dir/build.make CMakeFiles/cusp_gdml.dir/src/WriteToFile.cc.i
+.PHONY : src/WriteToFile.cc.i
+
+src/WriteToFile.s: src/WriteToFile.cc.s
+.PHONY : src/WriteToFile.s
+
+# target to generate assembly for a file
+src/WriteToFile.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cusp_gdml.dir/build.make CMakeFiles/cusp_gdml.dir/src/WriteToFile.cc.s
+.PHONY : src/WriteToFile.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -484,6 +508,9 @@ help:
 	@echo "... src/UserRunAction.o"
 	@echo "... src/UserRunAction.i"
 	@echo "... src/UserRunAction.s"
+	@echo "... src/WriteToFile.o"
+	@echo "... src/WriteToFile.i"
+	@echo "... src/WriteToFile.s"
 .PHONY : help
 
 

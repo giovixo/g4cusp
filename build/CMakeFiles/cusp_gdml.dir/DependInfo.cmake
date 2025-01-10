@@ -19,6 +19,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/giovanni/dev/CUSP/g4cusp/src/UserEventAction.cc" "CMakeFiles/cusp_gdml.dir/src/UserEventAction.cc.o" "gcc" "CMakeFiles/cusp_gdml.dir/src/UserEventAction.cc.o.d"
   "/Users/giovanni/dev/CUSP/g4cusp/src/UserRun.cc" "CMakeFiles/cusp_gdml.dir/src/UserRun.cc.o" "gcc" "CMakeFiles/cusp_gdml.dir/src/UserRun.cc.o.d"
   "/Users/giovanni/dev/CUSP/g4cusp/src/UserRunAction.cc" "CMakeFiles/cusp_gdml.dir/src/UserRunAction.cc.o" "gcc" "CMakeFiles/cusp_gdml.dir/src/UserRunAction.cc.o.d"
+  "/Users/giovanni/dev/CUSP/g4cusp/src/WriteToFile.cc" "CMakeFiles/cusp_gdml.dir/src/WriteToFile.cc.o" "gcc" "CMakeFiles/cusp_gdml.dir/src/WriteToFile.cc.o.d"
   )
 
 # Targets to which this target links.

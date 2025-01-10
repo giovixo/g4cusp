@@ -21,6 +21,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/cusp_gdml.dir/src/UserRun.cc.o.d"
   "CMakeFiles/cusp_gdml.dir/src/UserRunAction.cc.o"
   "CMakeFiles/cusp_gdml.dir/src/UserRunAction.cc.o.d"
+  "CMakeFiles/cusp_gdml.dir/src/WriteToFile.cc.o"
+  "CMakeFiles/cusp_gdml.dir/src/WriteToFile.cc.o.d"
   "cusp_gdml"
   "cusp_gdml.pdb"
 )

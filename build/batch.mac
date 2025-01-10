@@ -11,7 +11,13 @@
 
 # Define the primary particle (photon)
 /gps/particle gamma
-/gps/energy 60 keV
+/gps/ene/type Lin
+/gps/ene/gradient 0
+/gps/ene/intercept 1000
+/gps/ene/min 20 keV
+/gps/ene/max 100 keV
+
+#/gps/energy 60 keV
 /gps/direction -1.0  0.0 0.0
 /gps/polarization 0. 1. 0.
 

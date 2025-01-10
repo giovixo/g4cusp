@@ -4,6 +4,8 @@
 #include "G4VUserPrimaryGeneratorAction.hh"
 #include "DetectorConstruction.hh"
 
+#include "WriteToFile.hh"
+
 // Mandatory user class that defines the properties of the
 // particle gun and run initialization
 // Derived from the G4VUserPrimaryGeneratorAction initialisation
@@ -26,6 +28,7 @@ public:
     
 private:
     G4GeneralParticleSource*    particleGun;
+    WriteToFile testOutput; // to write the test output
 };
 
 #endif

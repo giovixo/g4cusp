@@ -8,6 +8,8 @@
 #include "globals.hh"
 #include "Randomize.hh"
 
+#include "WriteToFile.hh"
+
 
 // Constructor
 PrimaryGeneratorAction::PrimaryGeneratorAction()
@@ -26,6 +28,22 @@ PrimaryGeneratorAction::~PrimaryGeneratorAction()
 void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 {
     particleGun -> GeneratePrimaryVertex(anEvent);
+
+    // Retrieve the primary vertex
+    G4PrimaryVertex* primaryVertex = anEvent->GetPrimaryVertex();
+    if (primaryVertex)
+    {
+        // Retrieve the primary particle
+        G4PrimaryParticle* primaryParticle = primaryVertex->GetPrimary();
+        if (primaryParticle)
+        {
+            // Retrieve the energy
+            G4double energy = primaryParticle->GetKineticEnergy()/CLHEP::keV;
+
+            // Print the energy
+            testOutput.print(std::to_string(energy));
+        }
+    }
 }
 
 
