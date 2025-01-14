@@ -1,23 +1,14 @@
-# Macro file for the initialization phase 
+# Macro file for the initialization phase of example ED
 # when running in interactive mode with visualization
-
-# Set some default verbosity
-/run/verbose 0
-/event/verbose 0
-/tracking/verbose 0
-
-# Set defaults for General Particle Source generation
-/gps/particle gamma
-/gps/energy 100 keV
-/gps/position     0.0  0.0 +50.0 cm
-/gps/direction    0.0  0.0 -1.0
-/gps/polarization 1.0  0.0  0.0
-
-# Change the default number of threads (in multi-threaded mode)
-# /run/numberOfThreads 4
-
+#
+# Set some default verbose
+#
+/control/verbose 1
+/control/saveHistory
+/run/verbose 1
+#
 # Initialize kernel
 /run/initialize
-
+#
 # Visualization setting
-# /control/execute vis.mac
+/control/execute vis.mac

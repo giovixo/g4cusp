@@ -821,6 +821,8 @@ CMakeFiles/cusp_gdml.dir/cusp_gdml.cc.o: ../cusp_gdml.cc \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4PhysListFactory.hh \
   ../include/PrimaryGeneratorAction.hh \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4ParticleGun.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4VPrimaryGenerator.hh \
   ../include/WriteToFile.hh \
   ../include/UserRunAction.hh \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4UserRunAction.hh \
@@ -3559,39 +3561,42 @@ CMakeFiles/cusp_gdml.dir/src/PhysicsList.cc.o: ../src/PhysicsList.cc \
 CMakeFiles/cusp_gdml.dir/src/PrimaryGeneratorAction.cc.o: ../src/PrimaryGeneratorAction.cc \
   ../include/PrimaryGeneratorAction.hh \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
-  ../include/DetectorConstruction.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4VUserDetectorConstruction.hh \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/vector \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4ThreeVector.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/globals.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4ios.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4Types.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4GlobalConfig.hh \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/complex \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__config_site \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/pthread.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__bit_reference \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__bits \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__undef_macros \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/algorithm \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__debug \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iosfwd \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__mbstate_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/wchar.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/stddef.h \
-  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/stddef.h \
-  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/__stddef_max_align_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__nullptr \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/wchar.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/cmath \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/math.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/math.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/cdefs.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_symbol_aliasing.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_posix_availability.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/machine/_types.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/i386/_types.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_pthread/_pthread_types.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/Availability.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/AvailabilityVersions.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/AvailabilityInternal.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_null.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_size_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_mbstate_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/stdlib.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/stdlib.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/machine/_types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/i386/_types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_pthread/_pthread_types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/wait.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_pid_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_id_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/signal.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/appleapiopts.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/machine/signal.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/i386/signal.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/machine/_mcontext.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/i386/_mcontext.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/mach/machine/_structs.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/mach/i386/_structs.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/machine/types.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/i386/types.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_int8_t.h \
@@ -3604,9 +3609,52 @@ CMakeFiles/cusp_gdml.dir/src/PrimaryGeneratorAction.cc.o: ../src/PrimaryGenerato
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_u_int64_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_intptr_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_uintptr_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_pthread/_pthread_attr_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_sigaltstack.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_ucontext.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_sigset_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_size_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_uid_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/resource.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/stdint.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/stdint.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/stdint.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint8_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint16_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint32_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint64_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types/_intmax_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types/_uintmax_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_timeval.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/machine/endian.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/i386/endian.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_endian.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/libkern/_OSByteOrder.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/libkern/i386/_OSByteOrder.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/alloca.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_ct_rune_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_rune_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_wchar_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_null.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/malloc/_malloc.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_dev_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_mode_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/type_traits \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/cstddef \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/version \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/stddef.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/__stddef_max_align_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__nullptr \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__utility/forward.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__utility/move.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__undef_macros \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/limits \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iosfwd \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__mbstate_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/wchar.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/stddef.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/wchar.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_mbstate_t.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/stdarg.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/stdio.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/stdio.h \
@@ -3628,8 +3676,19 @@ CMakeFiles/cusp_gdml.dir/src/PrimaryGeneratorAction.cc.o: ../src/PrimaryGenerato
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/ctype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_ctype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/runetype.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/cstddef \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/version \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/stdexcept \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/exception \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__availability \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/addressof.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/cstdlib \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/sstream \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/istream \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/ostream \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/bitset \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__bit_reference \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__bits \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/algorithm \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__debug \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/cstring \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/string.h \
@@ -3646,56 +3705,11 @@ CMakeFiles/cusp_gdml.dir/src/PrimaryGeneratorAction.cc.o: ../src/PrimaryGenerato
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/weak_result_type.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/binary_function.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/unary_function.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/type_traits \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__utility/forward.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__utility/move.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional_base \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/operations.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/reference_wrapper.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/addressof.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/allocator_arg_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/uses_allocator.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/exception \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__availability \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/cstdlib \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/stdlib.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/stdlib.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/wait.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_pid_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_id_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/signal.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/appleapiopts.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/machine/signal.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/i386/signal.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/machine/_mcontext.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/i386/_mcontext.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/mach/machine/_structs.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/mach/i386/_structs.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_pthread/_pthread_attr_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_sigaltstack.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_ucontext.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_sigset_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_uid_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/resource.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/stdint.h \
-  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/stdint.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/stdint.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint8_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint16_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint32_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint64_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types/_intmax_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types/_uintmax_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_timeval.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/machine/endian.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/i386/endian.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_endian.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/libkern/_OSByteOrder.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/libkern/i386/_OSByteOrder.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/alloca.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/malloc/_malloc.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_dev_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_mode_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/new \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/typeinfo \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/cstdint \
@@ -3703,7 +3717,6 @@ CMakeFiles/cusp_gdml.dir/src/PrimaryGeneratorAction.cc.o: ../src/PrimaryGenerato
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__tuple \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__utility/as_const.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__utility/cmp.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/limits \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__utility/declval.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__utility/exchange.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__utility/in_place.h \
@@ -3733,7 +3746,6 @@ CMakeFiles/cusp_gdml.dir/src/PrimaryGeneratorAction.cc.o: ../src/PrimaryGenerato
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/allocation_guard.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/allocator.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/stdexcept \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/unique_ptr.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/hash.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/atomic \
@@ -3910,19 +3922,6 @@ CMakeFiles/cusp_gdml.dir/src/PrimaryGeneratorAction.cc.o: ../src/PrimaryGenerato
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__algorithm/transform.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__algorithm/unique_copy.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__algorithm/unique.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__split_buffer \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/globals.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4ios.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4Types.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4GlobalConfig.hh \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/complex \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/cmath \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/math.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/math.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/sstream \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/istream \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/ostream \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/bitset \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/cstdio \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string_view \
@@ -3999,31 +3998,31 @@ CMakeFiles/cusp_gdml.dir/src/PrimaryGeneratorAction.cc.o: ../src/PrimaryGenerato
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__node_handle \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/optional \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__tree \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4GenericMessenger.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4UImessenger.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4UIdirectory.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4UIcommand.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4UIparameter.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4UItokenNum.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4ApplicationState.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4ThreeVector.hh \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Vector/ThreeVector.h \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Utility/defs.h \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Vector/ThreeVector.icc \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4AnyType.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4AnyMethod.hh \
-  ../include/WriteToFile.hh \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/fstream \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/filesystem \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/stack \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/deque \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4Event.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/evtdefs.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4ParticleGun.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4VPrimaryGenerator.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4ParticleDefinition.hh \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/vector \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__split_buffer \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Units/PhysicalConstants.h \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Units/SystemOfUnits.h \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4PDefManager.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/pwdefs.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4AutoLock.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4Threading.hh \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/condition_variable \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/future \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/thread \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4ParticleDefinition.icc \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4PrimaryVertex.hh \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4Allocator.hh \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4AllocatorPool.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4PrimaryVertex.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/pwdefs.hh \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4PrimaryParticle.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4ParticleMomentum.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4Event.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/evtdefs.hh \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4HCofThisEvent.hh \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4VHitsCollection.hh \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4DCofThisEvent.hh \
@@ -4038,112 +4037,11 @@ CMakeFiles/cusp_gdml.dir/src/PrimaryGeneratorAction.cc.o: ../src/PrimaryGenerato
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/PTL/Utility.hh \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/set \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/array \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4GeneralParticleSource.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4SingleParticleSource.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4VPrimaryGenerator.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4ParticleMomentum.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4ParticleDefinition.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Units/PhysicalConstants.h \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Units/SystemOfUnits.h \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4PDefManager.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4AutoLock.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4Threading.hh \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/condition_variable \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/future \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/thread \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4ParticleDefinition.icc \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4SPSPosDistribution.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4Navigator.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/geomdefs.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4AffineTransform.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4RotationMatrix.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Vector/Rotation.h \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Vector/RotationInterfaces.h \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Vector/LorentzVector.h \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Vector/LorentzVector.icc \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Vector/AxisAngle.h \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Vector/AxisAngle.icc \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Vector/RotationInterfaces.icc \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Vector/RotationX.h \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Vector/RotationX.icc \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Vector/RotationY.h \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Vector/RotationY.icc \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Vector/RotationZ.h \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Vector/RotationZ.icc \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Vector/Rotation.icc \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4Transform3D.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Geometry/Transform3D.h \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Geometry/Transform3D.icc \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Geometry/Point3D.h \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Geometry/BasicVector3D.h \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Geometry/Vector3D.h \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Geometry/Normal3D.h \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4AffineTransform.icc \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4LogicalVolume.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4Region.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4GeomSplitter.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/geomwdefs.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4Region.icc \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4VPhysicalVolume.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4VPhysicalVolume.icc \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4LogicalVolume.icc \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4GRSVolume.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4VTouchable.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4VTouchable.icc \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4GRSVolume.icc \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4GRSSolid.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4GRSSolid.icc \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4TouchableHandle.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4ReferenceCountedHandle.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4TouchableHistoryHandle.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4TouchableHistory.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4NavigationHistory.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4NavigationLevel.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4NavigationLevelRep.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4NavigationLevelRep.icc \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4NavigationLevel.icc \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4NavigationHistoryPool.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4NavigationHistory.icc \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4TouchableHistory.icc \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4NormalNavigation.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4VSolid.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4VSolid.icc \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4AuxiliaryNavServices.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4AuxiliaryNavServices.icc \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4NormalNavigation.icc \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4VoxelNavigation.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4NavigationLogger.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4BlockingList.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4BlockingList.icc \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4SmartVoxelProxy.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4SmartVoxelProxy.icc \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4SmartVoxelNode.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4SmartVoxelNode.icc \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4SmartVoxelHeader.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4SmartVoxelHeader.icc \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4VoxelNavigation.icc \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4ParameterisedNavigation.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4VPVParameterisation.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4VVolumeMaterialScanner.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4ParameterisedNavigation.icc \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4ReplicaNavigation.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4ReplicaNavigation.icc \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4RegularNavigation.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4VExternalNavigation.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4Navigator.icc \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4SPSRandomGenerator.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4PhysicsFreeVector.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4PhysicsVector.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4Log.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4PhysicsVectorType.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4PhysicsVector.icc \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4DataInterpolation.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4Cache.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4CacheDetails.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4SPSAngDistribution.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4SPSEneDistribution.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4GeneralParticleSourceMessenger.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4GeneralParticleSourceData.hh \
+  ../include/WriteToFile.hh \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/fstream \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/filesystem \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/stack \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/deque \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4ParticleTable.hh \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4ParticleTableIterator.hh \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4ParticleTable.icc \
@@ -4193,7 +4091,8 @@ CMakeFiles/cusp_gdml.dir/src/PrimaryGeneratorAction.cc.o: ../src/PrimaryGenerato
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Random/RandPoisson.icc \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Random/RandPoissonQ.icc \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Random/RandStudentT.h \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Random/RandStudentT.icc
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Random/RandStudentT.icc \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4SystemOfUnits.hh
 
 CMakeFiles/cusp_gdml.dir/src/SensitiveDetector.cc.o: ../src/SensitiveDetector.cc \
   ../include/SensitiveDetector.hh \
@@ -4833,39 +4732,42 @@ CMakeFiles/cusp_gdml.dir/src/UserActionInitialization.cc.o: ../src/UserActionIni
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4VUserActionInitialization.hh \
   ../include/PrimaryGeneratorAction.hh \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
-  ../include/DetectorConstruction.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4VUserDetectorConstruction.hh \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/vector \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4ThreeVector.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/globals.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4ios.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4Types.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4GlobalConfig.hh \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/complex \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__config_site \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/pthread.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__bit_reference \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__bits \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__undef_macros \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/algorithm \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__debug \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iosfwd \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__mbstate_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/wchar.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/stddef.h \
-  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/stddef.h \
-  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/__stddef_max_align_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__nullptr \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/wchar.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/cmath \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/math.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/math.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/cdefs.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_symbol_aliasing.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_posix_availability.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/machine/_types.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/i386/_types.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_pthread/_pthread_types.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/Availability.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/AvailabilityVersions.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/AvailabilityInternal.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_null.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_size_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_mbstate_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/stdlib.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/stdlib.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/machine/_types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/i386/_types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_pthread/_pthread_types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/wait.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_pid_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_id_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/signal.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/appleapiopts.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/machine/signal.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/i386/signal.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/machine/_mcontext.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/i386/_mcontext.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/mach/machine/_structs.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/mach/i386/_structs.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/machine/types.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/i386/types.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_int8_t.h \
@@ -4878,9 +4780,52 @@ CMakeFiles/cusp_gdml.dir/src/UserActionInitialization.cc.o: ../src/UserActionIni
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_u_int64_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_intptr_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_uintptr_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_pthread/_pthread_attr_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_sigaltstack.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_ucontext.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_sigset_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_size_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_uid_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/resource.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/stdint.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/stdint.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/stdint.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint8_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint16_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint32_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint64_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types/_intmax_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types/_uintmax_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_timeval.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/machine/endian.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/i386/endian.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_endian.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/libkern/_OSByteOrder.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/libkern/i386/_OSByteOrder.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/alloca.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_ct_rune_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_rune_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_wchar_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_null.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/malloc/_malloc.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_dev_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_mode_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/type_traits \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/cstddef \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/version \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/stddef.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/__stddef_max_align_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__nullptr \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__utility/forward.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__utility/move.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__undef_macros \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/limits \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iosfwd \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__mbstate_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/wchar.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/stddef.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/wchar.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_mbstate_t.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/stdarg.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/stdio.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/stdio.h \
@@ -4902,8 +4847,19 @@ CMakeFiles/cusp_gdml.dir/src/UserActionInitialization.cc.o: ../src/UserActionIni
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/ctype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_ctype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/runetype.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/cstddef \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/version \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/stdexcept \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/exception \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__availability \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/addressof.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/cstdlib \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/sstream \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/istream \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/ostream \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/bitset \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__bit_reference \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__bits \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/algorithm \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__debug \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/cstring \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/string.h \
@@ -4920,56 +4876,11 @@ CMakeFiles/cusp_gdml.dir/src/UserActionInitialization.cc.o: ../src/UserActionIni
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/weak_result_type.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/binary_function.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/unary_function.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/type_traits \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__utility/forward.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__utility/move.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional_base \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/operations.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/reference_wrapper.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/addressof.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/allocator_arg_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/uses_allocator.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/exception \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__availability \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/cstdlib \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/stdlib.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/stdlib.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/wait.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_pid_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_id_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/signal.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/appleapiopts.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/machine/signal.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/i386/signal.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/machine/_mcontext.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/i386/_mcontext.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/mach/machine/_structs.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/mach/i386/_structs.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_pthread/_pthread_attr_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_sigaltstack.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_ucontext.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_sigset_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_uid_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/resource.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/stdint.h \
-  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/stdint.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/stdint.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint8_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint16_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint32_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint64_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types/_intmax_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types/_uintmax_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_timeval.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/machine/endian.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/i386/endian.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_endian.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/libkern/_OSByteOrder.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/libkern/i386/_OSByteOrder.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/alloca.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/malloc/_malloc.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_dev_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_mode_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/new \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/typeinfo \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/cstdint \
@@ -4977,7 +4888,6 @@ CMakeFiles/cusp_gdml.dir/src/UserActionInitialization.cc.o: ../src/UserActionIni
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__tuple \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__utility/as_const.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__utility/cmp.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/limits \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__utility/declval.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__utility/exchange.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__utility/in_place.h \
@@ -5007,7 +4917,6 @@ CMakeFiles/cusp_gdml.dir/src/UserActionInitialization.cc.o: ../src/UserActionIni
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/allocation_guard.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/allocator.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/stdexcept \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/unique_ptr.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/hash.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/atomic \
@@ -5184,19 +5093,6 @@ CMakeFiles/cusp_gdml.dir/src/UserActionInitialization.cc.o: ../src/UserActionIni
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__algorithm/transform.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__algorithm/unique_copy.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__algorithm/unique.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__split_buffer \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/globals.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4ios.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4Types.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4GlobalConfig.hh \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/complex \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/cmath \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/math.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/math.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/sstream \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/istream \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/ostream \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/bitset \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/cstdio \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string_view \
@@ -5273,19 +5169,45 @@ CMakeFiles/cusp_gdml.dir/src/UserActionInitialization.cc.o: ../src/UserActionIni
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__node_handle \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/optional \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__tree \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4GenericMessenger.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4UImessenger.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4UIdirectory.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4UIcommand.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4UIparameter.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4UItokenNum.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4ApplicationState.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4ThreeVector.hh \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Vector/ThreeVector.h \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Utility/defs.h \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Vector/ThreeVector.icc \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4AnyType.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4AnyMethod.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4ParticleGun.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4VPrimaryGenerator.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4ParticleDefinition.hh \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/vector \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__split_buffer \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Units/PhysicalConstants.h \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Units/SystemOfUnits.h \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4PDefManager.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/pwdefs.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4AutoLock.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4Threading.hh \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/condition_variable \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/future \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/thread \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4ParticleDefinition.icc \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4PrimaryVertex.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4Allocator.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4AllocatorPool.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4PrimaryParticle.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4ParticleMomentum.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4Event.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/evtdefs.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4HCofThisEvent.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4VHitsCollection.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4DCofThisEvent.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4VDigiCollection.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4TrajectoryContainer.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4VTrajectory.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4VUserEventInformation.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4Profiler.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4Profiler.icc \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/PTL/Globals.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/PTL/Types.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/PTL/Utility.hh \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/set \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/array \
   ../include/WriteToFile.hh \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/fstream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/filesystem \
@@ -5294,13 +5216,6 @@ CMakeFiles/cusp_gdml.dir/src/UserActionInitialization.cc.o: ../src/UserActionIni
   ../include/UserRunAction.hh \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4UserRunAction.hh \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4Run.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4Profiler.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4Profiler.icc \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/PTL/Globals.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/PTL/Types.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/PTL/Utility.hh \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/set \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/array \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4Timer.hh \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/times.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/unistd.h \
@@ -5315,7 +5230,16 @@ CMakeFiles/cusp_gdml.dir/src/UserActionInitialization.cc.o: ../src/UserActionIni
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4UImanager.hh \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/icomsdefs.hh \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4VStateDependent.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4ApplicationState.hh \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4UIcommandStatus.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4GenericMessenger.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4UImessenger.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4UIdirectory.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4UIcommand.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4UIparameter.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4UItokenNum.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4AnyType.hh \
+  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4AnyMethod.hh \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4AnalysisManager.hh \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4GenericAnalysisManager.hh \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4ToolsAnalysisManager.hh \
@@ -5347,12 +5271,7 @@ CMakeFiles/cusp_gdml.dir/src/UserActionInitialization.cc.o: ../src/UserActionIni
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4VTHnFileManager.hh \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4ToolsAnalysisMessenger.hh \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4THnManager.hh \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4Threading.hh \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/condition_variable \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/future \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/thread \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4THnManager.icc \
-  /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4AutoLock.hh \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/tools/histo/h1d \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/tools/histo/h1 \
   /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/tools/histo/b1 \
@@ -7714,18 +7633,6 @@ CMakeFiles/cusp_gdml.dir/src/WriteToFile.cc.o: ../src/WriteToFile.cc \
 
 ../src/UserEventAction.cc:
 
-/Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4DataInterpolation.hh:
-
-/Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4SPSRandomGenerator.hh:
-
-/Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4SPSPosDistribution.hh:
-
-/Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4VPrimaryGenerator.hh:
-
-/Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4SingleParticleSource.hh:
-
-/Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4GeneralParticleSource.hh:
-
 ../src/PrimaryGeneratorAction.cc:
 
 /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4HadronPhysicsQGSP_BERT.hh:
@@ -7805,8 +7712,6 @@ CMakeFiles/cusp_gdml.dir/src/WriteToFile.cc.o: ../src/WriteToFile.cc \
 /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4DsMesonMinus.hh:
 
 /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4DsMesonPlus.hh:
-
-/Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4SPSAngDistribution.hh:
 
 /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4DMesonZero.hh:
 
@@ -8178,8 +8083,6 @@ CMakeFiles/cusp_gdml.dir/src/WriteToFile.cc.o: ../src/WriteToFile.cc \
 
 /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4CollectionNameVector.hh:
 
-/Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4SPSEneDistribution.hh:
-
 /usr/local/include/xercesc/dom/DOMPSVITypeInfo.hpp:
 
 /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4SensitiveVolumeList.hh:
@@ -8303,6 +8206,10 @@ CMakeFiles/cusp_gdml.dir/src/WriteToFile.cc.o: ../src/WriteToFile.cc \
 /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4UserRunAction.hh:
 
 ../include/WriteToFile.hh:
+
+/Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4VPrimaryGenerator.hh:
+
+/Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4ParticleGun.hh:
 
 /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4VUserPrimaryGeneratorAction.hh:
 
@@ -8902,8 +8809,6 @@ CMakeFiles/cusp_gdml.dir/src/WriteToFile.cc.o: ../src/WriteToFile.cc \
 
 /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4ParticleDefinition.icc:
 
-/Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4GeneralParticleSourceData.hh:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__algorithm/fill.h:
 
 /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4PDefManager.hh:
@@ -8951,8 +8856,6 @@ CMakeFiles/cusp_gdml.dir/src/WriteToFile.cc.o: ../src/WriteToFile.cc \
 /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/tools/histo/profile_data:
 
 /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/CLHEP/Vector/Rotation.h:
-
-/Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4GeneralParticleSourceMessenger.hh:
 
 /Users/giovanni/sw/geant4/geant4-v11.0.2-mt-gdml-install/include/Geant4/G4RotationMatrix.hh:
 
