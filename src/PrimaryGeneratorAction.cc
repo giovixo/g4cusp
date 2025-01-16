@@ -28,23 +28,31 @@ PrimaryGeneratorAction::~PrimaryGeneratorAction() {
     delete particleGun;
 }
 
-void PrimaryGeneratorAction::GenerateVertex(G4double source_h, G4double source_r, G4double source_alpha, G4ThreeVector& vertex) {
+void PrimaryGeneratorAction::GenerateVertex(G4double source_h, G4double source_r, G4double source_alpha, G4ThreeVector &vertex_center, G4ThreeVector& vertex) {
     G4double y = source_h + 4.*cm ; // TdDO: check the exact position of the detector surface (detector center = 10.5*cm?)
     G4double z = source_r * std::cos(source_alpha); 
     G4double x = source_r * std::sin(source_alpha);
-    vertex.setX(x);
-    vertex.setY(y);
-    vertex.setZ(z);
+    vertex_center.setX(x);
+    vertex_center.setY(y);
+    vertex_center.setZ(z);
+
+    G4double beam_size1{10.*cm}, beam_size2{10.*cm};
+    G4double x_move = -beam_size1/2. + beam_size1*G4UniformRand();
+    G4double y_move = 0;
+    G4double z_move = -beam_size2/2. + beam_size2*G4UniformRand();
+    G4ThreeVector translation(x_move, y_move, z_move);
+
+    vertex = vertex_center + translation;
 }
 
-void PrimaryGeneratorAction::GenerateDirection(G4double detector_h, G4double beam_size1, G4double beam_size2, G4ThreeVector vertex, G4ThreeVector& direction) {
+void PrimaryGeneratorAction::GenerateDirection(G4double detector_h, G4ThreeVector vertex, G4ThreeVector& direction) {
     // Define the center of the detector surface
     G4ThreeVector detector_center;
     detector_center.setX(0.);
     detector_center.setY(detector_h);
     detector_center.setZ(0.);
 
-    direction = (detector_center - vertex).unit();
+    direction = detector_center - vertex;
 }
 
 void PrimaryGeneratorAction::GenerateSquare(G4double number) {
@@ -52,7 +60,7 @@ void PrimaryGeneratorAction::GenerateSquare(G4double number) {
 }
 
 void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent) {
-    G4ThreeVector vertex;
+    G4ThreeVector vertex_center, vertex;
     // Retrieve the event ID
     G4int eventID = anEvent->GetEventID();
     // Map the event ID to an angle in degrees
@@ -60,13 +68,16 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent) {
     // Convert the angle to radians
     G4double angleRadians = angleDegrees * (M_PI / 180.0);
 
+    // DEBUG
+    angleRadians = M_PI/2.;
+
     //GenerateVertex(6.*cm, 2.*cm, CLHEP::pi/2., vertex);
-    GenerateVertex(6.*cm, 3.*cm, angleRadians, vertex);
+    GenerateVertex(6.*cm, 3.*cm, angleRadians, vertex_center, vertex);
     
     particleGun->SetParticlePosition(vertex);
 
     G4ThreeVector direction;
-    GenerateDirection(4.*cm, 0., 0., vertex, direction);
+    GenerateDirection(4.*cm, vertex_center, direction);
     particleGun->SetParticleMomentumDirection(direction);
     
     // Output for debug

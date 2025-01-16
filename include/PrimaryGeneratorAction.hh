@@ -30,8 +30,8 @@ public:
     
 private:
     G4ParticleGun* particleGun;
-    void GenerateVertex(G4double source_h, G4double source_r, G4double source_alpha, G4ThreeVector& vertex); // Generate the source vertex
-    void GenerateDirection(G4double detector_h, G4double beam_size1, G4double beam_size2, G4ThreeVector vertex, G4ThreeVector& direction); // Generate the source direction
+    void GenerateVertex(G4double source_h, G4double source_r, G4double source_alpha, G4ThreeVector &vertex_center, G4ThreeVector& vertex); // Generate the source vertex
+    void GenerateDirection(G4double detector_h, G4ThreeVector vertex, G4ThreeVector& direction); // Generate the source direction
     void GenerateSquare(G4double number);     // Just a dummy method
     WriteToFile testOutput; // to write the test output
 };
