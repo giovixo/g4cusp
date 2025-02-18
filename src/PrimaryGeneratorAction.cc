@@ -53,6 +53,9 @@ void PrimaryGeneratorAction::GenerateDirection(G4double detector_h, G4ThreeVecto
     detector_center.setZ(0.);
 
     direction = detector_center - vertex;
+
+    // Normalize the direction vector
+    direction = direction.unit();
 }
 
 void PrimaryGeneratorAction::GenerateSquare(G4double number) {
@@ -79,13 +82,27 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent) {
     G4ThreeVector direction;
     GenerateDirection(4.*cm, vertex_center, direction);
     particleGun->SetParticleMomentumDirection(direction);
+
+    // Arbitrary polarization of the particle. It will be correctly defined in the 
+    // input csv file.
+
+    // Step 1: choose an arbitrary vector that is not parallel to the direction vector
+    G4ThreeVector arbitraryVector(1.0, 0.0, 0.0);
+    if (std::abs(direction.dot(arbitraryVector)) > 0.9) {
+        arbitraryVector = G4ThreeVector(0.0, 1.0, 0.0);
+    }
+    // Step 2: use the cross product to find a perpendicular vector
+    G4ThreeVector polarization = direction.cross(arbitraryVector);    
+    // Step3 : normalize the polarization vector to ensure it has unit length
+    polarization = polarization.unit();
+    // Define the polarization vector
+    particleGun->SetParticlePolarization(polarization);
     
-    // Output for debug
-    /*
+    #ifdef DEBUG
     std::ostringstream strValue;
     strValue << vertex.getX()/cm << " " << vertex.getY()/cm << " " << vertex.getZ()/cm;
     testOutput.print(strValue.str());
-    */
+    #endif
 
     // Generate the particle
     particleGun->GeneratePrimaryVertex(anEvent);
