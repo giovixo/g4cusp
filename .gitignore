@@ -37,6 +37,6 @@ build
 results
 gdml_backup
 .DS_Store
-*/.ipynb_checkpoints
+.ipynb_checkpoints/
 abstracts
 __pycache__/
