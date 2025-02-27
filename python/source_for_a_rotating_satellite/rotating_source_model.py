@@ -10,7 +10,7 @@ def main():
         exposure_time = 10.0 # Default value (10 seconds)
     elif  len(sys.argv) == 2 and sys.argv[1] == "help":
           print("USAGE")
-          print("python generate_source.py <energy_input> <photon_rate> <exposure_time>")
+          print("python rotating_source_model.py <energy_input> <photon_rate> <exposure_time>")
           sys.exit()
     elif len(sys.argv) == 4:
         energy_input = float(sys.argv[1])
@@ -29,8 +29,8 @@ def main():
     result = generate_events(energy_input, photon_rate, exposure_time)
 
     # save the result to a file
-    result.to_csv("events.csv", index=False, float_format='%.6f')
-    print("Events saved to events.csv")
+    result.to_csv("rsm-events.csv", index=False, float_format='%.6f')
+    print("Events saved to rsm-events.csv")
 
 def generate_events(energy_input, photon_rate, exposure_time):
     """
