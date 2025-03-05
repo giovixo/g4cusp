@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/cusp_gdml.dir/src/PhysicsList.cc.o.d"
   "CMakeFiles/cusp_gdml.dir/src/PrimaryGeneratorAction.cc.o"
   "CMakeFiles/cusp_gdml.dir/src/PrimaryGeneratorAction.cc.o.d"
+  "CMakeFiles/cusp_gdml.dir/src/RsmSource.cc.o"
+  "CMakeFiles/cusp_gdml.dir/src/RsmSource.cc.o.d"
   "CMakeFiles/cusp_gdml.dir/src/SensitiveDetector.cc.o"
   "CMakeFiles/cusp_gdml.dir/src/SensitiveDetector.cc.o.d"
   "CMakeFiles/cusp_gdml.dir/src/UserActionInitialization.cc.o"

@@ -22,6 +22,9 @@ PrimaryGeneratorAction::PrimaryGeneratorAction() {
     particleGun->SetParticleEnergy(50. * keV); // Set the energy
         // Output for debug
     std::ofstream outputFile("output.txt");
+
+    // Read events from CSV file
+    rsmSource.ReadCSV("events.csv");
 }
 
 PrimaryGeneratorAction::~PrimaryGeneratorAction() {
@@ -63,6 +66,20 @@ void PrimaryGeneratorAction::GenerateSquare(G4double number) {
 }
 
 void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent) {
+    static size_t currentEventIndex = 0;
+    const std::vector<EventData>& events = rsmSource.GetEvents();
+
+    if (currentEventIndex >= events.size()) {
+        G4cerr << "No more events in the CSV file." << G4endl;
+        return;
+    }
+
+    const EventData& event = events[currentEventIndex++];
+
+    // Retrieve the event data
+    //G4double angle = event.angle;
+    //G4double energy = event.energy * keV;
+
     G4ThreeVector vertex_center, vertex;
     // Retrieve the event ID
     G4int eventID = anEvent->GetEventID();
@@ -100,7 +117,19 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent) {
     
     #ifdef DEBUG
     std::ostringstream strValue;
-    strValue << vertex.getX()/cm << " " << vertex.getY()/cm << " " << vertex.getZ()/cm;
+    //strValue << vertex.getX()/cm << " " << vertex.getY()/cm << " " << vertex.getZ()/cm;
+    //testOutput.print(strValue.str());
+    // The event data from the csv file
+    //strValue << "angle: " << angle << " Energy: " << " " << energy;
+    // Generate and print new events
+    //EventData new_event = rsmSource.GenerateEvent();
+    strValue << "Event ID: " << event.event_id << ", "
+        << "Time: " << event.time << ", "
+        << "Angle: " << event.angle << ", "
+        << "Pol_x: " << event.pol_x << ", "
+        << "Pol_y: " << event.pol_y << ", "
+        << "Pol_z: " << event.pol_z << ", "
+        << "Energy: " << event.energy;
     testOutput.print(strValue.str());
     #endif
 

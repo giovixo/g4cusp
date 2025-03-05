@@ -318,6 +318,30 @@ src/PrimaryGeneratorAction.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cusp_gdml.dir/build.make CMakeFiles/cusp_gdml.dir/src/PrimaryGeneratorAction.cc.s
 .PHONY : src/PrimaryGeneratorAction.cc.s
 
+src/RsmSource.o: src/RsmSource.cc.o
+.PHONY : src/RsmSource.o
+
+# target to build an object file
+src/RsmSource.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cusp_gdml.dir/build.make CMakeFiles/cusp_gdml.dir/src/RsmSource.cc.o
+.PHONY : src/RsmSource.cc.o
+
+src/RsmSource.i: src/RsmSource.cc.i
+.PHONY : src/RsmSource.i
+
+# target to preprocess a source file
+src/RsmSource.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cusp_gdml.dir/build.make CMakeFiles/cusp_gdml.dir/src/RsmSource.cc.i
+.PHONY : src/RsmSource.cc.i
+
+src/RsmSource.s: src/RsmSource.cc.s
+.PHONY : src/RsmSource.s
+
+# target to generate assembly for a file
+src/RsmSource.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cusp_gdml.dir/build.make CMakeFiles/cusp_gdml.dir/src/RsmSource.cc.s
+.PHONY : src/RsmSource.cc.s
+
 src/SensitiveDetector.o: src/SensitiveDetector.cc.o
 .PHONY : src/SensitiveDetector.o
 
@@ -493,6 +517,9 @@ help:
 	@echo "... src/PrimaryGeneratorAction.o"
 	@echo "... src/PrimaryGeneratorAction.i"
 	@echo "... src/PrimaryGeneratorAction.s"
+	@echo "... src/RsmSource.o"
+	@echo "... src/RsmSource.i"
+	@echo "... src/RsmSource.s"
 	@echo "... src/SensitiveDetector.o"
 	@echo "... src/SensitiveDetector.i"
 	@echo "... src/SensitiveDetector.s"
