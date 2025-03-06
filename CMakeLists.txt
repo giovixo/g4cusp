@@ -51,7 +51,7 @@ target_link_libraries(cusp_gdml ${Geant4_LIBRARIES})
 #----------------------------------------------------------------------------
 # Enable the DEBUG directive for this target
 #
-target_compile_definitions(cusp_gdml PRIVATE DEBUG)
+# target_compile_definitions(cusp_gdml PRIVATE DEBUG)
 
 #----------------------------------------------------------------------------
 # Install the executable to 'bin/Darwin-g++' directory under CMAKE_INSTALL_PREFIX

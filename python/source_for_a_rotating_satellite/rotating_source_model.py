@@ -60,7 +60,7 @@ def generate_events(energy_input, photon_rate, exposure_time):
     time_intervals = np.random.exponential(1.0 / photon_rate, N)
     time = np.cumsum(time_intervals) # Cumulative sum to get event times
     
-    omega = 2. * np.pi # angular velocity 
+    omega = 0.01 * (2. * np.pi) # angular velocity (e.g. 2. * np.pi for one rotation per second)
     angle = omega * time
     pol_x = np.zeros(N)
     pol_y = np.zeros(N)

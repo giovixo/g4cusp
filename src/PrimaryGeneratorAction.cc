@@ -19,7 +19,6 @@ PrimaryGeneratorAction::PrimaryGeneratorAction() {
 
     // Set particle properties
     particleGun->SetParticleDefinition(particle);
-    particleGun->SetParticleEnergy(50. * keV); // Set the energy
         // Output for debug
     std::ofstream outputFile("output.txt");
 
@@ -65,7 +64,10 @@ void PrimaryGeneratorAction::GenerateSquare(G4double number) {
     G4cout << "Hello " << number * number << G4endl;
 }
 
-void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent) {
+void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent) {   
+    
+    // *** Step 0: Get the event 
+
     static size_t currentEventIndex = 0;
     const std::vector<EventData>& events = rsmSource.GetEvents();
 
@@ -73,47 +75,53 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent) {
         G4cerr << "No more events in the CSV file." << G4endl;
         return;
     }
-
+    // This statement accesses  events[0] and then increments the index to 1, and so on.
     const EventData& event = events[currentEventIndex++];
 
-    // Retrieve the event data
-    //G4double angle = event.angle;
-    //G4double energy = event.energy * keV;
+    // *** Step 1: retrieve the event data
 
+    G4int eventID = event.event_id; // This can be also obtained from currentEventIndex or anEvent->GetEventID()
+    G4double time = event.time;
+    G4double angle = event.angle;
+    G4double pol_x = event.pol_x;
+    G4double pol_y = event.pol_y;
+    G4double pol_z = event.pol_z;
+    G4double energy = event.energy * keV;
+
+    // *** Step 2: Generate the primary vertex using the event data
+
+    // Set the energy of the particle
+    particleGun->SetParticleEnergy(energy); 
+    // Set the source vertex
+    constexpr G4double source_h = 6.*cm;
+    constexpr G4double source_r = 3.*cm;
     G4ThreeVector vertex_center, vertex;
-    // Retrieve the event ID
-    G4int eventID = anEvent->GetEventID();
-    // Map the event ID to an angle in degrees
-    G4int angleDegrees = (eventID*10) % 360; // Wrap around after 360
-    // Convert the angle to radians
-    G4double angleRadians = angleDegrees * (M_PI / 180.0);
-
-    // DEBUG
-    angleRadians = M_PI/2.;
-
-    //GenerateVertex(6.*cm, 2.*cm, CLHEP::pi/2., vertex);
-    GenerateVertex(6.*cm, 3.*cm, angleRadians, vertex_center, vertex);
-    
-    particleGun->SetParticlePosition(vertex);
-
+    GenerateVertex(source_h, source_r, angle, vertex_center, vertex);    
+    //particleGun->SetParticlePosition(vertex);
+    particleGun->SetParticlePosition(vertex_center); // FOR TESTING ONLY
+    // Set the source direction
     G4ThreeVector direction;
-    GenerateDirection(4.*cm, vertex_center, direction);
+    constexpr G4double detector_h = 4.*cm; // The height of the detector surface
+    GenerateDirection(detector_h, vertex_center, direction);
     particleGun->SetParticleMomentumDirection(direction);
+    // Set the source polarization
+    G4ThreeVector pseudo_polarization(pol_x, pol_y, pol_z);
+    G4ThreeVector polarization = pseudo_polarization.cross(direction);
+    particleGun->SetParticlePolarization(polarization.unit());
 
-    // Arbitrary polarization of the particle. It will be correctly defined in the 
-    // input csv file.
+    particleGun->GeneratePrimaryVertex(anEvent);
 
-    // Step 1: choose an arbitrary vector that is not parallel to the direction vector
-    G4ThreeVector arbitraryVector(1.0, 0.0, 0.0);
+    // Choose an arbitrary vector that is not parallel to the direction vector (FOR TESTING ONLY)   
+    /** G4ThreeVector arbitraryVector(1.0, 0.0, 0.0);
     if (std::abs(direction.dot(arbitraryVector)) > 0.9) {
         arbitraryVector = G4ThreeVector(0.0, 1.0, 0.0);
     }
-    // Step 2: use the cross product to find a perpendicular vector
+    // Use the cross product to find a perpendicular vector
     G4ThreeVector polarization = direction.cross(arbitraryVector);    
-    // Step3 : normalize the polarization vector to ensure it has unit length
+    // Normalize the polarization vector to ensure it has unit length
     polarization = polarization.unit();
     // Define the polarization vector
-    particleGun->SetParticlePolarization(polarization);
+    particleGun->SetParticlePolarization(polarization); **/
     
     #ifdef DEBUG
     std::ostringstream strValue;
@@ -132,7 +140,4 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent) {
         << "Energy: " << event.energy;
     testOutput.print(strValue.str());
     #endif
-
-    // Generate the particle
-    particleGun->GeneratePrimaryVertex(anEvent);
 }
