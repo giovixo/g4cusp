@@ -8,3 +8,8 @@ The code is released under MIT licence. Please, read the `LICENCE` file in the r
 
 ## Usage
 
+Interactive mode:
+`./cusp_gdml`
+
+Batch mode:
+`./cusp_gdml batch.mac`
