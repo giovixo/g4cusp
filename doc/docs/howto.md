@@ -1,4 +1,6 @@
-# How to build the documentation
+# How To 
+
+## How to build the documentation
 
 `mkdocs gh-deploy`
 
