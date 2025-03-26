@@ -35,6 +35,7 @@
 *.csv
 build
 results
+doc/site/
 gdml_backup
 .DS_Store
 .ipynb_checkpoints/
