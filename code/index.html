@@ -120,13 +120,44 @@ target_compile_definitions(cusp_gdml PRIVATE DEBUG)
 </code></pre>
 <h2 id="c">c++</h2>
 <p>Main program: <code>cusp_gdml.cc</code></p>
-<p>Headers files:</p>
+<p>The code works in single or in multi-thread mode. The number of threads can be defined programmatically.</p>
+<pre><code class="language-cpp">// Construct the run manager
+#ifdef G4MULTITHREADED
+    G4MTRunManager * runManager = new G4MTRunManager;
+    runManager-&gt;SetNumberOfThreads(6);
+#else
+    G4RunManager * runManager = new G4RunManager;
+#endif
+</code></pre>
+<p>Header files derived from GEANT4 classes:</p>
 <ul>
 <li>
-<p><code>one.hh</code></p>
+<p><code>DetectorConstruction.hh</code></p>
 </li>
 <li>
-<p><code>two.hh</code></p>
+<p><code>DetectorHit.hh</code></p>
+</li>
+<li>
+<p><code>PhysicsList.hh</code></p>
+</li>
+<li>
+<p><code>PrimaryGeneratorAction.hh</code></p>
+</li>
+<li>
+<p><code>SensitiveDetector.hh</code></p>
+</li>
+<li>
+<p>... </p>
+</li>
+</ul>
+<p>For example <code>DetectorConstruction</code>  inherits from <code>G4VUserDetectorConstruction</code></p>
+<p>Other header files:</p>
+<ul>
+<li>
+<p><code>WriteToFile.hh</code></p>
+</li>
+<li>
+<p><code>RsmSource.hh</code></p>
 </li>
 </ul>
               
