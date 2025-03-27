@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Code - g4cusp</title>
+    <title>Data analysis - g4cusp</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Code";
-        var mkdocs_page_input_path = "code.md";
+        var mkdocs_page_name = "Data analysis";
+        var mkdocs_page_input_path = "data_analysis.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -51,22 +51,18 @@
                 <li class="toctree-l1"><a class="reference internal" href="../source_model/">Source Model</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../data_analysis/">Data analysis</a>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Data analysis</a>
+    <ul class="current">
+    </ul>
                 </li>
               </ul>
               <ul>
                 <li class="toctree-l1"><a class="reference internal" href="../tests/">Tests</a>
                 </li>
               </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="#">Code</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#cmake-file">cmake file</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#c">c++</a>
-    </li>
-    </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../code/">Code</a>
                 </li>
               </ul>
               <ul>
@@ -87,7 +83,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Code</li>
+      <li class="breadcrumb-item active">Data analysis</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -96,46 +92,13 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="code">Code</h1>
-<h2 id="cmake-file">cmake file</h2>
-<p>The cmake file <code>CMakeLists.txt</code> has the following option to activate the debug messages:</p>
-<pre><code class="language-cmake">#----------------------------------------------------------------------------
-# Enable the DEBUG directive for this target
-#
-target_compile_definitions(cusp_gdml PRIVATE DEBUG)
-</code></pre>
-<p>Comment to to switch off the debug.</p>
-<p>The debug option can be implemented as in the following code example:</p>
-<pre><code class="language-cpp">    #ifdef DEBUG
-    std::ostringstream strValue;
-    strValue &lt;&lt; &quot;Event ID: &quot; &lt;&lt; event.event_id &lt;&lt; &quot;, &quot;
-        &lt;&lt; &quot;Time: &quot; &lt;&lt; event.time &lt;&lt; &quot;, &quot;
-        &lt;&lt; &quot;Angle: &quot; &lt;&lt; event.angle &lt;&lt; &quot;, &quot;
-        &lt;&lt; &quot;Pol_x: &quot; &lt;&lt; event.pol_x &lt;&lt; &quot;, &quot;
-        &lt;&lt; &quot;Pol_y: &quot; &lt;&lt; event.pol_y &lt;&lt; &quot;, &quot;
-        &lt;&lt; &quot;Pol_z: &quot; &lt;&lt; event.pol_z &lt;&lt; &quot;, &quot;
-        &lt;&lt; &quot;Energy: &quot; &lt;&lt; event.energy;
-    testOutput.print(strValue.str());
-    #endif
-</code></pre>
-<h2 id="c">c++</h2>
-<p>Main program: <code>cusp_gdml.cc</code></p>
-<p>Headers files (in the <code>include/</code> dir):</p>
-<ul>
-<li>
-<p><code>one.hh</code></p>
-</li>
-<li>
-<p><code>two.hh</code></p>
-</li>
-</ul>
-<p>The C++ code is in the <code>src/</code> dir.</p>
+                <h1 id="data-analysis">Data analysis</h1>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../tests/" class="btn btn-neutral float-left" title="Tests"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../howto/" class="btn btn-neutral float-right" title="HowTo">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../source_model/" class="btn btn-neutral float-left" title="Source Model"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../tests/" class="btn btn-neutral float-right" title="Tests">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -158,10 +121,10 @@ target_compile_definitions(cusp_gdml PRIVATE DEBUG)
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../tests/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../source_model/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../howto/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../tests/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
