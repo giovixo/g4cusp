@@ -66,6 +66,8 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#c">c++</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#how-to-test-the-user-c-code-outsite-the-geant4-application">How to test the user c++ code outsite the geant4 application</a>
+    </li>
     </ul>
                 </li>
               </ul>
@@ -160,6 +162,15 @@ target_compile_definitions(cusp_gdml PRIVATE DEBUG)
 <p><code>RsmSource.hh</code></p>
 </li>
 </ul>
+<h2 id="how-to-test-the-user-c-code-outsite-the-geant4-application">How to test the user c++ code outsite the geant4 application</h2>
+<p>Edit <code>CMakeLists.txt</code> if necessary</p>
+<p>Compile:</p>
+<pre><code class="language-c">cd cpp-lab/build
+cmake ..
+make
+</code></pre>
+<p>Run:</p>
+<p><code>./&lt;program_name&gt;</code></p>
               
             </div>
           </div><footer>
