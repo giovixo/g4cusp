@@ -10,7 +10,8 @@
 
 #include "WriteToFile.hh"
 
-#include "RsmSource.hh"
+// #include "RsmSource.hh"
+#include "GlobalRsmSource.hh"
 
 // Mandatory user class that defines the properties of the
 // particle gun and run initialization
@@ -32,7 +33,7 @@ public:
     
 private:
     G4ParticleGun* particleGun;
-    RsmSource rsmSource; // to read the source data
+    //RsmSource rsmSource; // to read the source data
     void GenerateVertex(G4double source_h, G4double source_r, G4double source_alpha, G4ThreeVector &vertex_center, G4ThreeVector& vertex); // Generate the source vertex
     void GenerateDirection(G4double detector_h, G4ThreeVector vertex, G4ThreeVector& direction); // Generate the source direction
     void GenerateSquare(G4double number);     // Just a dummy method

@@ -270,6 +270,30 @@ src/DetectorHit.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cusp_gdml.dir/build.make CMakeFiles/cusp_gdml.dir/src/DetectorHit.cc.s
 .PHONY : src/DetectorHit.cc.s
 
+src/GlobalRsmSource.o: src/GlobalRsmSource.cc.o
+.PHONY : src/GlobalRsmSource.o
+
+# target to build an object file
+src/GlobalRsmSource.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cusp_gdml.dir/build.make CMakeFiles/cusp_gdml.dir/src/GlobalRsmSource.cc.o
+.PHONY : src/GlobalRsmSource.cc.o
+
+src/GlobalRsmSource.i: src/GlobalRsmSource.cc.i
+.PHONY : src/GlobalRsmSource.i
+
+# target to preprocess a source file
+src/GlobalRsmSource.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cusp_gdml.dir/build.make CMakeFiles/cusp_gdml.dir/src/GlobalRsmSource.cc.i
+.PHONY : src/GlobalRsmSource.cc.i
+
+src/GlobalRsmSource.s: src/GlobalRsmSource.cc.s
+.PHONY : src/GlobalRsmSource.s
+
+# target to generate assembly for a file
+src/GlobalRsmSource.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cusp_gdml.dir/build.make CMakeFiles/cusp_gdml.dir/src/GlobalRsmSource.cc.s
+.PHONY : src/GlobalRsmSource.cc.s
+
 src/PhysicsList.o: src/PhysicsList.cc.o
 .PHONY : src/PhysicsList.o
 
@@ -511,6 +535,9 @@ help:
 	@echo "... src/DetectorHit.o"
 	@echo "... src/DetectorHit.i"
 	@echo "... src/DetectorHit.s"
+	@echo "... src/GlobalRsmSource.o"
+	@echo "... src/GlobalRsmSource.i"
+	@echo "... src/GlobalRsmSource.s"
 	@echo "... src/PhysicsList.o"
 	@echo "... src/PhysicsList.i"
 	@echo "... src/PhysicsList.s"

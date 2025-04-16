@@ -20,7 +20,7 @@
 #include "G4GenericMessenger.hh"
 
 
-
+#include "GlobalRsmSource.hh"
 
 int main(int argc, char **argv)
 {
@@ -43,10 +43,14 @@ int main(int argc, char **argv)
     G4RunManager * runManager = new G4RunManager;
 #endif
 
-
+    // Initialize the global RsmSource
+    gRsmSource = new RsmSource();
+    gRsmSource->ReadCSV("events.csv");
+    gRsmSource->PrintCSV(); // Print the CSV data for debugging
+    
     // Set mandatory initialization classes
     runManager->SetUserInitialization(new DetectorConstruction());
-    runManager->SetUserInitialization(new PhysicsList());
+    runManager->SetUserInitialization(new PhysicsList());   
 
     // // User action initialization
     runManager->SetUserInitialization(new UserActionInitialization());

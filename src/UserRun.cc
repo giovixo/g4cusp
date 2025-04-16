@@ -18,6 +18,8 @@
 //#include "g4root.hh"
 #include "G4AnalysisManager.hh"
 
+#include "GlobalRsmSource.hh"
+
 
 UserRun::UserRun()
 {
@@ -109,6 +111,13 @@ void UserRun::RecordEvent(const G4Event* event)
             G4double detector_y = ahit -> GetScint_y(); 
             G4double detector_z = ahit -> GetScint_z(); 
 			G4double lastStepGlobalTime = ahit -> GetTime();
+
+			// Debug output
+			G4cout << "Event ID: " << eventID << G4endl;
+			G4int sourceEventID = gRsmSource->GetEventID(); // Get the next event ID  
+		    G4cout << "Source event ID: " << sourceEventID << G4endl;
+    		G4double sourceTime = gRsmSource->GetTime(); // Get the time of the next event
+    		G4cout << "Source timestamp: " << sourceTime << G4endl;  
             
             analysisManager->FillNtupleDColumn(0, eventID);
             analysisManager->FillNtupleDColumn(1, energyDeposit/keV);

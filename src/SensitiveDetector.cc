@@ -15,6 +15,8 @@
 #include <iostream>
 #include <string> 
 
+#include "GlobalRsmSource.hh"
+
 // Constructor.
 SensitiveDetector::SensitiveDetector(G4String SDuniqueName) :
 G4VSensitiveDetector(SDuniqueName),
@@ -24,7 +26,7 @@ numberOfCellsY(1)
 {
     collectionName.insert(SDuniqueName);
     initArray();
-
+    //gRsmSource->PrintCSV(); // Print the CSV data for debugging
 }
 
 

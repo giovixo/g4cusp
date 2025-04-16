@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/cusp_gdml.dir/src/DetectorConstruction.cc.o.d"
   "CMakeFiles/cusp_gdml.dir/src/DetectorHit.cc.o"
   "CMakeFiles/cusp_gdml.dir/src/DetectorHit.cc.o.d"
+  "CMakeFiles/cusp_gdml.dir/src/GlobalRsmSource.cc.o"
+  "CMakeFiles/cusp_gdml.dir/src/GlobalRsmSource.cc.o.d"
   "CMakeFiles/cusp_gdml.dir/src/PhysicsList.cc.o"
   "CMakeFiles/cusp_gdml.dir/src/PhysicsList.cc.o.d"
   "CMakeFiles/cusp_gdml.dir/src/PrimaryGeneratorAction.cc.o"

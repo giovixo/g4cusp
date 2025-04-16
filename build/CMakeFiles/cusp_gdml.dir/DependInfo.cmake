@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/giovanni/dev/CUSP/g4cusp/src/ConfigFile.cc" "CMakeFiles/cusp_gdml.dir/src/ConfigFile.cc.o" "gcc" "CMakeFiles/cusp_gdml.dir/src/ConfigFile.cc.o.d"
   "/Users/giovanni/dev/CUSP/g4cusp/src/DetectorConstruction.cc" "CMakeFiles/cusp_gdml.dir/src/DetectorConstruction.cc.o" "gcc" "CMakeFiles/cusp_gdml.dir/src/DetectorConstruction.cc.o.d"
   "/Users/giovanni/dev/CUSP/g4cusp/src/DetectorHit.cc" "CMakeFiles/cusp_gdml.dir/src/DetectorHit.cc.o" "gcc" "CMakeFiles/cusp_gdml.dir/src/DetectorHit.cc.o.d"
+  "/Users/giovanni/dev/CUSP/g4cusp/src/GlobalRsmSource.cc" "CMakeFiles/cusp_gdml.dir/src/GlobalRsmSource.cc.o" "gcc" "CMakeFiles/cusp_gdml.dir/src/GlobalRsmSource.cc.o.d"
   "/Users/giovanni/dev/CUSP/g4cusp/src/PhysicsList.cc" "CMakeFiles/cusp_gdml.dir/src/PhysicsList.cc.o" "gcc" "CMakeFiles/cusp_gdml.dir/src/PhysicsList.cc.o.d"
   "/Users/giovanni/dev/CUSP/g4cusp/src/PrimaryGeneratorAction.cc" "CMakeFiles/cusp_gdml.dir/src/PrimaryGeneratorAction.cc.o" "gcc" "CMakeFiles/cusp_gdml.dir/src/PrimaryGeneratorAction.cc.o.d"
   "/Users/giovanni/dev/CUSP/g4cusp/src/RsmSource.cc" "CMakeFiles/cusp_gdml.dir/src/RsmSource.cc.o" "gcc" "CMakeFiles/cusp_gdml.dir/src/RsmSource.cc.o.d"

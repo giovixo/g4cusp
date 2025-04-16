@@ -23,7 +23,9 @@ PrimaryGeneratorAction::PrimaryGeneratorAction() {
     std::ofstream outputFile("output.txt");
 
     // Read events from CSV file
-    rsmSource.ReadCSV("events.csv");
+    #ifdef CSV
+       // rsmSource.ReadCSV("events.csv"); // no more needed as rsmSource is a global variable
+    #endif
 }
 
 PrimaryGeneratorAction::~PrimaryGeneratorAction() {
@@ -69,14 +71,22 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent) {
     // *** Step 0: Get the event 
 
     static size_t currentEventIndex = 0;
-    const std::vector<EventData>& events = rsmSource.GetEvents();
 
-    if (currentEventIndex >= events.size()) {
-        G4cerr << "No more events in the CSV file." << G4endl;
-        return;
-    }
-    // This statement accesses  events[0] and then increments the index to 1, and so on.
-    const EventData& event = events[currentEventIndex++];
+    #ifdef CSV
+       const std::vector<EventData>& events = gRsmSource->GetEvents();
+
+       if (currentEventIndex >= events.size()) {
+           G4cerr << "No more events in the CSV file." << G4endl;
+           return;
+       }
+       // This statement accesses  events[0] and then increments the index to 1, and so on.
+       const EventData& event = events[currentEventIndex++];
+    #endif 
+
+    #ifndef CSV
+       // This statement accesses the event 
+       EventData event = gRsmSource->GenerateEvent(60.*keV, 0.01); // 0.01 photons per second
+    #endif
 
     // *** Step 1: retrieve the event data
 
@@ -86,7 +96,7 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent) {
     G4double pol_x = event.pol_x;
     G4double pol_y = event.pol_y;
     G4double pol_z = event.pol_z;
-    G4double energy = event.energy * keV;
+    G4double energy = event.energy;
 
     // *** Step 2: Generate the primary vertex using the event data
 

@@ -43,14 +43,36 @@ void RsmSource::ReadCSV(const std::string& filename) {
     std::cout << "Read " << events.size() << " events from " << filename << std::endl;
 }
 
-EventData RsmSource::GenerateEvent() { //dummy. To implement this function see the .py example
+void RsmSource::PrintCSV() const {
+    std::cout << "Event ID, Time, Angle, Pol_x, Pol_y, Pol_z, Energy" << std::endl;
+    for (const auto& event : events) {
+        std::cout << event.event_id << ", "
+                  << event.time << ", "
+                  << event.angle << ", "
+                  << event.pol_x << ", "
+                  << event.pol_y << ", "
+                  << event.pol_z << ", "
+                  << event.energy << std::endl;
+    }
+}
+
+EventData RsmSource::GenerateEvent(G4double energy_input, G4double photon_rate) { 
     EventData event;
+    // Assign a unique event ID
     event.event_id = next_event_id++;
-    event.time = 0.0;
-    event.angle = 0.0;
-    event.pol_x = 0.0;
+
+    // Angular frequency of the rotating source
+    // Assuming a rotation period of 100 seconds
+    const double omega = 0.01 * (2.0 * M_PI);
+
+    // Generate a random time interval
+    double time_interval = G4RandExponential::shoot(1.0 / photon_rate);
+    event.time += time_interval;
+    event.angle = omega * event.time;
+    event.pol_x = std::cos(event.angle);
     event.pol_y = 0.0;
-    event.pol_z = 0.0;
-    event.energy = 0.0;
+    event.pol_z = std::sin(event.angle);
+    event.energy = energy_input;
+
     return event;
 }

@@ -3,6 +3,7 @@ nav:
   - Home: index.md
   - Mass Model: mass_model.md
   - Source Model: source_model.md
+  - Data analysis: data_analysis.md
   - Tests: tests.md
   - Code: code.md
   - HowTo: howto.md
