@@ -46,8 +46,9 @@ int main(int argc, char **argv)
     // Initialize the global RsmSource
     gRsmSource = new RsmSource();
     gRsmSource->ReadCSV("events.csv");
-    gRsmSource->PrintCSV(); // Print the CSV data for debugging
-    
+    #ifdef DEBUG
+       gRsmSource->PrintCSV(); // Print the CSV data for debugging
+    #endif
     // Set mandatory initialization classes
     runManager->SetUserInitialization(new DetectorConstruction());
     runManager->SetUserInitialization(new PhysicsList());   
