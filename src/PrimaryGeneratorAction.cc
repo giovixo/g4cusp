@@ -85,7 +85,7 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent) {
 
     #ifndef CSV
        // This statement accesses the event 
-       EventData event = gRsmSource->GenerateEvent(60.*keV, 0.01); // 0.01 photons per second
+       EventData event = gRsmSource->GenerateEvent(50.*keV, 0.01); // 0.01 photons per second
     #endif
 
     // *** Step 1: retrieve the event data

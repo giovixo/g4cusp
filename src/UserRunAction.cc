@@ -53,6 +53,7 @@ void UserRunAction::BeginOfRunAction(const G4Run* run)
     // Ntuple merging (only for Geant v. 4.10.03 or higher)
     analysisManager->SetNtupleMerging(true);
     
+    /* old tuple
     analysisManager->CreateNtuple("Events", "Events");
     analysisManager->CreateNtupleDColumn("EventID");
     analysisManager->CreateNtupleDColumn("Timestamp");
@@ -72,7 +73,18 @@ void UserRunAction::BeginOfRunAction(const G4Run* run)
     analysisManager->CreateNtupleDColumn("Y_Pol");
     analysisManager->CreateNtupleDColumn("Z_Pol");
     analysisManager->FinishNtuple();
-    
+    */
+
+    // New tuple
+    analysisManager->CreateNtuple("Events", "Events");
+    analysisManager->CreateNtupleIColumn("EventID");
+    analysisManager->CreateNtupleDColumn("Timestamp");
+    analysisManager->CreateNtupleDColumn("En_dep");
+    analysisManager->CreateNtupleIColumn("Scint_ID");
+    analysisManager->CreateNtupleDColumn("X_Detected");
+    analysisManager->CreateNtupleDColumn("Y_Detected");
+    analysisManager->CreateNtupleDColumn("Z_Detected");
+    analysisManager->FinishNtuple();
     
     if(IsMaster())
     {
